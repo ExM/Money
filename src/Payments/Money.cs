@@ -6,9 +6,9 @@ namespace Payments
 		
 		public readonly decimal Amount;
 		
-		public readonly Currency Currency;
+		public readonly ICurrency Currency;
 		
-		public Money(decimal amount, Currency currency)
+		public Money(decimal amount, ICurrency currency)
 		{
 			Amount = amount;
 			Currency = currency;
