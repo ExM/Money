@@ -1,0 +1,9 @@
+*.suo
+*~
+src/*/obj/Debug/*
+src/*/bin/Debug/*
+*.userprefs
+*.pidb
+src/*/test-results/*
+bin/*.VisualState.xml
+bin/TestResult.xml
