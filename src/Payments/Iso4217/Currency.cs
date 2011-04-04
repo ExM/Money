@@ -57,6 +57,6 @@ namespace Payments.Iso4217Currencies
 			}
 		}
 		#endregion
-}
+	}
 }
 

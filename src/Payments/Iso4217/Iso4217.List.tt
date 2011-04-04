@@ -1,4 +1,7 @@
-﻿<#@ template language="C#v3.5" #>
+﻿<#@ template language="C#v3.5" hostspecific="True"
+#><#@ import namespace="System.Collections.Generic" 
+#><#@ import namespace="System.IO" 
+#>
 using System;
 using Payments.Iso4217Currencies;
 
@@ -6,6 +9,19 @@ namespace Payments
 {
 	public static partial class Iso4217
 	{
-		//public static readonly ICurrency UAH = new Currency("UAH", "€", 980, 100m);
+<#
+		string[] lines = File.ReadAllLines(Host.ResolvePath("../../../docs/iso4217_code_table.csv"));
+		bool head = true;
+		foreach(string line in lines)
+		{
+			if(head)
+			{
+				head = false;
+				continue;
+			}
+			string[] cells = line.Split(';');
+		#>		public static readonly ICurrency <#= cells[0] #> = new Currency("<#= cells[0] #>", "?", <#= cells[1] #>, 100m);	//<#= line #>
+<# } #>
+
 	}
 }

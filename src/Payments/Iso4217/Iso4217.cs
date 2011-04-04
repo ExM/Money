@@ -5,10 +5,6 @@ namespace Payments
 {
 	public static partial class Iso4217
 	{
-		public static readonly ICurrency UAH = new Currency("UAH", "€", 980, 100m);
-		public static readonly ICurrency UGX = new Currency("UGX", "€", 800, 100m);
-		public static readonly ICurrency USD = new Currency("USD", "€", 840, 100m);
-
 		public static bool Contain(ICurrency currency)
 		{
 			return currency is Currency;
