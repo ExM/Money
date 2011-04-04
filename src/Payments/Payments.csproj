@@ -34,6 +34,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Dic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dic.resx</DependentUpon>
+    </Compile>
     <Compile Include="Money.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="Iso4217\Currency.cs" />
@@ -47,7 +52,14 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Iso4217\" />
+    <EmbeddedResource Include="Dic.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dic.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">
