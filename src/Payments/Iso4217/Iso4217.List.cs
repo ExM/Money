@@ -726,6 +726,15 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency ZWL = new Currency("ZWL", "¤", 932, 0.01m);
 		
+		/// <summary>
+		/// Parse char code of currency in ISO4217
+		/// </summary>
+		/// <param name="charCode">
+		/// char code of currency <see cref="System.String"/>
+		/// </param>
+		/// <returns>
+		/// null if not found<see cref="ICurrency"/>
+		/// </returns>
 		public static ICurrency Parse(string charCode)
 		{
 			switch(charCode.ToUpperInvariant())
@@ -910,6 +919,202 @@ namespace Payments
 				case "ZAR": return ZAR;
 				case "ZMK": return ZMK;
 				case "ZWL": return ZWL;
+				default: return null;
+			}
+		}
+		
+		/// <summary>
+		/// Parse number code of currency in ISO4217
+		/// </summary>
+		/// <param name="charCode">
+		/// number code of currency <see cref="System.String"/>
+		/// </param>
+		/// <returns>
+		/// null if not found<see cref="ICurrency"/>
+		/// </returns>
+		public static ICurrency Parse(int numCode)
+		{
+			switch(numCode)
+			{
+				case 8: return ALL;
+				case 12: return DZD;
+				case 32: return ARS;
+				case 36: return AUD;
+				case 44: return BSD;
+				case 48: return BHD;
+				case 50: return BDT;
+				case 51: return AMD;
+				case 52: return BBD;
+				case 60: return BMD;
+				case 64: return BTN;
+				case 68: return BOB;
+				case 72: return BWP;
+				case 84: return BZD;
+				case 90: return SBD;
+				case 96: return BND;
+				case 104: return MMK;
+				case 108: return BIF;
+				case 116: return KHR;
+				case 124: return CAD;
+				case 132: return CVE;
+				case 136: return KYD;
+				case 144: return LKR;
+				case 152: return CLP;
+				case 156: return CNY;
+				case 170: return COP;
+				case 174: return KMF;
+				case 188: return CRC;
+				case 191: return HRK;
+				case 192: return CUP;
+				case 203: return CZK;
+				case 208: return DKK;
+				case 214: return DOP;
+				case 222: return SVC;
+				case 230: return ETB;
+				case 232: return ERN;
+				case 238: return FKP;
+				case 242: return FJD;
+				case 262: return DJF;
+				case 270: return GMD;
+				case 292: return GIP;
+				case 320: return GTQ;
+				case 324: return GNF;
+				case 328: return GYD;
+				case 332: return HTG;
+				case 340: return HNL;
+				case 344: return HKD;
+				case 348: return HUF;
+				case 352: return ISK;
+				case 356: return INR;
+				case 360: return IDR;
+				case 364: return IRR;
+				case 368: return IQD;
+				case 376: return ILS;
+				case 388: return JMD;
+				case 392: return JPY;
+				case 398: return KZT;
+				case 400: return JOD;
+				case 404: return KES;
+				case 408: return KPW;
+				case 410: return KRW;
+				case 414: return KWD;
+				case 417: return KGS;
+				case 418: return LAK;
+				case 422: return LBP;
+				case 426: return LSL;
+				case 428: return LVL;
+				case 430: return LRD;
+				case 434: return LYD;
+				case 440: return LTL;
+				case 446: return MOP;
+				case 454: return MWK;
+				case 458: return MYR;
+				case 462: return MVR;
+				case 478: return MRO;
+				case 480: return MUR;
+				case 484: return MXN;
+				case 496: return MNT;
+				case 498: return MDL;
+				case 504: return MAD;
+				case 512: return OMR;
+				case 516: return NAD;
+				case 524: return NPR;
+				case 532: return ANG;
+				case 533: return AWG;
+				case 548: return VUV;
+				case 554: return NZD;
+				case 558: return NIO;
+				case 566: return NGN;
+				case 578: return NOK;
+				case 586: return PKR;
+				case 590: return PAB;
+				case 598: return PGK;
+				case 600: return PYG;
+				case 604: return PEN;
+				case 608: return PHP;
+				case 634: return QAR;
+				case 643: return RUB;
+				case 646: return RWF;
+				case 654: return SHP;
+				case 678: return STD;
+				case 682: return SAR;
+				case 690: return SCR;
+				case 694: return SLL;
+				case 702: return SGD;
+				case 704: return VND;
+				case 706: return SOS;
+				case 710: return ZAR;
+				case 748: return SZL;
+				case 752: return SEK;
+				case 756: return CHF;
+				case 760: return SYP;
+				case 764: return THB;
+				case 776: return TOP;
+				case 780: return TTD;
+				case 784: return AED;
+				case 788: return TND;
+				case 800: return UGX;
+				case 807: return MKD;
+				case 818: return EGP;
+				case 826: return GBP;
+				case 834: return TZS;
+				case 840: return USD;
+				case 858: return UYU;
+				case 860: return UZS;
+				case 882: return WST;
+				case 886: return YER;
+				case 894: return ZMK;
+				case 901: return TWD;
+				case 931: return CUC;
+				case 932: return ZWL;
+				case 934: return TMT;
+				case 936: return GHS;
+				case 937: return VEF;
+				case 938: return SDG;
+				case 940: return UYI;
+				case 941: return RSD;
+				case 943: return MZN;
+				case 944: return AZN;
+				case 946: return RON;
+				case 947: return CHE;
+				case 948: return CHW;
+				case 949: return TRY;
+				case 950: return XAF;
+				case 951: return XCD;
+				case 952: return XOF;
+				case 953: return XPF;
+				case 955: return XBA;
+				case 956: return XBB;
+				case 957: return XBC;
+				case 958: return XBD;
+				case 959: return XAU;
+				case 960: return XDR;
+				case 961: return XAG;
+				case 962: return XPT;
+				case 963: return XTS;
+				case 964: return XPD;
+				case 968: return SRD;
+				case 969: return MGA;
+				case 970: return COU;
+				case 971: return AFN;
+				case 972: return TJS;
+				case 973: return AOA;
+				case 974: return BYR;
+				case 975: return BGN;
+				case 976: return CDF;
+				case 977: return BAM;
+				case 978: return EUR;
+				case 979: return MXV;
+				case 980: return UAH;
+				case 981: return GEL;
+				case 984: return BOV;
+				case 985: return PLN;
+				case 986: return BRL;
+				case 990: return CLF;
+				case 994: return XSU;
+				case 997: return USN;
+				case 998: return USS;
+				case 999: return XXX;
 				default: return null;
 			}
 		}

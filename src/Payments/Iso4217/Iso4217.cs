@@ -23,5 +23,14 @@ namespace Payments
 			currency = new UnknownCurrency(charCode);
 			return false;
 		}
+		
+		public static bool TryParse(int numCode, out ICurrency currency)
+		{
+			currency = Parse(numCode);
+			if(currency != null)
+				return true;
+			currency = new UnknownCurrency(numCode);
+			return false;
+		}
 	}
 }

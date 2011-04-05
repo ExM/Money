@@ -28,10 +28,16 @@ namespace Payments
 		}
 		
 		List<string> codes = new List<string>();
+		SortedList<int, string> numCodes = new SortedList<int, string>();
 		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../../docs/iso4217_code_table.csv")).Skip(1))
 		{
 			string[] cells = line.Split(';');
 			codes.Add(cells[0]);
+			
+			int numCode = Convert.ToInt32(cells[1]);
+			if(numCode > 0)
+				numCodes.Add(numCode, cells[0]);
+			
 			string symbol;
 			if(!symbols.TryGetValue(cells[0], out symbol))
 				symbol = "¤";
@@ -47,12 +53,41 @@ namespace Payments
 		public static readonly ICurrency <#= cells[0] #> = new Currency("<#= cells[0] #>", "<#= symbol #>", <#= cells[1] #>, <#= mou #>);
 <# } #>
 		
+		/// <summary>
+		/// Parse char code of currency in ISO4217
+		/// </summary>
+		/// <param name="charCode">
+		/// char code of currency <see cref="System.String"/>
+		/// </param>
+		/// <returns>
+		/// null if not found<see cref="ICurrency"/>
+		/// </returns>
 		public static ICurrency Parse(string charCode)
 		{
 			switch(charCode.ToUpperInvariant())
 			{
 <# foreach(string code in codes) {
 #>				case "<#= code #>": return <#= code #>;
+<# } #>
+				default: return null;
+			}
+		}
+		
+		/// <summary>
+		/// Parse number code of currency in ISO4217
+		/// </summary>
+		/// <param name="charCode">
+		/// number code of currency <see cref="System.String"/>
+		/// </param>
+		/// <returns>
+		/// null if not found<see cref="ICurrency"/>
+		/// </returns>
+		public static ICurrency Parse(int numCode)
+		{
+			switch(numCode)
+			{
+<# foreach(var pair in numCodes) {
+#>				case <#= pair.Key #>: return <#= pair.Value #>;
 <# } #>
 				default: return null;
 			}
