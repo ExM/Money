@@ -23,16 +23,5 @@ namespace Payments
 			currency = new UnknownCurrency(charCode);
 			return false;
 		}
-		
-		public static ICurrency Parse(string charCode)
-		{
-			switch(charCode.ToUpperInvariant())
-			{
-				case "UAH": return UAH;
-				case "UGX": return UGX;
-				case "USD": return USD;
-				default: return null;
-			}
-		}
 	}
 }

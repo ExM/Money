@@ -1,10 +1,13 @@
 using System;
+using System.Resources;
 
 
 namespace Payments.Iso4217Currencies
 {
 	public class Currency: ICurrency
 	{
+		private static readonly ResourceManager _rMan = new ResourceManager("Payments.Dic", typeof(Currency).Assembly);
+		
 		private readonly string _charCode;
 		private readonly int _numCode;
 		private readonly string _symbol;
@@ -20,9 +23,8 @@ namespace Payments.Iso4217Currencies
 		
 		public override string ToString()
 		{
-			return string.Format ("[Currency]");
+			return _rMan.GetString(_charCode);
 		}
-	
 
 		#region ICurrency implementation
 		public string CharCode

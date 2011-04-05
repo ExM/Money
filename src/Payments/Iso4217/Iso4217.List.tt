@@ -1,8 +1,9 @@
 ﻿<#@ template language="C#v3.5" hostspecific="True"
+#><#@ import namespace="System" 
 #><#@ import namespace="System.Collections.Generic" 
 #><#@ import namespace="System.IO" 
-#>
-using System;
+#><#@ import namespace="System.Linq" 
+#>using System;
 using Payments.Iso4217Currencies;
 
 namespace Payments
@@ -10,18 +11,51 @@ namespace Payments
 	public static partial class Iso4217
 	{
 <#
-		string[] lines = File.ReadAllLines(Host.ResolvePath("../../../docs/iso4217_code_table.csv"));
-		bool head = true;
-		foreach(string line in lines)
+		Dictionary<string, string> symbols = new Dictionary<string, string>();
+		string path = Path.GetDirectoryName(Host.TemplateFile);
+		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../../docs/symbols.csv")).Skip(1))
 		{
-			if(head)
-			{
-				head = false;
-				continue;
-			}
 			string[] cells = line.Split(';');
-		#>		public static readonly ICurrency <#= cells[0] #> = new Currency("<#= cells[0] #>", "?", <#= cells[1] #>, 100m);	//<#= line #>
+			string code = cells[0];
+			string symbol = "";
+			foreach(string ch in cells[1].Split(','))
+			{
+				if(ch.Length == 2) symbol += ((char)Convert.ToInt32(ch, 16)).ToString();//"\\u00" + ch;
+				else if(ch.Length == 3) symbol += "\\u0" + ch;
+				else symbol += "\\u" + ch;
+			}
+			symbols.Add(code, symbol);
+		}
+		
+		List<string> codes = new List<string>();
+		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../../docs/iso4217_code_table.csv")).Skip(1))
+		{
+			string[] cells = line.Split(';');
+			codes.Add(cells[0]);
+			string symbol;
+			if(!symbols.TryGetValue(cells[0], out symbol))
+				symbol = "¤";
+			string mouTxt = cells[2];
+			string mou = "0m";
+			if(mouTxt == "0") mou = "1m";
+			else if(mouTxt == "1") mou = "0.1m";
+			else if(mouTxt == "2") mou = "0.01m";
+			else if(mouTxt == "3") mou = "0.001m";
+		#>		/// <summary>
+		/// <#= cells[3] #>
+		/// </summary>
+		public static readonly ICurrency <#= cells[0] #> = new Currency("<#= cells[0] #>", "<#= symbol #>", <#= cells[1] #>, <#= mou #>);
 <# } #>
-
+		
+		public static ICurrency Parse(string charCode)
+		{
+			switch(charCode.ToUpperInvariant())
+			{
+<# foreach(string code in codes) {
+#>				case "<#= code #>": return <#= code #>;
+<# } #>
+				default: return null;
+			}
+		}
 	}
 }

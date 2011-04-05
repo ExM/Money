@@ -1,4 +1,5 @@
 using System;
+
 namespace Payments
 {
 	public struct Money
@@ -12,6 +13,7 @@ namespace Payments
 		{
 			Amount = amount;
 			Currency = currency;
+			
 		}
 	}
 }

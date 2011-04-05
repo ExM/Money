@@ -5,186 +5,913 @@ namespace Payments
 {
 	public static partial class Iso4217
 	{
-		public static readonly ICurrency AED = new Currency("AED", "?", 784, 100m);	//AED;784;2;UAE Dirham
-		public static readonly ICurrency AFN = new Currency("AFN", "?", 971, 100m);	//AFN;971;2;Afghani
-		public static readonly ICurrency ALL = new Currency("ALL", "?", 8, 100m);	//ALL;8;2;Lek
-		public static readonly ICurrency AMD = new Currency("AMD", "?", 51, 100m);	//AMD;51;2;Armenian Dram
-		public static readonly ICurrency ANG = new Currency("ANG", "?", 532, 100m);	//ANG;532;2;Netherlands Antillean Guilder
-		public static readonly ICurrency AOA = new Currency("AOA", "?", 973, 100m);	//AOA;973;2;Kwanza
-		public static readonly ICurrency ARS = new Currency("ARS", "?", 32, 100m);	//ARS;32;2;Argentine Peso
-		public static readonly ICurrency AUD = new Currency("AUD", "?", 36, 100m);	//AUD;36;2;Australian Dollar
-		public static readonly ICurrency AWG = new Currency("AWG", "?", 533, 100m);	//AWG;533;2;Aruban Guilder
-		public static readonly ICurrency AZN = new Currency("AZN", "?", 944, 100m);	//AZN;944;2;Azerbaijanian Manat
-		public static readonly ICurrency BAM = new Currency("BAM", "?", 977, 100m);	//BAM;977;2;Convertible Mark
-		public static readonly ICurrency BBD = new Currency("BBD", "?", 52, 100m);	//BBD;52;2;Barbados Dollar
-		public static readonly ICurrency BDT = new Currency("BDT", "?", 50, 100m);	//BDT;50;2;Taka
-		public static readonly ICurrency BGN = new Currency("BGN", "?", 975, 100m);	//BGN;975;2;Bulgarian Lev
-		public static readonly ICurrency BHD = new Currency("BHD", "?", 48, 100m);	//BHD;48;3;Bahraini Dinar
-		public static readonly ICurrency BIF = new Currency("BIF", "?", 108, 100m);	//BIF;108;0;Burundi Franc
-		public static readonly ICurrency BMD = new Currency("BMD", "?", 60, 100m);	//BMD;60;2;Bermudian Dollar
-		public static readonly ICurrency BND = new Currency("BND", "?", 96, 100m);	//BND;96;2;Brunei Dollar
-		public static readonly ICurrency BOB = new Currency("BOB", "?", 68, 100m);	//BOB;68;2;Boliviano
-		public static readonly ICurrency BOV = new Currency("BOV", "?", 984, 100m);	//BOV;984;2;Mvdol
-		public static readonly ICurrency BRL = new Currency("BRL", "?", 986, 100m);	//BRL;986;2;Brazilian Real
-		public static readonly ICurrency BSD = new Currency("BSD", "?", 44, 100m);	//BSD;44;2;Bahamian Dollar
-		public static readonly ICurrency BTN = new Currency("BTN", "?", 64, 100m);	//BTN;64;2;Ngultrum
-		public static readonly ICurrency BWP = new Currency("BWP", "?", 72, 100m);	//BWP;72;2;Pula
-		public static readonly ICurrency BYR = new Currency("BYR", "?", 974, 100m);	//BYR;974;0;Belarussian Ruble
-		public static readonly ICurrency BZD = new Currency("BZD", "?", 84, 100m);	//BZD;84;2;Belize Dollar
-		public static readonly ICurrency CAD = new Currency("CAD", "?", 124, 100m);	//CAD;124;2;Canadian Dollar
-		public static readonly ICurrency CDF = new Currency("CDF", "?", 976, 100m);	//CDF;976;2;Congolese Franc
-		public static readonly ICurrency CHE = new Currency("CHE", "?", 947, 100m);	//CHE;947;2;WIR Euro
-		public static readonly ICurrency CHF = new Currency("CHF", "?", 756, 100m);	//CHF;756;2;Swiss Franc
-		public static readonly ICurrency CHW = new Currency("CHW", "?", 948, 100m);	//CHW;948;2;WIR Franc
-		public static readonly ICurrency CLF = new Currency("CLF", "?", 990, 100m);	//CLF;990;0;Unidades de fomento
-		public static readonly ICurrency CLP = new Currency("CLP", "?", 152, 100m);	//CLP;152;0;Chilean Peso
-		public static readonly ICurrency CNY = new Currency("CNY", "?", 156, 100m);	//CNY;156;2;Yuan Renminbi
-		public static readonly ICurrency COP = new Currency("COP", "?", 170, 100m);	//COP;170;2;Colombian Peso
-		public static readonly ICurrency COU = new Currency("COU", "?", 970, 100m);	//COU;970;2;Unidad de Valor Real
-		public static readonly ICurrency CRC = new Currency("CRC", "?", 188, 100m);	//CRC;188;2;Costa Rican Colon
-		public static readonly ICurrency CUC = new Currency("CUC", "?", 931, 100m);	//CUC;931;2;Peso Convertible
-		public static readonly ICurrency CUP = new Currency("CUP", "?", 192, 100m);	//CUP;192;2;Cuban Peso
-		public static readonly ICurrency CVE = new Currency("CVE", "?", 132, 100m);	//CVE;132;2;Cape Verde Escudo
-		public static readonly ICurrency CZK = new Currency("CZK", "?", 203, 100m);	//CZK;203;2;Czech Koruna
-		public static readonly ICurrency DJF = new Currency("DJF", "?", 262, 100m);	//DJF;262;0;Djibouti Franc
-		public static readonly ICurrency DKK = new Currency("DKK", "?", 208, 100m);	//DKK;208;2;Danish Krone
-		public static readonly ICurrency DOP = new Currency("DOP", "?", 214, 100m);	//DOP;214;2;Dominican Peso
-		public static readonly ICurrency DZD = new Currency("DZD", "?", 12, 100m);	//DZD;12;2;Algerian Dinar
-		public static readonly ICurrency EGP = new Currency("EGP", "?", 818, 100m);	//EGP;818;2;Egyptian Pound
-		public static readonly ICurrency ERN = new Currency("ERN", "?", 232, 100m);	//ERN;232;2;Nakfa
-		public static readonly ICurrency ETB = new Currency("ETB", "?", 230, 100m);	//ETB;230;2;Ethiopian Birr
-		public static readonly ICurrency EUR = new Currency("EUR", "?", 978, 100m);	//EUR;978;2;Euro
-		public static readonly ICurrency FJD = new Currency("FJD", "?", 242, 100m);	//FJD;242;2;Fiji Dollar
-		public static readonly ICurrency FKP = new Currency("FKP", "?", 238, 100m);	//FKP;238;2;Falkland Islands Pound
-		public static readonly ICurrency GBP = new Currency("GBP", "?", 826, 100m);	//GBP;826;2;Pound Sterling
-		public static readonly ICurrency GEL = new Currency("GEL", "?", 981, 100m);	//GEL;981;2;Lari
-		public static readonly ICurrency GHS = new Currency("GHS", "?", 936, 100m);	//GHS;936;2;Cedi
-		public static readonly ICurrency GIP = new Currency("GIP", "?", 292, 100m);	//GIP;292;2;Gibraltar Pound
-		public static readonly ICurrency GMD = new Currency("GMD", "?", 270, 100m);	//GMD;270;2;Dalasi
-		public static readonly ICurrency GNF = new Currency("GNF", "?", 324, 100m);	//GNF;324;0;Guinea Franc
-		public static readonly ICurrency GTQ = new Currency("GTQ", "?", 320, 100m);	//GTQ;320;2;Quetzal
-		public static readonly ICurrency GYD = new Currency("GYD", "?", 328, 100m);	//GYD;328;2;Guyana Dollar
-		public static readonly ICurrency HKD = new Currency("HKD", "?", 344, 100m);	//HKD;344;2;Hong Kong Dollar
-		public static readonly ICurrency HNL = new Currency("HNL", "?", 340, 100m);	//HNL;340;2;Lempira
-		public static readonly ICurrency HRK = new Currency("HRK", "?", 191, 100m);	//HRK;191;2;Croatian Kuna
-		public static readonly ICurrency HTG = new Currency("HTG", "?", 332, 100m);	//HTG;332;2;Gourde
-		public static readonly ICurrency HUF = new Currency("HUF", "?", 348, 100m);	//HUF;348;2;Forint
-		public static readonly ICurrency IDR = new Currency("IDR", "?", 360, 100m);	//IDR;360;2;Rupiah
-		public static readonly ICurrency ILS = new Currency("ILS", "?", 376, 100m);	//ILS;376;2;New Israeli Sheqel
-		public static readonly ICurrency INR = new Currency("INR", "?", 356, 100m);	//INR;356;2;Indian Rupee
-		public static readonly ICurrency IQD = new Currency("IQD", "?", 368, 100m);	//IQD;368;3;Iraqi Dinar
-		public static readonly ICurrency IRR = new Currency("IRR", "?", 364, 100m);	//IRR;364;2;Iranian Rial
-		public static readonly ICurrency ISK = new Currency("ISK", "?", 352, 100m);	//ISK;352;0;Iceland Krona
-		public static readonly ICurrency JMD = new Currency("JMD", "?", 388, 100m);	//JMD;388;2;Jamaican Dollar
-		public static readonly ICurrency JOD = new Currency("JOD", "?", 400, 100m);	//JOD;400;3;Jordanian Dinar
-		public static readonly ICurrency JPY = new Currency("JPY", "?", 392, 100m);	//JPY;392;0;Yen
-		public static readonly ICurrency KES = new Currency("KES", "?", 404, 100m);	//KES;404;2;Kenyan Shilling
-		public static readonly ICurrency KGS = new Currency("KGS", "?", 417, 100m);	//KGS;417;2;Som
-		public static readonly ICurrency KHR = new Currency("KHR", "?", 116, 100m);	//KHR;116;2;Riel
-		public static readonly ICurrency KMF = new Currency("KMF", "?", 174, 100m);	//KMF;174;0;Comoro Franc
-		public static readonly ICurrency KPW = new Currency("KPW", "?", 408, 100m);	//KPW;408;2;North Korean Won
-		public static readonly ICurrency KRW = new Currency("KRW", "?", 410, 100m);	//KRW;410;0;Won
-		public static readonly ICurrency KWD = new Currency("KWD", "?", 414, 100m);	//KWD;414;3;Kuwaiti Dinar
-		public static readonly ICurrency KYD = new Currency("KYD", "?", 136, 100m);	//KYD;136;2;Cayman Islands Dollar
-		public static readonly ICurrency KZT = new Currency("KZT", "?", 398, 100m);	//KZT;398;2;Tenge
-		public static readonly ICurrency LAK = new Currency("LAK", "?", 418, 100m);	//LAK;418;2;Kip
-		public static readonly ICurrency LBP = new Currency("LBP", "?", 422, 100m);	//LBP;422;2;Lebanese Pound
-		public static readonly ICurrency LKR = new Currency("LKR", "?", 144, 100m);	//LKR;144;2;Sri Lanka Rupee
-		public static readonly ICurrency LRD = new Currency("LRD", "?", 430, 100m);	//LRD;430;2;Liberian Dollar
-		public static readonly ICurrency LSL = new Currency("LSL", "?", 426, 100m);	//LSL;426;2;Loti
-		public static readonly ICurrency LTL = new Currency("LTL", "?", 440, 100m);	//LTL;440;2;Lithuanian Litas
-		public static readonly ICurrency LVL = new Currency("LVL", "?", 428, 100m);	//LVL;428;2;Latvian Lats
-		public static readonly ICurrency LYD = new Currency("LYD", "?", 434, 100m);	//LYD;434;3;Libyan Dinar
-		public static readonly ICurrency MAD = new Currency("MAD", "?", 504, 100m);	//MAD;504;2;Moroccan Dirham
-		public static readonly ICurrency MDL = new Currency("MDL", "?", 498, 100m);	//MDL;498;2;Moldovan Leu
-		public static readonly ICurrency MGA = new Currency("MGA", "?", 969, 100m);	//MGA;969;2;Malagasy Ariary
-		public static readonly ICurrency MKD = new Currency("MKD", "?", 807, 100m);	//MKD;807;2;Denar
-		public static readonly ICurrency MMK = new Currency("MMK", "?", 104, 100m);	//MMK;104;2;Kyat
-		public static readonly ICurrency MNT = new Currency("MNT", "?", 496, 100m);	//MNT;496;2;Tugrik
-		public static readonly ICurrency MOP = new Currency("MOP", "?", 446, 100m);	//MOP;446;2;Pataca
-		public static readonly ICurrency MRO = new Currency("MRO", "?", 478, 100m);	//MRO;478;2;Ouguiya
-		public static readonly ICurrency MUR = new Currency("MUR", "?", 480, 100m);	//MUR;480;2;Mauritius Rupee
-		public static readonly ICurrency MVR = new Currency("MVR", "?", 462, 100m);	//MVR;462;2;Rufiyaa
-		public static readonly ICurrency MWK = new Currency("MWK", "?", 454, 100m);	//MWK;454;2;Kwacha
-		public static readonly ICurrency MXN = new Currency("MXN", "?", 484, 100m);	//MXN;484;2;Mexican Peso
-		public static readonly ICurrency MXV = new Currency("MXV", "?", 979, 100m);	//MXV;979;2;Mexican Unidad de Inversion (UDI)
-		public static readonly ICurrency MYR = new Currency("MYR", "?", 458, 100m);	//MYR;458;2;Malaysian Ringgit
-		public static readonly ICurrency MZN = new Currency("MZN", "?", 943, 100m);	//MZN;943;2;Metical
-		public static readonly ICurrency NAD = new Currency("NAD", "?", 516, 100m);	//NAD;516;2;Namibia Dollar
-		public static readonly ICurrency NGN = new Currency("NGN", "?", 566, 100m);	//NGN;566;2;Naira
-		public static readonly ICurrency NIO = new Currency("NIO", "?", 558, 100m);	//NIO;558;2;Cordoba Oro
-		public static readonly ICurrency NOK = new Currency("NOK", "?", 578, 100m);	//NOK;578;2;Norwegian Krone
-		public static readonly ICurrency NPR = new Currency("NPR", "?", 524, 100m);	//NPR;524;2;Nepalese Rupee
-		public static readonly ICurrency NZD = new Currency("NZD", "?", 554, 100m);	//NZD;554;2;New Zealand Dollar
-		public static readonly ICurrency OMR = new Currency("OMR", "?", 512, 100m);	//OMR;512;3;Rial Omani
-		public static readonly ICurrency PAB = new Currency("PAB", "?", 590, 100m);	//PAB;590;2;Balboa
-		public static readonly ICurrency PEN = new Currency("PEN", "?", 604, 100m);	//PEN;604;2;Nuevo Sol
-		public static readonly ICurrency PGK = new Currency("PGK", "?", 598, 100m);	//PGK;598;2;Kina
-		public static readonly ICurrency PHP = new Currency("PHP", "?", 608, 100m);	//PHP;608;2;Philippine Peso
-		public static readonly ICurrency PKR = new Currency("PKR", "?", 586, 100m);	//PKR;586;2;Pakistan Rupee
-		public static readonly ICurrency PLN = new Currency("PLN", "?", 985, 100m);	//PLN;985;2;Zloty
-		public static readonly ICurrency PYG = new Currency("PYG", "?", 600, 100m);	//PYG;600;0;Guarani
-		public static readonly ICurrency QAR = new Currency("QAR", "?", 634, 100m);	//QAR;634;2;Qatari Rial
-		public static readonly ICurrency RON = new Currency("RON", "?", 946, 100m);	//RON;946;2;Leu
-		public static readonly ICurrency RSD = new Currency("RSD", "?", 941, 100m);	//RSD;941;2;Serbian Dinar
-		public static readonly ICurrency RUB = new Currency("RUB", "?", 643, 100m);	//RUB;643;2;Russian Ruble
-		public static readonly ICurrency RWF = new Currency("RWF", "?", 646, 100m);	//RWF;646;0;Rwanda Franc
-		public static readonly ICurrency SAR = new Currency("SAR", "?", 682, 100m);	//SAR;682;2;Saudi Riyal
-		public static readonly ICurrency SBD = new Currency("SBD", "?", 90, 100m);	//SBD;90;2;Solomon Islands Dollar
-		public static readonly ICurrency SCR = new Currency("SCR", "?", 690, 100m);	//SCR;690;2;Seychelles Rupee
-		public static readonly ICurrency SDG = new Currency("SDG", "?", 938, 100m);	//SDG;938;2;Sudanese Pound
-		public static readonly ICurrency SEK = new Currency("SEK", "?", 752, 100m);	//SEK;752;2;Swedish Krona
-		public static readonly ICurrency SGD = new Currency("SGD", "?", 702, 100m);	//SGD;702;2;Singapore Dollar
-		public static readonly ICurrency SHP = new Currency("SHP", "?", 654, 100m);	//SHP;654;2;Saint Helena Pound
-		public static readonly ICurrency SLL = new Currency("SLL", "?", 694, 100m);	//SLL;694;2;Leone
-		public static readonly ICurrency SOS = new Currency("SOS", "?", 706, 100m);	//SOS;706;2;Somali Shilling
-		public static readonly ICurrency SRD = new Currency("SRD", "?", 968, 100m);	//SRD;968;2;Surinam Dollar
-		public static readonly ICurrency STD = new Currency("STD", "?", 678, 100m);	//STD;678;2;Dobra
-		public static readonly ICurrency SVC = new Currency("SVC", "?", 222, 100m);	//SVC;222;2;El Salvador Colon
-		public static readonly ICurrency SYP = new Currency("SYP", "?", 760, 100m);	//SYP;760;2;Syrian Pound
-		public static readonly ICurrency SZL = new Currency("SZL", "?", 748, 100m);	//SZL;748;2;Lilangeni
-		public static readonly ICurrency THB = new Currency("THB", "?", 764, 100m);	//THB;764;2;Baht
-		public static readonly ICurrency TJS = new Currency("TJS", "?", 972, 100m);	//TJS;972;2;Somoni
-		public static readonly ICurrency TMT = new Currency("TMT", "?", 934, 100m);	//TMT;934;2;New Manat
-		public static readonly ICurrency TND = new Currency("TND", "?", 788, 100m);	//TND;788;3;Tunisian Dinar
-		public static readonly ICurrency TOP = new Currency("TOP", "?", 776, 100m);	//TOP;776;2;Pa’anga
-		public static readonly ICurrency TRY = new Currency("TRY", "?", 949, 100m);	//TRY;949;2;Turkish Lira
-		public static readonly ICurrency TTD = new Currency("TTD", "?", 780, 100m);	//TTD;780;2;Trinidad and Tobago Dollar
-		public static readonly ICurrency TWD = new Currency("TWD", "?", 901, 100m);	//TWD;901;2;New Taiwan Dollar
-		public static readonly ICurrency TZS = new Currency("TZS", "?", 834, 100m);	//TZS;834;2;Tanzanian Shilling
-		public static readonly ICurrency UAH = new Currency("UAH", "?", 980, 100m);	//UAH;980;2;Hryvnia
-		public static readonly ICurrency UGX = new Currency("UGX", "?", 800, 100m);	//UGX;800;2;Uganda Shilling
-		public static readonly ICurrency USD = new Currency("USD", "?", 840, 100m);	//USD;840;2;US Dollar
-		public static readonly ICurrency USN = new Currency("USN", "?", 997, 100m);	//USN;997;2;US Dollar (Next day)
-		public static readonly ICurrency USS = new Currency("USS", "?", 998, 100m);	//USS;998;2;US Dollar (Same day)
-		public static readonly ICurrency UYI = new Currency("UYI", "?", 940, 100m);	//UYI;940;0;Uruguay Peso en Unidades Indexadas (URUIURUI)
-		public static readonly ICurrency UYU = new Currency("UYU", "?", 858, 100m);	//UYU;858;2;Peso Uruguayo
-		public static readonly ICurrency UZS = new Currency("UZS", "?", 860, 100m);	//UZS;860;2;Uzbekistan Sum
-		public static readonly ICurrency VEF = new Currency("VEF", "?", 937, 100m);	//VEF;937;2;Bolivar Fuerte
-		public static readonly ICurrency VND = new Currency("VND", "?", 704, 100m);	//VND;704;0;Dong
-		public static readonly ICurrency VUV = new Currency("VUV", "?", 548, 100m);	//VUV;548;0;Vatu
-		public static readonly ICurrency WST = new Currency("WST", "?", 882, 100m);	//WST;882;2;Tala
-		public static readonly ICurrency XAF = new Currency("XAF", "?", 950, 100m);	//XAF;950;0;CFA Franc BEAC
-		public static readonly ICurrency XAG = new Currency("XAG", "?", 961, 100m);	//XAG;961;N.A.;Silver
-		public static readonly ICurrency XAU = new Currency("XAU", "?", 959, 100m);	//XAU;959;N.A.;Gold
-		public static readonly ICurrency XBA = new Currency("XBA", "?", 955, 100m);	//XBA;955;N.A.;EURCO
-		public static readonly ICurrency XBB = new Currency("XBB", "?", 956, 100m);	//XBB;956;N.A.;EMU-6
-		public static readonly ICurrency XBC = new Currency("XBC", "?", 957, 100m);	//XBC;957;N.A.;EUA-9
-		public static readonly ICurrency XBD = new Currency("XBD", "?", 958, 100m);	//XBD;958;N.A.;EUA-17
-		public static readonly ICurrency XCD = new Currency("XCD", "?", 951, 100m);	//XCD;951;2;East Caribbean Dollar
-		public static readonly ICurrency XDR = new Currency("XDR", "?", 960, 100m);	//XDR;960;N.A.;SDR (Special Drawing Right)
-		public static readonly ICurrency XFU = new Currency("XFU", "?", -1, 100m);	//XFU;-1;N.A.;UIC-Franc
-		public static readonly ICurrency XOF = new Currency("XOF", "?", 952, 100m);	//XOF;952;0;CFA Franc BCEAO
-		public static readonly ICurrency XPD = new Currency("XPD", "?", 964, 100m);	//XPD;964;N.A;Palladium
-		public static readonly ICurrency XPF = new Currency("XPF", "?", 953, 100m);	//XPF;953;0;CFP Franc
-		public static readonly ICurrency XPT = new Currency("XPT", "?", 962, 100m);	//XPT;962;N.A.;Platinum
-		public static readonly ICurrency XSU = new Currency("XSU", "?", 994, 100m);	//XSU;994;N.A.;Sucre
-		public static readonly ICurrency XTS = new Currency("XTS", "?", 963, 100m);	//XTS;963;N.A.;Codes for testing purposes
-		public static readonly ICurrency XXX = new Currency("XXX", "?", 999, 100m);	//XXX;999;N.A.;No currency
-		public static readonly ICurrency YER = new Currency("YER", "?", 886, 100m);	//YER;886;2;Yemeni Rial
-		public static readonly ICurrency ZAR = new Currency("ZAR", "?", 710, 100m);	//ZAR;710;2;South African Rand
-		public static readonly ICurrency ZMK = new Currency("ZMK", "?", 894, 100m);	//ZMK;894;2;Zambian Kwacha
-		public static readonly ICurrency ZWL = new Currency("ZWL", "?", 932, 100m);	//ZWL;932;2;Zimbabwe Dollar
-
+		/// <summary>
+		/// UAE Dirham
+		/// </summary>
+		public static readonly ICurrency AED = new Currency("AED", "¤", 784, 0.01m);
+		/// <summary>
+		/// Afghani
+		/// </summary>
+		public static readonly ICurrency AFN = new Currency("AFN", "\u060b", 971, 0.01m);
+		/// <summary>
+		/// Lek
+		/// </summary>
+		public static readonly ICurrency ALL = new Currency("ALL", "Lek", 8, 0.01m);
+		/// <summary>
+		/// Armenian Dram
+		/// </summary>
+		public static readonly ICurrency AMD = new Currency("AMD", "¤", 51, 0.01m);
+		/// <summary>
+		/// Netherlands Antillean Guilder
+		/// </summary>
+		public static readonly ICurrency ANG = new Currency("ANG", "\u0192", 532, 0.01m);
+		/// <summary>
+		/// Kwanza
+		/// </summary>
+		public static readonly ICurrency AOA = new Currency("AOA", "¤", 973, 0.01m);
+		/// <summary>
+		/// Argentine Peso
+		/// </summary>
+		public static readonly ICurrency ARS = new Currency("ARS", "$", 32, 0.01m);
+		/// <summary>
+		/// Australian Dollar
+		/// </summary>
+		public static readonly ICurrency AUD = new Currency("AUD", "$", 36, 0.01m);
+		/// <summary>
+		/// Aruban Guilder
+		/// </summary>
+		public static readonly ICurrency AWG = new Currency("AWG", "\u0192", 533, 0.01m);
+		/// <summary>
+		/// Azerbaijanian Manat
+		/// </summary>
+		public static readonly ICurrency AZN = new Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
+		/// <summary>
+		/// Convertible Mark
+		/// </summary>
+		public static readonly ICurrency BAM = new Currency("BAM", "KM", 977, 0.01m);
+		/// <summary>
+		/// Barbados Dollar
+		/// </summary>
+		public static readonly ICurrency BBD = new Currency("BBD", "$", 52, 0.01m);
+		/// <summary>
+		/// Taka
+		/// </summary>
+		public static readonly ICurrency BDT = new Currency("BDT", "¤", 50, 0.01m);
+		/// <summary>
+		/// Bulgarian Lev
+		/// </summary>
+		public static readonly ICurrency BGN = new Currency("BGN", "\u043b\u0432", 975, 0.01m);
+		/// <summary>
+		/// Bahraini Dinar
+		/// </summary>
+		public static readonly ICurrency BHD = new Currency("BHD", "¤", 48, 0.001m);
+		/// <summary>
+		/// Burundi Franc
+		/// </summary>
+		public static readonly ICurrency BIF = new Currency("BIF", "¤", 108, 1m);
+		/// <summary>
+		/// Bermudian Dollar
+		/// </summary>
+		public static readonly ICurrency BMD = new Currency("BMD", "$", 60, 0.01m);
+		/// <summary>
+		/// Brunei Dollar
+		/// </summary>
+		public static readonly ICurrency BND = new Currency("BND", "$", 96, 0.01m);
+		/// <summary>
+		/// Boliviano
+		/// </summary>
+		public static readonly ICurrency BOB = new Currency("BOB", "$b", 68, 0.01m);
+		/// <summary>
+		/// Mvdol
+		/// </summary>
+		public static readonly ICurrency BOV = new Currency("BOV", "¤", 984, 0.01m);
+		/// <summary>
+		/// Brazilian Real
+		/// </summary>
+		public static readonly ICurrency BRL = new Currency("BRL", "R$", 986, 0.01m);
+		/// <summary>
+		/// Bahamian Dollar
+		/// </summary>
+		public static readonly ICurrency BSD = new Currency("BSD", "$", 44, 0.01m);
+		/// <summary>
+		/// Ngultrum
+		/// </summary>
+		public static readonly ICurrency BTN = new Currency("BTN", "¤", 64, 0.01m);
+		/// <summary>
+		/// Pula
+		/// </summary>
+		public static readonly ICurrency BWP = new Currency("BWP", "P", 72, 0.01m);
+		/// <summary>
+		/// Belarussian Ruble
+		/// </summary>
+		public static readonly ICurrency BYR = new Currency("BYR", "p.", 974, 1m);
+		/// <summary>
+		/// Belize Dollar
+		/// </summary>
+		public static readonly ICurrency BZD = new Currency("BZD", "BZ$", 84, 0.01m);
+		/// <summary>
+		/// Canadian Dollar
+		/// </summary>
+		public static readonly ICurrency CAD = new Currency("CAD", "$", 124, 0.01m);
+		/// <summary>
+		/// Congolese Franc
+		/// </summary>
+		public static readonly ICurrency CDF = new Currency("CDF", "¤", 976, 0.01m);
+		/// <summary>
+		/// WIR Euro
+		/// </summary>
+		public static readonly ICurrency CHE = new Currency("CHE", "¤", 947, 0.01m);
+		/// <summary>
+		/// Swiss Franc
+		/// </summary>
+		public static readonly ICurrency CHF = new Currency("CHF", "CHF", 756, 0.01m);
+		/// <summary>
+		/// WIR Franc
+		/// </summary>
+		public static readonly ICurrency CHW = new Currency("CHW", "¤", 948, 0.01m);
+		/// <summary>
+		/// Unidades de fomento
+		/// </summary>
+		public static readonly ICurrency CLF = new Currency("CLF", "¤", 990, 1m);
+		/// <summary>
+		/// Chilean Peso
+		/// </summary>
+		public static readonly ICurrency CLP = new Currency("CLP", "$", 152, 1m);
+		/// <summary>
+		/// Yuan Renminbi
+		/// </summary>
+		public static readonly ICurrency CNY = new Currency("CNY", "¥", 156, 0.01m);
+		/// <summary>
+		/// Colombian Peso
+		/// </summary>
+		public static readonly ICurrency COP = new Currency("COP", "$", 170, 0.01m);
+		/// <summary>
+		/// Unidad de Valor Real
+		/// </summary>
+		public static readonly ICurrency COU = new Currency("COU", "¤", 970, 0.01m);
+		/// <summary>
+		/// Costa Rican Colon
+		/// </summary>
+		public static readonly ICurrency CRC = new Currency("CRC", "\u20a1", 188, 0.01m);
+		/// <summary>
+		/// Peso Convertible
+		/// </summary>
+		public static readonly ICurrency CUC = new Currency("CUC", "¤", 931, 0.01m);
+		/// <summary>
+		/// Cuban Peso
+		/// </summary>
+		public static readonly ICurrency CUP = new Currency("CUP", "\u20b1", 192, 0.01m);
+		/// <summary>
+		/// Cape Verde Escudo
+		/// </summary>
+		public static readonly ICurrency CVE = new Currency("CVE", "¤", 132, 0.01m);
+		/// <summary>
+		/// Czech Koruna
+		/// </summary>
+		public static readonly ICurrency CZK = new Currency("CZK", "K\u010d", 203, 0.01m);
+		/// <summary>
+		/// Djibouti Franc
+		/// </summary>
+		public static readonly ICurrency DJF = new Currency("DJF", "¤", 262, 1m);
+		/// <summary>
+		/// Danish Krone
+		/// </summary>
+		public static readonly ICurrency DKK = new Currency("DKK", "kr", 208, 0.01m);
+		/// <summary>
+		/// Dominican Peso
+		/// </summary>
+		public static readonly ICurrency DOP = new Currency("DOP", "RD$", 214, 0.01m);
+		/// <summary>
+		/// Algerian Dinar
+		/// </summary>
+		public static readonly ICurrency DZD = new Currency("DZD", "¤", 12, 0.01m);
+		/// <summary>
+		/// Egyptian Pound
+		/// </summary>
+		public static readonly ICurrency EGP = new Currency("EGP", "£", 818, 0.01m);
+		/// <summary>
+		/// Nakfa
+		/// </summary>
+		public static readonly ICurrency ERN = new Currency("ERN", "¤", 232, 0.01m);
+		/// <summary>
+		/// Ethiopian Birr
+		/// </summary>
+		public static readonly ICurrency ETB = new Currency("ETB", "¤", 230, 0.01m);
+		/// <summary>
+		/// Euro
+		/// </summary>
+		public static readonly ICurrency EUR = new Currency("EUR", "\u20ac", 978, 0.01m);
+		/// <summary>
+		/// Fiji Dollar
+		/// </summary>
+		public static readonly ICurrency FJD = new Currency("FJD", "$", 242, 0.01m);
+		/// <summary>
+		/// Falkland Islands Pound
+		/// </summary>
+		public static readonly ICurrency FKP = new Currency("FKP", "£", 238, 0.01m);
+		/// <summary>
+		/// Pound Sterling
+		/// </summary>
+		public static readonly ICurrency GBP = new Currency("GBP", "£", 826, 0.01m);
+		/// <summary>
+		/// Lari
+		/// </summary>
+		public static readonly ICurrency GEL = new Currency("GEL", "¤", 981, 0.01m);
+		/// <summary>
+		/// Cedi
+		/// </summary>
+		public static readonly ICurrency GHS = new Currency("GHS", "¤", 936, 0.01m);
+		/// <summary>
+		/// Gibraltar Pound
+		/// </summary>
+		public static readonly ICurrency GIP = new Currency("GIP", "£", 292, 0.01m);
+		/// <summary>
+		/// Dalasi
+		/// </summary>
+		public static readonly ICurrency GMD = new Currency("GMD", "¤", 270, 0.01m);
+		/// <summary>
+		/// Guinea Franc
+		/// </summary>
+		public static readonly ICurrency GNF = new Currency("GNF", "¤", 324, 1m);
+		/// <summary>
+		/// Quetzal
+		/// </summary>
+		public static readonly ICurrency GTQ = new Currency("GTQ", "Q", 320, 0.01m);
+		/// <summary>
+		/// Guyana Dollar
+		/// </summary>
+		public static readonly ICurrency GYD = new Currency("GYD", "$", 328, 0.01m);
+		/// <summary>
+		/// Hong Kong Dollar
+		/// </summary>
+		public static readonly ICurrency HKD = new Currency("HKD", "HK$", 344, 0.01m);
+		/// <summary>
+		/// Lempira
+		/// </summary>
+		public static readonly ICurrency HNL = new Currency("HNL", "L", 340, 0.01m);
+		/// <summary>
+		/// Croatian Kuna
+		/// </summary>
+		public static readonly ICurrency HRK = new Currency("HRK", "kn", 191, 0.01m);
+		/// <summary>
+		/// Gourde
+		/// </summary>
+		public static readonly ICurrency HTG = new Currency("HTG", "¤", 332, 0.01m);
+		/// <summary>
+		/// Forint
+		/// </summary>
+		public static readonly ICurrency HUF = new Currency("HUF", "Ft", 348, 0.01m);
+		/// <summary>
+		/// Rupiah
+		/// </summary>
+		public static readonly ICurrency IDR = new Currency("IDR", "Rp", 360, 0.01m);
+		/// <summary>
+		/// New Israeli Sheqel
+		/// </summary>
+		public static readonly ICurrency ILS = new Currency("ILS", "\u20aa", 376, 0.01m);
+		/// <summary>
+		/// Indian Rupee
+		/// </summary>
+		public static readonly ICurrency INR = new Currency("INR", "\u20a8", 356, 0.01m);
+		/// <summary>
+		/// Iraqi Dinar
+		/// </summary>
+		public static readonly ICurrency IQD = new Currency("IQD", "¤", 368, 0.001m);
+		/// <summary>
+		/// Iranian Rial
+		/// </summary>
+		public static readonly ICurrency IRR = new Currency("IRR", "\ufdfc", 364, 0.01m);
+		/// <summary>
+		/// Iceland Krona
+		/// </summary>
+		public static readonly ICurrency ISK = new Currency("ISK", "kr", 352, 1m);
+		/// <summary>
+		/// Jamaican Dollar
+		/// </summary>
+		public static readonly ICurrency JMD = new Currency("JMD", "J$", 388, 0.01m);
+		/// <summary>
+		/// Jordanian Dinar
+		/// </summary>
+		public static readonly ICurrency JOD = new Currency("JOD", "¤", 400, 0.001m);
+		/// <summary>
+		/// Yen
+		/// </summary>
+		public static readonly ICurrency JPY = new Currency("JPY", "¥", 392, 1m);
+		/// <summary>
+		/// Kenyan Shilling
+		/// </summary>
+		public static readonly ICurrency KES = new Currency("KES", "¤", 404, 0.01m);
+		/// <summary>
+		/// Som
+		/// </summary>
+		public static readonly ICurrency KGS = new Currency("KGS", "\u043b\u0432", 417, 0.01m);
+		/// <summary>
+		/// Riel
+		/// </summary>
+		public static readonly ICurrency KHR = new Currency("KHR", "\u17db", 116, 0.01m);
+		/// <summary>
+		/// Comoro Franc
+		/// </summary>
+		public static readonly ICurrency KMF = new Currency("KMF", "¤", 174, 1m);
+		/// <summary>
+		/// North Korean Won
+		/// </summary>
+		public static readonly ICurrency KPW = new Currency("KPW", "\u20a9", 408, 0.01m);
+		/// <summary>
+		/// Won
+		/// </summary>
+		public static readonly ICurrency KRW = new Currency("KRW", "¤", 410, 1m);
+		/// <summary>
+		/// Kuwaiti Dinar
+		/// </summary>
+		public static readonly ICurrency KWD = new Currency("KWD", "¤", 414, 0.001m);
+		/// <summary>
+		/// Cayman Islands Dollar
+		/// </summary>
+		public static readonly ICurrency KYD = new Currency("KYD", "$", 136, 0.01m);
+		/// <summary>
+		/// Tenge
+		/// </summary>
+		public static readonly ICurrency KZT = new Currency("KZT", "\u043b\u0432", 398, 0.01m);
+		/// <summary>
+		/// Kip
+		/// </summary>
+		public static readonly ICurrency LAK = new Currency("LAK", "\u20ad", 418, 0.01m);
+		/// <summary>
+		/// Lebanese Pound
+		/// </summary>
+		public static readonly ICurrency LBP = new Currency("LBP", "£", 422, 0.01m);
+		/// <summary>
+		/// Sri Lanka Rupee
+		/// </summary>
+		public static readonly ICurrency LKR = new Currency("LKR", "\u20a8", 144, 0.01m);
+		/// <summary>
+		/// Liberian Dollar
+		/// </summary>
+		public static readonly ICurrency LRD = new Currency("LRD", "$", 430, 0.01m);
+		/// <summary>
+		/// Loti
+		/// </summary>
+		public static readonly ICurrency LSL = new Currency("LSL", "¤", 426, 0.01m);
+		/// <summary>
+		/// Lithuanian Litas
+		/// </summary>
+		public static readonly ICurrency LTL = new Currency("LTL", "Lt", 440, 0.01m);
+		/// <summary>
+		/// Latvian Lats
+		/// </summary>
+		public static readonly ICurrency LVL = new Currency("LVL", "Ls", 428, 0.01m);
+		/// <summary>
+		/// Libyan Dinar
+		/// </summary>
+		public static readonly ICurrency LYD = new Currency("LYD", "¤", 434, 0.001m);
+		/// <summary>
+		/// Moroccan Dirham
+		/// </summary>
+		public static readonly ICurrency MAD = new Currency("MAD", "¤", 504, 0.01m);
+		/// <summary>
+		/// Moldovan Leu
+		/// </summary>
+		public static readonly ICurrency MDL = new Currency("MDL", "¤", 498, 0.01m);
+		/// <summary>
+		/// Malagasy Ariary
+		/// </summary>
+		public static readonly ICurrency MGA = new Currency("MGA", "¤", 969, 0.01m);
+		/// <summary>
+		/// Denar
+		/// </summary>
+		public static readonly ICurrency MKD = new Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
+		/// <summary>
+		/// Kyat
+		/// </summary>
+		public static readonly ICurrency MMK = new Currency("MMK", "¤", 104, 0.01m);
+		/// <summary>
+		/// Tugrik
+		/// </summary>
+		public static readonly ICurrency MNT = new Currency("MNT", "\u20ae", 496, 0.01m);
+		/// <summary>
+		/// Pataca
+		/// </summary>
+		public static readonly ICurrency MOP = new Currency("MOP", "¤", 446, 0.01m);
+		/// <summary>
+		/// Ouguiya
+		/// </summary>
+		public static readonly ICurrency MRO = new Currency("MRO", "¤", 478, 0.01m);
+		/// <summary>
+		/// Mauritius Rupee
+		/// </summary>
+		public static readonly ICurrency MUR = new Currency("MUR", "\u20a8", 480, 0.01m);
+		/// <summary>
+		/// Rufiyaa
+		/// </summary>
+		public static readonly ICurrency MVR = new Currency("MVR", "¤", 462, 0.01m);
+		/// <summary>
+		/// Kwacha
+		/// </summary>
+		public static readonly ICurrency MWK = new Currency("MWK", "¤", 454, 0.01m);
+		/// <summary>
+		/// Mexican Peso
+		/// </summary>
+		public static readonly ICurrency MXN = new Currency("MXN", "$", 484, 0.01m);
+		/// <summary>
+		/// Mexican Unidad de Inversion (UDI)
+		/// </summary>
+		public static readonly ICurrency MXV = new Currency("MXV", "¤", 979, 0.01m);
+		/// <summary>
+		/// Malaysian Ringgit
+		/// </summary>
+		public static readonly ICurrency MYR = new Currency("MYR", "RM", 458, 0.01m);
+		/// <summary>
+		/// Metical
+		/// </summary>
+		public static readonly ICurrency MZN = new Currency("MZN", "MT", 943, 0.01m);
+		/// <summary>
+		/// Namibia Dollar
+		/// </summary>
+		public static readonly ICurrency NAD = new Currency("NAD", "$", 516, 0.01m);
+		/// <summary>
+		/// Naira
+		/// </summary>
+		public static readonly ICurrency NGN = new Currency("NGN", "\u20a6", 566, 0.01m);
+		/// <summary>
+		/// Cordoba Oro
+		/// </summary>
+		public static readonly ICurrency NIO = new Currency("NIO", "C$", 558, 0.01m);
+		/// <summary>
+		/// Norwegian Krone
+		/// </summary>
+		public static readonly ICurrency NOK = new Currency("NOK", "kr", 578, 0.01m);
+		/// <summary>
+		/// Nepalese Rupee
+		/// </summary>
+		public static readonly ICurrency NPR = new Currency("NPR", "\u20a8", 524, 0.01m);
+		/// <summary>
+		/// New Zealand Dollar
+		/// </summary>
+		public static readonly ICurrency NZD = new Currency("NZD", "$", 554, 0.01m);
+		/// <summary>
+		/// Rial Omani
+		/// </summary>
+		public static readonly ICurrency OMR = new Currency("OMR", "\ufdfc", 512, 0.001m);
+		/// <summary>
+		/// Balboa
+		/// </summary>
+		public static readonly ICurrency PAB = new Currency("PAB", "B/.", 590, 0.01m);
+		/// <summary>
+		/// Nuevo Sol
+		/// </summary>
+		public static readonly ICurrency PEN = new Currency("PEN", "S/.", 604, 0.01m);
+		/// <summary>
+		/// Kina
+		/// </summary>
+		public static readonly ICurrency PGK = new Currency("PGK", "¤", 598, 0.01m);
+		/// <summary>
+		/// Philippine Peso
+		/// </summary>
+		public static readonly ICurrency PHP = new Currency("PHP", "Php", 608, 0.01m);
+		/// <summary>
+		/// Pakistan Rupee
+		/// </summary>
+		public static readonly ICurrency PKR = new Currency("PKR", "\u20a8", 586, 0.01m);
+		/// <summary>
+		/// Zloty
+		/// </summary>
+		public static readonly ICurrency PLN = new Currency("PLN", "z\u0142", 985, 0.01m);
+		/// <summary>
+		/// Guarani
+		/// </summary>
+		public static readonly ICurrency PYG = new Currency("PYG", "Gs", 600, 1m);
+		/// <summary>
+		/// Qatari Rial
+		/// </summary>
+		public static readonly ICurrency QAR = new Currency("QAR", "\ufdfc", 634, 0.01m);
+		/// <summary>
+		/// Leu
+		/// </summary>
+		public static readonly ICurrency RON = new Currency("RON", "lei", 946, 0.01m);
+		/// <summary>
+		/// Serbian Dinar
+		/// </summary>
+		public static readonly ICurrency RSD = new Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
+		/// <summary>
+		/// Russian Ruble
+		/// </summary>
+		public static readonly ICurrency RUB = new Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
+		/// <summary>
+		/// Rwanda Franc
+		/// </summary>
+		public static readonly ICurrency RWF = new Currency("RWF", "¤", 646, 1m);
+		/// <summary>
+		/// Saudi Riyal
+		/// </summary>
+		public static readonly ICurrency SAR = new Currency("SAR", "\ufdfc", 682, 0.01m);
+		/// <summary>
+		/// Solomon Islands Dollar
+		/// </summary>
+		public static readonly ICurrency SBD = new Currency("SBD", "$", 90, 0.01m);
+		/// <summary>
+		/// Seychelles Rupee
+		/// </summary>
+		public static readonly ICurrency SCR = new Currency("SCR", "\u20a8", 690, 0.01m);
+		/// <summary>
+		/// Sudanese Pound
+		/// </summary>
+		public static readonly ICurrency SDG = new Currency("SDG", "¤", 938, 0.01m);
+		/// <summary>
+		/// Swedish Krona
+		/// </summary>
+		public static readonly ICurrency SEK = new Currency("SEK", "kr", 752, 0.01m);
+		/// <summary>
+		/// Singapore Dollar
+		/// </summary>
+		public static readonly ICurrency SGD = new Currency("SGD", "$", 702, 0.01m);
+		/// <summary>
+		/// Saint Helena Pound
+		/// </summary>
+		public static readonly ICurrency SHP = new Currency("SHP", "£", 654, 0.01m);
+		/// <summary>
+		/// Leone
+		/// </summary>
+		public static readonly ICurrency SLL = new Currency("SLL", "¤", 694, 0.01m);
+		/// <summary>
+		/// Somali Shilling
+		/// </summary>
+		public static readonly ICurrency SOS = new Currency("SOS", "S", 706, 0.01m);
+		/// <summary>
+		/// Surinam Dollar
+		/// </summary>
+		public static readonly ICurrency SRD = new Currency("SRD", "$", 968, 0.01m);
+		/// <summary>
+		/// Dobra
+		/// </summary>
+		public static readonly ICurrency STD = new Currency("STD", "¤", 678, 0.01m);
+		/// <summary>
+		/// El Salvador Colon
+		/// </summary>
+		public static readonly ICurrency SVC = new Currency("SVC", "$", 222, 0.01m);
+		/// <summary>
+		/// Syrian Pound
+		/// </summary>
+		public static readonly ICurrency SYP = new Currency("SYP", "£", 760, 0.01m);
+		/// <summary>
+		/// Lilangeni
+		/// </summary>
+		public static readonly ICurrency SZL = new Currency("SZL", "¤", 748, 0.01m);
+		/// <summary>
+		/// Baht
+		/// </summary>
+		public static readonly ICurrency THB = new Currency("THB", "\u0e3f", 764, 0.01m);
+		/// <summary>
+		/// Somoni
+		/// </summary>
+		public static readonly ICurrency TJS = new Currency("TJS", "¤", 972, 0.01m);
+		/// <summary>
+		/// New Manat
+		/// </summary>
+		public static readonly ICurrency TMT = new Currency("TMT", "¤", 934, 0.01m);
+		/// <summary>
+		/// Tunisian Dinar
+		/// </summary>
+		public static readonly ICurrency TND = new Currency("TND", "¤", 788, 0.001m);
+		/// <summary>
+		/// Pa’anga
+		/// </summary>
+		public static readonly ICurrency TOP = new Currency("TOP", "¤", 776, 0.01m);
+		/// <summary>
+		/// Turkish Lira
+		/// </summary>
+		public static readonly ICurrency TRY = new Currency("TRY", "YTL", 949, 0.01m);
+		/// <summary>
+		/// Trinidad and Tobago Dollar
+		/// </summary>
+		public static readonly ICurrency TTD = new Currency("TTD", "TT$", 780, 0.01m);
+		/// <summary>
+		/// New Taiwan Dollar
+		/// </summary>
+		public static readonly ICurrency TWD = new Currency("TWD", "NT$", 901, 0.01m);
+		/// <summary>
+		/// Tanzanian Shilling
+		/// </summary>
+		public static readonly ICurrency TZS = new Currency("TZS", "¤", 834, 0.01m);
+		/// <summary>
+		/// Hryvnia
+		/// </summary>
+		public static readonly ICurrency UAH = new Currency("UAH", "\u20b4", 980, 0.01m);
+		/// <summary>
+		/// Uganda Shilling
+		/// </summary>
+		public static readonly ICurrency UGX = new Currency("UGX", "¤", 800, 0.01m);
+		/// <summary>
+		/// US Dollar
+		/// </summary>
+		public static readonly ICurrency USD = new Currency("USD", "$", 840, 0.01m);
+		/// <summary>
+		/// US Dollar (Next day)
+		/// </summary>
+		public static readonly ICurrency USN = new Currency("USN", "¤", 997, 0.01m);
+		/// <summary>
+		/// US Dollar (Same day)
+		/// </summary>
+		public static readonly ICurrency USS = new Currency("USS", "¤", 998, 0.01m);
+		/// <summary>
+		/// Uruguay Peso en Unidades Indexadas (URUIURUI)
+		/// </summary>
+		public static readonly ICurrency UYI = new Currency("UYI", "¤", 940, 1m);
+		/// <summary>
+		/// Peso Uruguayo
+		/// </summary>
+		public static readonly ICurrency UYU = new Currency("UYU", "$U", 858, 0.01m);
+		/// <summary>
+		/// Uzbekistan Sum
+		/// </summary>
+		public static readonly ICurrency UZS = new Currency("UZS", "\u043b\u0432", 860, 0.01m);
+		/// <summary>
+		/// Bolivar Fuerte
+		/// </summary>
+		public static readonly ICurrency VEF = new Currency("VEF", "Bs", 937, 0.01m);
+		/// <summary>
+		/// Dong
+		/// </summary>
+		public static readonly ICurrency VND = new Currency("VND", "\u20ab", 704, 1m);
+		/// <summary>
+		/// Vatu
+		/// </summary>
+		public static readonly ICurrency VUV = new Currency("VUV", "¤", 548, 1m);
+		/// <summary>
+		/// Tala
+		/// </summary>
+		public static readonly ICurrency WST = new Currency("WST", "¤", 882, 0.01m);
+		/// <summary>
+		/// CFA Franc BEAC
+		/// </summary>
+		public static readonly ICurrency XAF = new Currency("XAF", "¤", 950, 1m);
+		/// <summary>
+		/// Silver
+		/// </summary>
+		public static readonly ICurrency XAG = new Currency("XAG", "¤", 961, 0m);
+		/// <summary>
+		/// Gold
+		/// </summary>
+		public static readonly ICurrency XAU = new Currency("XAU", "¤", 959, 0m);
+		/// <summary>
+		/// EURCO
+		/// </summary>
+		public static readonly ICurrency XBA = new Currency("XBA", "¤", 955, 0m);
+		/// <summary>
+		/// EMU-6
+		/// </summary>
+		public static readonly ICurrency XBB = new Currency("XBB", "¤", 956, 0m);
+		/// <summary>
+		/// EUA-9
+		/// </summary>
+		public static readonly ICurrency XBC = new Currency("XBC", "¤", 957, 0m);
+		/// <summary>
+		/// EUA-17
+		/// </summary>
+		public static readonly ICurrency XBD = new Currency("XBD", "¤", 958, 0m);
+		/// <summary>
+		/// East Caribbean Dollar
+		/// </summary>
+		public static readonly ICurrency XCD = new Currency("XCD", "$", 951, 0.01m);
+		/// <summary>
+		/// SDR (Special Drawing Right)
+		/// </summary>
+		public static readonly ICurrency XDR = new Currency("XDR", "¤", 960, 0m);
+		/// <summary>
+		/// UIC-Franc
+		/// </summary>
+		public static readonly ICurrency XFU = new Currency("XFU", "¤", -1, 0m);
+		/// <summary>
+		/// CFA Franc BCEAO
+		/// </summary>
+		public static readonly ICurrency XOF = new Currency("XOF", "¤", 952, 1m);
+		/// <summary>
+		/// Palladium
+		/// </summary>
+		public static readonly ICurrency XPD = new Currency("XPD", "¤", 964, 0m);
+		/// <summary>
+		/// CFP Franc
+		/// </summary>
+		public static readonly ICurrency XPF = new Currency("XPF", "¤", 953, 1m);
+		/// <summary>
+		/// Platinum
+		/// </summary>
+		public static readonly ICurrency XPT = new Currency("XPT", "¤", 962, 0m);
+		/// <summary>
+		/// Sucre
+		/// </summary>
+		public static readonly ICurrency XSU = new Currency("XSU", "¤", 994, 0m);
+		/// <summary>
+		/// Codes for testing purposes
+		/// </summary>
+		public static readonly ICurrency XTS = new Currency("XTS", "¤", 963, 0m);
+		/// <summary>
+		/// No currency
+		/// </summary>
+		public static readonly ICurrency XXX = new Currency("XXX", "¤", 999, 0m);
+		/// <summary>
+		/// Yemeni Rial
+		/// </summary>
+		public static readonly ICurrency YER = new Currency("YER", "\ufdfc", 886, 0.01m);
+		/// <summary>
+		/// South African Rand
+		/// </summary>
+		public static readonly ICurrency ZAR = new Currency("ZAR", "R", 710, 0.01m);
+		/// <summary>
+		/// Zambian Kwacha
+		/// </summary>
+		public static readonly ICurrency ZMK = new Currency("ZMK", "¤", 894, 0.01m);
+		/// <summary>
+		/// Zimbabwe Dollar
+		/// </summary>
+		public static readonly ICurrency ZWL = new Currency("ZWL", "¤", 932, 0.01m);
+		
+		public static ICurrency Parse(string charCode)
+		{
+			switch(charCode.ToUpperInvariant())
+			{
+				case "AED": return AED;
+				case "AFN": return AFN;
+				case "ALL": return ALL;
+				case "AMD": return AMD;
+				case "ANG": return ANG;
+				case "AOA": return AOA;
+				case "ARS": return ARS;
+				case "AUD": return AUD;
+				case "AWG": return AWG;
+				case "AZN": return AZN;
+				case "BAM": return BAM;
+				case "BBD": return BBD;
+				case "BDT": return BDT;
+				case "BGN": return BGN;
+				case "BHD": return BHD;
+				case "BIF": return BIF;
+				case "BMD": return BMD;
+				case "BND": return BND;
+				case "BOB": return BOB;
+				case "BOV": return BOV;
+				case "BRL": return BRL;
+				case "BSD": return BSD;
+				case "BTN": return BTN;
+				case "BWP": return BWP;
+				case "BYR": return BYR;
+				case "BZD": return BZD;
+				case "CAD": return CAD;
+				case "CDF": return CDF;
+				case "CHE": return CHE;
+				case "CHF": return CHF;
+				case "CHW": return CHW;
+				case "CLF": return CLF;
+				case "CLP": return CLP;
+				case "CNY": return CNY;
+				case "COP": return COP;
+				case "COU": return COU;
+				case "CRC": return CRC;
+				case "CUC": return CUC;
+				case "CUP": return CUP;
+				case "CVE": return CVE;
+				case "CZK": return CZK;
+				case "DJF": return DJF;
+				case "DKK": return DKK;
+				case "DOP": return DOP;
+				case "DZD": return DZD;
+				case "EGP": return EGP;
+				case "ERN": return ERN;
+				case "ETB": return ETB;
+				case "EUR": return EUR;
+				case "FJD": return FJD;
+				case "FKP": return FKP;
+				case "GBP": return GBP;
+				case "GEL": return GEL;
+				case "GHS": return GHS;
+				case "GIP": return GIP;
+				case "GMD": return GMD;
+				case "GNF": return GNF;
+				case "GTQ": return GTQ;
+				case "GYD": return GYD;
+				case "HKD": return HKD;
+				case "HNL": return HNL;
+				case "HRK": return HRK;
+				case "HTG": return HTG;
+				case "HUF": return HUF;
+				case "IDR": return IDR;
+				case "ILS": return ILS;
+				case "INR": return INR;
+				case "IQD": return IQD;
+				case "IRR": return IRR;
+				case "ISK": return ISK;
+				case "JMD": return JMD;
+				case "JOD": return JOD;
+				case "JPY": return JPY;
+				case "KES": return KES;
+				case "KGS": return KGS;
+				case "KHR": return KHR;
+				case "KMF": return KMF;
+				case "KPW": return KPW;
+				case "KRW": return KRW;
+				case "KWD": return KWD;
+				case "KYD": return KYD;
+				case "KZT": return KZT;
+				case "LAK": return LAK;
+				case "LBP": return LBP;
+				case "LKR": return LKR;
+				case "LRD": return LRD;
+				case "LSL": return LSL;
+				case "LTL": return LTL;
+				case "LVL": return LVL;
+				case "LYD": return LYD;
+				case "MAD": return MAD;
+				case "MDL": return MDL;
+				case "MGA": return MGA;
+				case "MKD": return MKD;
+				case "MMK": return MMK;
+				case "MNT": return MNT;
+				case "MOP": return MOP;
+				case "MRO": return MRO;
+				case "MUR": return MUR;
+				case "MVR": return MVR;
+				case "MWK": return MWK;
+				case "MXN": return MXN;
+				case "MXV": return MXV;
+				case "MYR": return MYR;
+				case "MZN": return MZN;
+				case "NAD": return NAD;
+				case "NGN": return NGN;
+				case "NIO": return NIO;
+				case "NOK": return NOK;
+				case "NPR": return NPR;
+				case "NZD": return NZD;
+				case "OMR": return OMR;
+				case "PAB": return PAB;
+				case "PEN": return PEN;
+				case "PGK": return PGK;
+				case "PHP": return PHP;
+				case "PKR": return PKR;
+				case "PLN": return PLN;
+				case "PYG": return PYG;
+				case "QAR": return QAR;
+				case "RON": return RON;
+				case "RSD": return RSD;
+				case "RUB": return RUB;
+				case "RWF": return RWF;
+				case "SAR": return SAR;
+				case "SBD": return SBD;
+				case "SCR": return SCR;
+				case "SDG": return SDG;
+				case "SEK": return SEK;
+				case "SGD": return SGD;
+				case "SHP": return SHP;
+				case "SLL": return SLL;
+				case "SOS": return SOS;
+				case "SRD": return SRD;
+				case "STD": return STD;
+				case "SVC": return SVC;
+				case "SYP": return SYP;
+				case "SZL": return SZL;
+				case "THB": return THB;
+				case "TJS": return TJS;
+				case "TMT": return TMT;
+				case "TND": return TND;
+				case "TOP": return TOP;
+				case "TRY": return TRY;
+				case "TTD": return TTD;
+				case "TWD": return TWD;
+				case "TZS": return TZS;
+				case "UAH": return UAH;
+				case "UGX": return UGX;
+				case "USD": return USD;
+				case "USN": return USN;
+				case "USS": return USS;
+				case "UYI": return UYI;
+				case "UYU": return UYU;
+				case "UZS": return UZS;
+				case "VEF": return VEF;
+				case "VND": return VND;
+				case "VUV": return VUV;
+				case "WST": return WST;
+				case "XAF": return XAF;
+				case "XAG": return XAG;
+				case "XAU": return XAU;
+				case "XBA": return XBA;
+				case "XBB": return XBB;
+				case "XBC": return XBC;
+				case "XBD": return XBD;
+				case "XCD": return XCD;
+				case "XDR": return XDR;
+				case "XFU": return XFU;
+				case "XOF": return XOF;
+				case "XPD": return XPD;
+				case "XPF": return XPF;
+				case "XPT": return XPT;
+				case "XSU": return XSU;
+				case "XTS": return XTS;
+				case "XXX": return XXX;
+				case "YER": return YER;
+				case "ZAR": return ZAR;
+				case "ZMK": return ZMK;
+				case "ZWL": return ZWL;
+				default: return null;
+			}
+		}
 	}
 }
