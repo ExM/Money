@@ -1,5 +1,4 @@
 ﻿using System;
-using Payments.Iso4217Currencies;
 
 namespace Payments
 {
@@ -8,723 +7,723 @@ namespace Payments
 		/// <summary>
 		/// UAE Dirham
 		/// </summary>
-		public static readonly ICurrency AED = new Currency("AED", "¤", 784, 0.01m);
+		public static readonly ICurrency AED = new Iso4217Currency("AED", "¤", 784, 0.01m);
 		/// <summary>
 		/// Afghani
 		/// </summary>
-		public static readonly ICurrency AFN = new Currency("AFN", "\u060b", 971, 0.01m);
+		public static readonly ICurrency AFN = new Iso4217Currency("AFN", "\u060b", 971, 0.01m);
 		/// <summary>
 		/// Lek
 		/// </summary>
-		public static readonly ICurrency ALL = new Currency("ALL", "Lek", 8, 0.01m);
+		public static readonly ICurrency ALL = new Iso4217Currency("ALL", "Lek", 8, 0.01m);
 		/// <summary>
 		/// Armenian Dram
 		/// </summary>
-		public static readonly ICurrency AMD = new Currency("AMD", "¤", 51, 0.01m);
+		public static readonly ICurrency AMD = new Iso4217Currency("AMD", "¤", 51, 0.01m);
 		/// <summary>
 		/// Netherlands Antillean Guilder
 		/// </summary>
-		public static readonly ICurrency ANG = new Currency("ANG", "\u0192", 532, 0.01m);
+		public static readonly ICurrency ANG = new Iso4217Currency("ANG", "\u0192", 532, 0.01m);
 		/// <summary>
 		/// Kwanza
 		/// </summary>
-		public static readonly ICurrency AOA = new Currency("AOA", "¤", 973, 0.01m);
+		public static readonly ICurrency AOA = new Iso4217Currency("AOA", "¤", 973, 0.01m);
 		/// <summary>
 		/// Argentine Peso
 		/// </summary>
-		public static readonly ICurrency ARS = new Currency("ARS", "$", 32, 0.01m);
+		public static readonly ICurrency ARS = new Iso4217Currency("ARS", "$", 32, 0.01m);
 		/// <summary>
 		/// Australian Dollar
 		/// </summary>
-		public static readonly ICurrency AUD = new Currency("AUD", "$", 36, 0.01m);
+		public static readonly ICurrency AUD = new Iso4217Currency("AUD", "$", 36, 0.01m);
 		/// <summary>
 		/// Aruban Guilder
 		/// </summary>
-		public static readonly ICurrency AWG = new Currency("AWG", "\u0192", 533, 0.01m);
+		public static readonly ICurrency AWG = new Iso4217Currency("AWG", "\u0192", 533, 0.01m);
 		/// <summary>
 		/// Azerbaijanian Manat
 		/// </summary>
-		public static readonly ICurrency AZN = new Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
+		public static readonly ICurrency AZN = new Iso4217Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
 		/// <summary>
 		/// Convertible Mark
 		/// </summary>
-		public static readonly ICurrency BAM = new Currency("BAM", "KM", 977, 0.01m);
+		public static readonly ICurrency BAM = new Iso4217Currency("BAM", "KM", 977, 0.01m);
 		/// <summary>
 		/// Barbados Dollar
 		/// </summary>
-		public static readonly ICurrency BBD = new Currency("BBD", "$", 52, 0.01m);
+		public static readonly ICurrency BBD = new Iso4217Currency("BBD", "$", 52, 0.01m);
 		/// <summary>
 		/// Taka
 		/// </summary>
-		public static readonly ICurrency BDT = new Currency("BDT", "¤", 50, 0.01m);
+		public static readonly ICurrency BDT = new Iso4217Currency("BDT", "¤", 50, 0.01m);
 		/// <summary>
 		/// Bulgarian Lev
 		/// </summary>
-		public static readonly ICurrency BGN = new Currency("BGN", "\u043b\u0432", 975, 0.01m);
+		public static readonly ICurrency BGN = new Iso4217Currency("BGN", "\u043b\u0432", 975, 0.01m);
 		/// <summary>
 		/// Bahraini Dinar
 		/// </summary>
-		public static readonly ICurrency BHD = new Currency("BHD", "¤", 48, 0.001m);
+		public static readonly ICurrency BHD = new Iso4217Currency("BHD", "¤", 48, 0.001m);
 		/// <summary>
 		/// Burundi Franc
 		/// </summary>
-		public static readonly ICurrency BIF = new Currency("BIF", "¤", 108, 1m);
+		public static readonly ICurrency BIF = new Iso4217Currency("BIF", "¤", 108, 1m);
 		/// <summary>
 		/// Bermudian Dollar
 		/// </summary>
-		public static readonly ICurrency BMD = new Currency("BMD", "$", 60, 0.01m);
+		public static readonly ICurrency BMD = new Iso4217Currency("BMD", "$", 60, 0.01m);
 		/// <summary>
 		/// Brunei Dollar
 		/// </summary>
-		public static readonly ICurrency BND = new Currency("BND", "$", 96, 0.01m);
+		public static readonly ICurrency BND = new Iso4217Currency("BND", "$", 96, 0.01m);
 		/// <summary>
 		/// Boliviano
 		/// </summary>
-		public static readonly ICurrency BOB = new Currency("BOB", "$b", 68, 0.01m);
+		public static readonly ICurrency BOB = new Iso4217Currency("BOB", "$b", 68, 0.01m);
 		/// <summary>
 		/// Mvdol
 		/// </summary>
-		public static readonly ICurrency BOV = new Currency("BOV", "¤", 984, 0.01m);
+		public static readonly ICurrency BOV = new Iso4217Currency("BOV", "¤", 984, 0.01m);
 		/// <summary>
 		/// Brazilian Real
 		/// </summary>
-		public static readonly ICurrency BRL = new Currency("BRL", "R$", 986, 0.01m);
+		public static readonly ICurrency BRL = new Iso4217Currency("BRL", "R$", 986, 0.01m);
 		/// <summary>
 		/// Bahamian Dollar
 		/// </summary>
-		public static readonly ICurrency BSD = new Currency("BSD", "$", 44, 0.01m);
+		public static readonly ICurrency BSD = new Iso4217Currency("BSD", "$", 44, 0.01m);
 		/// <summary>
 		/// Ngultrum
 		/// </summary>
-		public static readonly ICurrency BTN = new Currency("BTN", "¤", 64, 0.01m);
+		public static readonly ICurrency BTN = new Iso4217Currency("BTN", "¤", 64, 0.01m);
 		/// <summary>
 		/// Pula
 		/// </summary>
-		public static readonly ICurrency BWP = new Currency("BWP", "P", 72, 0.01m);
+		public static readonly ICurrency BWP = new Iso4217Currency("BWP", "P", 72, 0.01m);
 		/// <summary>
 		/// Belarussian Ruble
 		/// </summary>
-		public static readonly ICurrency BYR = new Currency("BYR", "p.", 974, 1m);
+		public static readonly ICurrency BYR = new Iso4217Currency("BYR", "p.", 974, 1m);
 		/// <summary>
 		/// Belize Dollar
 		/// </summary>
-		public static readonly ICurrency BZD = new Currency("BZD", "BZ$", 84, 0.01m);
+		public static readonly ICurrency BZD = new Iso4217Currency("BZD", "BZ$", 84, 0.01m);
 		/// <summary>
 		/// Canadian Dollar
 		/// </summary>
-		public static readonly ICurrency CAD = new Currency("CAD", "$", 124, 0.01m);
+		public static readonly ICurrency CAD = new Iso4217Currency("CAD", "$", 124, 0.01m);
 		/// <summary>
 		/// Congolese Franc
 		/// </summary>
-		public static readonly ICurrency CDF = new Currency("CDF", "¤", 976, 0.01m);
+		public static readonly ICurrency CDF = new Iso4217Currency("CDF", "¤", 976, 0.01m);
 		/// <summary>
 		/// WIR Euro
 		/// </summary>
-		public static readonly ICurrency CHE = new Currency("CHE", "¤", 947, 0.01m);
+		public static readonly ICurrency CHE = new Iso4217Currency("CHE", "¤", 947, 0.01m);
 		/// <summary>
 		/// Swiss Franc
 		/// </summary>
-		public static readonly ICurrency CHF = new Currency("CHF", "CHF", 756, 0.01m);
+		public static readonly ICurrency CHF = new Iso4217Currency("CHF", "CHF", 756, 0.01m);
 		/// <summary>
 		/// WIR Franc
 		/// </summary>
-		public static readonly ICurrency CHW = new Currency("CHW", "¤", 948, 0.01m);
+		public static readonly ICurrency CHW = new Iso4217Currency("CHW", "¤", 948, 0.01m);
 		/// <summary>
 		/// Unidades de fomento
 		/// </summary>
-		public static readonly ICurrency CLF = new Currency("CLF", "¤", 990, 1m);
+		public static readonly ICurrency CLF = new Iso4217Currency("CLF", "¤", 990, 1m);
 		/// <summary>
 		/// Chilean Peso
 		/// </summary>
-		public static readonly ICurrency CLP = new Currency("CLP", "$", 152, 1m);
+		public static readonly ICurrency CLP = new Iso4217Currency("CLP", "$", 152, 1m);
 		/// <summary>
 		/// Yuan Renminbi
 		/// </summary>
-		public static readonly ICurrency CNY = new Currency("CNY", "¥", 156, 0.01m);
+		public static readonly ICurrency CNY = new Iso4217Currency("CNY", "¥", 156, 0.01m);
 		/// <summary>
 		/// Colombian Peso
 		/// </summary>
-		public static readonly ICurrency COP = new Currency("COP", "$", 170, 0.01m);
+		public static readonly ICurrency COP = new Iso4217Currency("COP", "$", 170, 0.01m);
 		/// <summary>
 		/// Unidad de Valor Real
 		/// </summary>
-		public static readonly ICurrency COU = new Currency("COU", "¤", 970, 0.01m);
+		public static readonly ICurrency COU = new Iso4217Currency("COU", "¤", 970, 0.01m);
 		/// <summary>
 		/// Costa Rican Colon
 		/// </summary>
-		public static readonly ICurrency CRC = new Currency("CRC", "\u20a1", 188, 0.01m);
+		public static readonly ICurrency CRC = new Iso4217Currency("CRC", "\u20a1", 188, 0.01m);
 		/// <summary>
 		/// Peso Convertible
 		/// </summary>
-		public static readonly ICurrency CUC = new Currency("CUC", "¤", 931, 0.01m);
+		public static readonly ICurrency CUC = new Iso4217Currency("CUC", "¤", 931, 0.01m);
 		/// <summary>
 		/// Cuban Peso
 		/// </summary>
-		public static readonly ICurrency CUP = new Currency("CUP", "\u20b1", 192, 0.01m);
+		public static readonly ICurrency CUP = new Iso4217Currency("CUP", "\u20b1", 192, 0.01m);
 		/// <summary>
 		/// Cape Verde Escudo
 		/// </summary>
-		public static readonly ICurrency CVE = new Currency("CVE", "¤", 132, 0.01m);
+		public static readonly ICurrency CVE = new Iso4217Currency("CVE", "¤", 132, 0.01m);
 		/// <summary>
 		/// Czech Koruna
 		/// </summary>
-		public static readonly ICurrency CZK = new Currency("CZK", "K\u010d", 203, 0.01m);
+		public static readonly ICurrency CZK = new Iso4217Currency("CZK", "K\u010d", 203, 0.01m);
 		/// <summary>
 		/// Djibouti Franc
 		/// </summary>
-		public static readonly ICurrency DJF = new Currency("DJF", "¤", 262, 1m);
+		public static readonly ICurrency DJF = new Iso4217Currency("DJF", "¤", 262, 1m);
 		/// <summary>
 		/// Danish Krone
 		/// </summary>
-		public static readonly ICurrency DKK = new Currency("DKK", "kr", 208, 0.01m);
+		public static readonly ICurrency DKK = new Iso4217Currency("DKK", "kr", 208, 0.01m);
 		/// <summary>
 		/// Dominican Peso
 		/// </summary>
-		public static readonly ICurrency DOP = new Currency("DOP", "RD$", 214, 0.01m);
+		public static readonly ICurrency DOP = new Iso4217Currency("DOP", "RD$", 214, 0.01m);
 		/// <summary>
 		/// Algerian Dinar
 		/// </summary>
-		public static readonly ICurrency DZD = new Currency("DZD", "¤", 12, 0.01m);
+		public static readonly ICurrency DZD = new Iso4217Currency("DZD", "¤", 12, 0.01m);
 		/// <summary>
 		/// Egyptian Pound
 		/// </summary>
-		public static readonly ICurrency EGP = new Currency("EGP", "£", 818, 0.01m);
+		public static readonly ICurrency EGP = new Iso4217Currency("EGP", "£", 818, 0.01m);
 		/// <summary>
 		/// Nakfa
 		/// </summary>
-		public static readonly ICurrency ERN = new Currency("ERN", "¤", 232, 0.01m);
+		public static readonly ICurrency ERN = new Iso4217Currency("ERN", "¤", 232, 0.01m);
 		/// <summary>
 		/// Ethiopian Birr
 		/// </summary>
-		public static readonly ICurrency ETB = new Currency("ETB", "¤", 230, 0.01m);
+		public static readonly ICurrency ETB = new Iso4217Currency("ETB", "¤", 230, 0.01m);
 		/// <summary>
 		/// Euro
 		/// </summary>
-		public static readonly ICurrency EUR = new Currency("EUR", "\u20ac", 978, 0.01m);
+		public static readonly ICurrency EUR = new Iso4217Currency("EUR", "\u20ac", 978, 0.01m);
 		/// <summary>
 		/// Fiji Dollar
 		/// </summary>
-		public static readonly ICurrency FJD = new Currency("FJD", "$", 242, 0.01m);
+		public static readonly ICurrency FJD = new Iso4217Currency("FJD", "$", 242, 0.01m);
 		/// <summary>
 		/// Falkland Islands Pound
 		/// </summary>
-		public static readonly ICurrency FKP = new Currency("FKP", "£", 238, 0.01m);
+		public static readonly ICurrency FKP = new Iso4217Currency("FKP", "£", 238, 0.01m);
 		/// <summary>
 		/// Pound Sterling
 		/// </summary>
-		public static readonly ICurrency GBP = new Currency("GBP", "£", 826, 0.01m);
+		public static readonly ICurrency GBP = new Iso4217Currency("GBP", "£", 826, 0.01m);
 		/// <summary>
 		/// Lari
 		/// </summary>
-		public static readonly ICurrency GEL = new Currency("GEL", "¤", 981, 0.01m);
+		public static readonly ICurrency GEL = new Iso4217Currency("GEL", "¤", 981, 0.01m);
 		/// <summary>
 		/// Cedi
 		/// </summary>
-		public static readonly ICurrency GHS = new Currency("GHS", "¤", 936, 0.01m);
+		public static readonly ICurrency GHS = new Iso4217Currency("GHS", "¤", 936, 0.01m);
 		/// <summary>
 		/// Gibraltar Pound
 		/// </summary>
-		public static readonly ICurrency GIP = new Currency("GIP", "£", 292, 0.01m);
+		public static readonly ICurrency GIP = new Iso4217Currency("GIP", "£", 292, 0.01m);
 		/// <summary>
 		/// Dalasi
 		/// </summary>
-		public static readonly ICurrency GMD = new Currency("GMD", "¤", 270, 0.01m);
+		public static readonly ICurrency GMD = new Iso4217Currency("GMD", "¤", 270, 0.01m);
 		/// <summary>
 		/// Guinea Franc
 		/// </summary>
-		public static readonly ICurrency GNF = new Currency("GNF", "¤", 324, 1m);
+		public static readonly ICurrency GNF = new Iso4217Currency("GNF", "¤", 324, 1m);
 		/// <summary>
 		/// Quetzal
 		/// </summary>
-		public static readonly ICurrency GTQ = new Currency("GTQ", "Q", 320, 0.01m);
+		public static readonly ICurrency GTQ = new Iso4217Currency("GTQ", "Q", 320, 0.01m);
 		/// <summary>
 		/// Guyana Dollar
 		/// </summary>
-		public static readonly ICurrency GYD = new Currency("GYD", "$", 328, 0.01m);
+		public static readonly ICurrency GYD = new Iso4217Currency("GYD", "$", 328, 0.01m);
 		/// <summary>
 		/// Hong Kong Dollar
 		/// </summary>
-		public static readonly ICurrency HKD = new Currency("HKD", "HK$", 344, 0.01m);
+		public static readonly ICurrency HKD = new Iso4217Currency("HKD", "HK$", 344, 0.01m);
 		/// <summary>
 		/// Lempira
 		/// </summary>
-		public static readonly ICurrency HNL = new Currency("HNL", "L", 340, 0.01m);
+		public static readonly ICurrency HNL = new Iso4217Currency("HNL", "L", 340, 0.01m);
 		/// <summary>
 		/// Croatian Kuna
 		/// </summary>
-		public static readonly ICurrency HRK = new Currency("HRK", "kn", 191, 0.01m);
+		public static readonly ICurrency HRK = new Iso4217Currency("HRK", "kn", 191, 0.01m);
 		/// <summary>
 		/// Gourde
 		/// </summary>
-		public static readonly ICurrency HTG = new Currency("HTG", "¤", 332, 0.01m);
+		public static readonly ICurrency HTG = new Iso4217Currency("HTG", "¤", 332, 0.01m);
 		/// <summary>
 		/// Forint
 		/// </summary>
-		public static readonly ICurrency HUF = new Currency("HUF", "Ft", 348, 0.01m);
+		public static readonly ICurrency HUF = new Iso4217Currency("HUF", "Ft", 348, 0.01m);
 		/// <summary>
 		/// Rupiah
 		/// </summary>
-		public static readonly ICurrency IDR = new Currency("IDR", "Rp", 360, 0.01m);
+		public static readonly ICurrency IDR = new Iso4217Currency("IDR", "Rp", 360, 0.01m);
 		/// <summary>
 		/// New Israeli Sheqel
 		/// </summary>
-		public static readonly ICurrency ILS = new Currency("ILS", "\u20aa", 376, 0.01m);
+		public static readonly ICurrency ILS = new Iso4217Currency("ILS", "\u20aa", 376, 0.01m);
 		/// <summary>
 		/// Indian Rupee
 		/// </summary>
-		public static readonly ICurrency INR = new Currency("INR", "\u20a8", 356, 0.01m);
+		public static readonly ICurrency INR = new Iso4217Currency("INR", "\u20a8", 356, 0.01m);
 		/// <summary>
 		/// Iraqi Dinar
 		/// </summary>
-		public static readonly ICurrency IQD = new Currency("IQD", "¤", 368, 0.001m);
+		public static readonly ICurrency IQD = new Iso4217Currency("IQD", "¤", 368, 0.001m);
 		/// <summary>
 		/// Iranian Rial
 		/// </summary>
-		public static readonly ICurrency IRR = new Currency("IRR", "\ufdfc", 364, 0.01m);
+		public static readonly ICurrency IRR = new Iso4217Currency("IRR", "\ufdfc", 364, 0.01m);
 		/// <summary>
 		/// Iceland Krona
 		/// </summary>
-		public static readonly ICurrency ISK = new Currency("ISK", "kr", 352, 1m);
+		public static readonly ICurrency ISK = new Iso4217Currency("ISK", "kr", 352, 1m);
 		/// <summary>
 		/// Jamaican Dollar
 		/// </summary>
-		public static readonly ICurrency JMD = new Currency("JMD", "J$", 388, 0.01m);
+		public static readonly ICurrency JMD = new Iso4217Currency("JMD", "J$", 388, 0.01m);
 		/// <summary>
 		/// Jordanian Dinar
 		/// </summary>
-		public static readonly ICurrency JOD = new Currency("JOD", "¤", 400, 0.001m);
+		public static readonly ICurrency JOD = new Iso4217Currency("JOD", "¤", 400, 0.001m);
 		/// <summary>
 		/// Yen
 		/// </summary>
-		public static readonly ICurrency JPY = new Currency("JPY", "¥", 392, 1m);
+		public static readonly ICurrency JPY = new Iso4217Currency("JPY", "¥", 392, 1m);
 		/// <summary>
 		/// Kenyan Shilling
 		/// </summary>
-		public static readonly ICurrency KES = new Currency("KES", "¤", 404, 0.01m);
+		public static readonly ICurrency KES = new Iso4217Currency("KES", "¤", 404, 0.01m);
 		/// <summary>
 		/// Som
 		/// </summary>
-		public static readonly ICurrency KGS = new Currency("KGS", "\u043b\u0432", 417, 0.01m);
+		public static readonly ICurrency KGS = new Iso4217Currency("KGS", "\u043b\u0432", 417, 0.01m);
 		/// <summary>
 		/// Riel
 		/// </summary>
-		public static readonly ICurrency KHR = new Currency("KHR", "\u17db", 116, 0.01m);
+		public static readonly ICurrency KHR = new Iso4217Currency("KHR", "\u17db", 116, 0.01m);
 		/// <summary>
 		/// Comoro Franc
 		/// </summary>
-		public static readonly ICurrency KMF = new Currency("KMF", "¤", 174, 1m);
+		public static readonly ICurrency KMF = new Iso4217Currency("KMF", "¤", 174, 1m);
 		/// <summary>
 		/// North Korean Won
 		/// </summary>
-		public static readonly ICurrency KPW = new Currency("KPW", "\u20a9", 408, 0.01m);
+		public static readonly ICurrency KPW = new Iso4217Currency("KPW", "\u20a9", 408, 0.01m);
 		/// <summary>
 		/// Won
 		/// </summary>
-		public static readonly ICurrency KRW = new Currency("KRW", "¤", 410, 1m);
+		public static readonly ICurrency KRW = new Iso4217Currency("KRW", "¤", 410, 1m);
 		/// <summary>
 		/// Kuwaiti Dinar
 		/// </summary>
-		public static readonly ICurrency KWD = new Currency("KWD", "¤", 414, 0.001m);
+		public static readonly ICurrency KWD = new Iso4217Currency("KWD", "¤", 414, 0.001m);
 		/// <summary>
 		/// Cayman Islands Dollar
 		/// </summary>
-		public static readonly ICurrency KYD = new Currency("KYD", "$", 136, 0.01m);
+		public static readonly ICurrency KYD = new Iso4217Currency("KYD", "$", 136, 0.01m);
 		/// <summary>
 		/// Tenge
 		/// </summary>
-		public static readonly ICurrency KZT = new Currency("KZT", "\u043b\u0432", 398, 0.01m);
+		public static readonly ICurrency KZT = new Iso4217Currency("KZT", "\u043b\u0432", 398, 0.01m);
 		/// <summary>
 		/// Kip
 		/// </summary>
-		public static readonly ICurrency LAK = new Currency("LAK", "\u20ad", 418, 0.01m);
+		public static readonly ICurrency LAK = new Iso4217Currency("LAK", "\u20ad", 418, 0.01m);
 		/// <summary>
 		/// Lebanese Pound
 		/// </summary>
-		public static readonly ICurrency LBP = new Currency("LBP", "£", 422, 0.01m);
+		public static readonly ICurrency LBP = new Iso4217Currency("LBP", "£", 422, 0.01m);
 		/// <summary>
 		/// Sri Lanka Rupee
 		/// </summary>
-		public static readonly ICurrency LKR = new Currency("LKR", "\u20a8", 144, 0.01m);
+		public static readonly ICurrency LKR = new Iso4217Currency("LKR", "\u20a8", 144, 0.01m);
 		/// <summary>
 		/// Liberian Dollar
 		/// </summary>
-		public static readonly ICurrency LRD = new Currency("LRD", "$", 430, 0.01m);
+		public static readonly ICurrency LRD = new Iso4217Currency("LRD", "$", 430, 0.01m);
 		/// <summary>
 		/// Loti
 		/// </summary>
-		public static readonly ICurrency LSL = new Currency("LSL", "¤", 426, 0.01m);
+		public static readonly ICurrency LSL = new Iso4217Currency("LSL", "¤", 426, 0.01m);
 		/// <summary>
 		/// Lithuanian Litas
 		/// </summary>
-		public static readonly ICurrency LTL = new Currency("LTL", "Lt", 440, 0.01m);
+		public static readonly ICurrency LTL = new Iso4217Currency("LTL", "Lt", 440, 0.01m);
 		/// <summary>
 		/// Latvian Lats
 		/// </summary>
-		public static readonly ICurrency LVL = new Currency("LVL", "Ls", 428, 0.01m);
+		public static readonly ICurrency LVL = new Iso4217Currency("LVL", "Ls", 428, 0.01m);
 		/// <summary>
 		/// Libyan Dinar
 		/// </summary>
-		public static readonly ICurrency LYD = new Currency("LYD", "¤", 434, 0.001m);
+		public static readonly ICurrency LYD = new Iso4217Currency("LYD", "¤", 434, 0.001m);
 		/// <summary>
 		/// Moroccan Dirham
 		/// </summary>
-		public static readonly ICurrency MAD = new Currency("MAD", "¤", 504, 0.01m);
+		public static readonly ICurrency MAD = new Iso4217Currency("MAD", "¤", 504, 0.01m);
 		/// <summary>
 		/// Moldovan Leu
 		/// </summary>
-		public static readonly ICurrency MDL = new Currency("MDL", "¤", 498, 0.01m);
+		public static readonly ICurrency MDL = new Iso4217Currency("MDL", "¤", 498, 0.01m);
 		/// <summary>
 		/// Malagasy Ariary
 		/// </summary>
-		public static readonly ICurrency MGA = new Currency("MGA", "¤", 969, 0.01m);
+		public static readonly ICurrency MGA = new Iso4217Currency("MGA", "¤", 969, 0.01m);
 		/// <summary>
 		/// Denar
 		/// </summary>
-		public static readonly ICurrency MKD = new Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
+		public static readonly ICurrency MKD = new Iso4217Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
 		/// <summary>
 		/// Kyat
 		/// </summary>
-		public static readonly ICurrency MMK = new Currency("MMK", "¤", 104, 0.01m);
+		public static readonly ICurrency MMK = new Iso4217Currency("MMK", "¤", 104, 0.01m);
 		/// <summary>
 		/// Tugrik
 		/// </summary>
-		public static readonly ICurrency MNT = new Currency("MNT", "\u20ae", 496, 0.01m);
+		public static readonly ICurrency MNT = new Iso4217Currency("MNT", "\u20ae", 496, 0.01m);
 		/// <summary>
 		/// Pataca
 		/// </summary>
-		public static readonly ICurrency MOP = new Currency("MOP", "¤", 446, 0.01m);
+		public static readonly ICurrency MOP = new Iso4217Currency("MOP", "¤", 446, 0.01m);
 		/// <summary>
 		/// Ouguiya
 		/// </summary>
-		public static readonly ICurrency MRO = new Currency("MRO", "¤", 478, 0.01m);
+		public static readonly ICurrency MRO = new Iso4217Currency("MRO", "¤", 478, 0.01m);
 		/// <summary>
 		/// Mauritius Rupee
 		/// </summary>
-		public static readonly ICurrency MUR = new Currency("MUR", "\u20a8", 480, 0.01m);
+		public static readonly ICurrency MUR = new Iso4217Currency("MUR", "\u20a8", 480, 0.01m);
 		/// <summary>
 		/// Rufiyaa
 		/// </summary>
-		public static readonly ICurrency MVR = new Currency("MVR", "¤", 462, 0.01m);
+		public static readonly ICurrency MVR = new Iso4217Currency("MVR", "¤", 462, 0.01m);
 		/// <summary>
 		/// Kwacha
 		/// </summary>
-		public static readonly ICurrency MWK = new Currency("MWK", "¤", 454, 0.01m);
+		public static readonly ICurrency MWK = new Iso4217Currency("MWK", "¤", 454, 0.01m);
 		/// <summary>
 		/// Mexican Peso
 		/// </summary>
-		public static readonly ICurrency MXN = new Currency("MXN", "$", 484, 0.01m);
+		public static readonly ICurrency MXN = new Iso4217Currency("MXN", "$", 484, 0.01m);
 		/// <summary>
 		/// Mexican Unidad de Inversion (UDI)
 		/// </summary>
-		public static readonly ICurrency MXV = new Currency("MXV", "¤", 979, 0.01m);
+		public static readonly ICurrency MXV = new Iso4217Currency("MXV", "¤", 979, 0.01m);
 		/// <summary>
 		/// Malaysian Ringgit
 		/// </summary>
-		public static readonly ICurrency MYR = new Currency("MYR", "RM", 458, 0.01m);
+		public static readonly ICurrency MYR = new Iso4217Currency("MYR", "RM", 458, 0.01m);
 		/// <summary>
 		/// Metical
 		/// </summary>
-		public static readonly ICurrency MZN = new Currency("MZN", "MT", 943, 0.01m);
+		public static readonly ICurrency MZN = new Iso4217Currency("MZN", "MT", 943, 0.01m);
 		/// <summary>
 		/// Namibia Dollar
 		/// </summary>
-		public static readonly ICurrency NAD = new Currency("NAD", "$", 516, 0.01m);
+		public static readonly ICurrency NAD = new Iso4217Currency("NAD", "$", 516, 0.01m);
 		/// <summary>
 		/// Naira
 		/// </summary>
-		public static readonly ICurrency NGN = new Currency("NGN", "\u20a6", 566, 0.01m);
+		public static readonly ICurrency NGN = new Iso4217Currency("NGN", "\u20a6", 566, 0.01m);
 		/// <summary>
 		/// Cordoba Oro
 		/// </summary>
-		public static readonly ICurrency NIO = new Currency("NIO", "C$", 558, 0.01m);
+		public static readonly ICurrency NIO = new Iso4217Currency("NIO", "C$", 558, 0.01m);
 		/// <summary>
 		/// Norwegian Krone
 		/// </summary>
-		public static readonly ICurrency NOK = new Currency("NOK", "kr", 578, 0.01m);
+		public static readonly ICurrency NOK = new Iso4217Currency("NOK", "kr", 578, 0.01m);
 		/// <summary>
 		/// Nepalese Rupee
 		/// </summary>
-		public static readonly ICurrency NPR = new Currency("NPR", "\u20a8", 524, 0.01m);
+		public static readonly ICurrency NPR = new Iso4217Currency("NPR", "\u20a8", 524, 0.01m);
 		/// <summary>
 		/// New Zealand Dollar
 		/// </summary>
-		public static readonly ICurrency NZD = new Currency("NZD", "$", 554, 0.01m);
+		public static readonly ICurrency NZD = new Iso4217Currency("NZD", "$", 554, 0.01m);
 		/// <summary>
 		/// Rial Omani
 		/// </summary>
-		public static readonly ICurrency OMR = new Currency("OMR", "\ufdfc", 512, 0.001m);
+		public static readonly ICurrency OMR = new Iso4217Currency("OMR", "\ufdfc", 512, 0.001m);
 		/// <summary>
 		/// Balboa
 		/// </summary>
-		public static readonly ICurrency PAB = new Currency("PAB", "B/.", 590, 0.01m);
+		public static readonly ICurrency PAB = new Iso4217Currency("PAB", "B/.", 590, 0.01m);
 		/// <summary>
 		/// Nuevo Sol
 		/// </summary>
-		public static readonly ICurrency PEN = new Currency("PEN", "S/.", 604, 0.01m);
+		public static readonly ICurrency PEN = new Iso4217Currency("PEN", "S/.", 604, 0.01m);
 		/// <summary>
 		/// Kina
 		/// </summary>
-		public static readonly ICurrency PGK = new Currency("PGK", "¤", 598, 0.01m);
+		public static readonly ICurrency PGK = new Iso4217Currency("PGK", "¤", 598, 0.01m);
 		/// <summary>
 		/// Philippine Peso
 		/// </summary>
-		public static readonly ICurrency PHP = new Currency("PHP", "Php", 608, 0.01m);
+		public static readonly ICurrency PHP = new Iso4217Currency("PHP", "Php", 608, 0.01m);
 		/// <summary>
 		/// Pakistan Rupee
 		/// </summary>
-		public static readonly ICurrency PKR = new Currency("PKR", "\u20a8", 586, 0.01m);
+		public static readonly ICurrency PKR = new Iso4217Currency("PKR", "\u20a8", 586, 0.01m);
 		/// <summary>
 		/// Zloty
 		/// </summary>
-		public static readonly ICurrency PLN = new Currency("PLN", "z\u0142", 985, 0.01m);
+		public static readonly ICurrency PLN = new Iso4217Currency("PLN", "z\u0142", 985, 0.01m);
 		/// <summary>
 		/// Guarani
 		/// </summary>
-		public static readonly ICurrency PYG = new Currency("PYG", "Gs", 600, 1m);
+		public static readonly ICurrency PYG = new Iso4217Currency("PYG", "Gs", 600, 1m);
 		/// <summary>
 		/// Qatari Rial
 		/// </summary>
-		public static readonly ICurrency QAR = new Currency("QAR", "\ufdfc", 634, 0.01m);
+		public static readonly ICurrency QAR = new Iso4217Currency("QAR", "\ufdfc", 634, 0.01m);
 		/// <summary>
 		/// Leu
 		/// </summary>
-		public static readonly ICurrency RON = new Currency("RON", "lei", 946, 0.01m);
+		public static readonly ICurrency RON = new Iso4217Currency("RON", "lei", 946, 0.01m);
 		/// <summary>
 		/// Serbian Dinar
 		/// </summary>
-		public static readonly ICurrency RSD = new Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
+		public static readonly ICurrency RSD = new Iso4217Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
 		/// <summary>
 		/// Russian Ruble
 		/// </summary>
-		public static readonly ICurrency RUB = new Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
+		public static readonly ICurrency RUB = new Iso4217Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
 		/// <summary>
 		/// Rwanda Franc
 		/// </summary>
-		public static readonly ICurrency RWF = new Currency("RWF", "¤", 646, 1m);
+		public static readonly ICurrency RWF = new Iso4217Currency("RWF", "¤", 646, 1m);
 		/// <summary>
 		/// Saudi Riyal
 		/// </summary>
-		public static readonly ICurrency SAR = new Currency("SAR", "\ufdfc", 682, 0.01m);
+		public static readonly ICurrency SAR = new Iso4217Currency("SAR", "\ufdfc", 682, 0.01m);
 		/// <summary>
 		/// Solomon Islands Dollar
 		/// </summary>
-		public static readonly ICurrency SBD = new Currency("SBD", "$", 90, 0.01m);
+		public static readonly ICurrency SBD = new Iso4217Currency("SBD", "$", 90, 0.01m);
 		/// <summary>
 		/// Seychelles Rupee
 		/// </summary>
-		public static readonly ICurrency SCR = new Currency("SCR", "\u20a8", 690, 0.01m);
+		public static readonly ICurrency SCR = new Iso4217Currency("SCR", "\u20a8", 690, 0.01m);
 		/// <summary>
 		/// Sudanese Pound
 		/// </summary>
-		public static readonly ICurrency SDG = new Currency("SDG", "¤", 938, 0.01m);
+		public static readonly ICurrency SDG = new Iso4217Currency("SDG", "¤", 938, 0.01m);
 		/// <summary>
 		/// Swedish Krona
 		/// </summary>
-		public static readonly ICurrency SEK = new Currency("SEK", "kr", 752, 0.01m);
+		public static readonly ICurrency SEK = new Iso4217Currency("SEK", "kr", 752, 0.01m);
 		/// <summary>
 		/// Singapore Dollar
 		/// </summary>
-		public static readonly ICurrency SGD = new Currency("SGD", "$", 702, 0.01m);
+		public static readonly ICurrency SGD = new Iso4217Currency("SGD", "$", 702, 0.01m);
 		/// <summary>
 		/// Saint Helena Pound
 		/// </summary>
-		public static readonly ICurrency SHP = new Currency("SHP", "£", 654, 0.01m);
+		public static readonly ICurrency SHP = new Iso4217Currency("SHP", "£", 654, 0.01m);
 		/// <summary>
 		/// Leone
 		/// </summary>
-		public static readonly ICurrency SLL = new Currency("SLL", "¤", 694, 0.01m);
+		public static readonly ICurrency SLL = new Iso4217Currency("SLL", "¤", 694, 0.01m);
 		/// <summary>
 		/// Somali Shilling
 		/// </summary>
-		public static readonly ICurrency SOS = new Currency("SOS", "S", 706, 0.01m);
+		public static readonly ICurrency SOS = new Iso4217Currency("SOS", "S", 706, 0.01m);
 		/// <summary>
 		/// Surinam Dollar
 		/// </summary>
-		public static readonly ICurrency SRD = new Currency("SRD", "$", 968, 0.01m);
+		public static readonly ICurrency SRD = new Iso4217Currency("SRD", "$", 968, 0.01m);
 		/// <summary>
 		/// Dobra
 		/// </summary>
-		public static readonly ICurrency STD = new Currency("STD", "¤", 678, 0.01m);
+		public static readonly ICurrency STD = new Iso4217Currency("STD", "¤", 678, 0.01m);
 		/// <summary>
 		/// El Salvador Colon
 		/// </summary>
-		public static readonly ICurrency SVC = new Currency("SVC", "$", 222, 0.01m);
+		public static readonly ICurrency SVC = new Iso4217Currency("SVC", "$", 222, 0.01m);
 		/// <summary>
 		/// Syrian Pound
 		/// </summary>
-		public static readonly ICurrency SYP = new Currency("SYP", "£", 760, 0.01m);
+		public static readonly ICurrency SYP = new Iso4217Currency("SYP", "£", 760, 0.01m);
 		/// <summary>
 		/// Lilangeni
 		/// </summary>
-		public static readonly ICurrency SZL = new Currency("SZL", "¤", 748, 0.01m);
+		public static readonly ICurrency SZL = new Iso4217Currency("SZL", "¤", 748, 0.01m);
 		/// <summary>
 		/// Baht
 		/// </summary>
-		public static readonly ICurrency THB = new Currency("THB", "\u0e3f", 764, 0.01m);
+		public static readonly ICurrency THB = new Iso4217Currency("THB", "\u0e3f", 764, 0.01m);
 		/// <summary>
 		/// Somoni
 		/// </summary>
-		public static readonly ICurrency TJS = new Currency("TJS", "¤", 972, 0.01m);
+		public static readonly ICurrency TJS = new Iso4217Currency("TJS", "¤", 972, 0.01m);
 		/// <summary>
 		/// New Manat
 		/// </summary>
-		public static readonly ICurrency TMT = new Currency("TMT", "¤", 934, 0.01m);
+		public static readonly ICurrency TMT = new Iso4217Currency("TMT", "¤", 934, 0.01m);
 		/// <summary>
 		/// Tunisian Dinar
 		/// </summary>
-		public static readonly ICurrency TND = new Currency("TND", "¤", 788, 0.001m);
+		public static readonly ICurrency TND = new Iso4217Currency("TND", "¤", 788, 0.001m);
 		/// <summary>
 		/// Pa’anga
 		/// </summary>
-		public static readonly ICurrency TOP = new Currency("TOP", "¤", 776, 0.01m);
+		public static readonly ICurrency TOP = new Iso4217Currency("TOP", "¤", 776, 0.01m);
 		/// <summary>
 		/// Turkish Lira
 		/// </summary>
-		public static readonly ICurrency TRY = new Currency("TRY", "YTL", 949, 0.01m);
+		public static readonly ICurrency TRY = new Iso4217Currency("TRY", "YTL", 949, 0.01m);
 		/// <summary>
 		/// Trinidad and Tobago Dollar
 		/// </summary>
-		public static readonly ICurrency TTD = new Currency("TTD", "TT$", 780, 0.01m);
+		public static readonly ICurrency TTD = new Iso4217Currency("TTD", "TT$", 780, 0.01m);
 		/// <summary>
 		/// New Taiwan Dollar
 		/// </summary>
-		public static readonly ICurrency TWD = new Currency("TWD", "NT$", 901, 0.01m);
+		public static readonly ICurrency TWD = new Iso4217Currency("TWD", "NT$", 901, 0.01m);
 		/// <summary>
 		/// Tanzanian Shilling
 		/// </summary>
-		public static readonly ICurrency TZS = new Currency("TZS", "¤", 834, 0.01m);
+		public static readonly ICurrency TZS = new Iso4217Currency("TZS", "¤", 834, 0.01m);
 		/// <summary>
 		/// Hryvnia
 		/// </summary>
-		public static readonly ICurrency UAH = new Currency("UAH", "\u20b4", 980, 0.01m);
+		public static readonly ICurrency UAH = new Iso4217Currency("UAH", "\u20b4", 980, 0.01m);
 		/// <summary>
 		/// Uganda Shilling
 		/// </summary>
-		public static readonly ICurrency UGX = new Currency("UGX", "¤", 800, 0.01m);
+		public static readonly ICurrency UGX = new Iso4217Currency("UGX", "¤", 800, 0.01m);
 		/// <summary>
 		/// US Dollar
 		/// </summary>
-		public static readonly ICurrency USD = new Currency("USD", "$", 840, 0.01m);
+		public static readonly ICurrency USD = new Iso4217Currency("USD", "$", 840, 0.01m);
 		/// <summary>
 		/// US Dollar (Next day)
 		/// </summary>
-		public static readonly ICurrency USN = new Currency("USN", "¤", 997, 0.01m);
+		public static readonly ICurrency USN = new Iso4217Currency("USN", "¤", 997, 0.01m);
 		/// <summary>
 		/// US Dollar (Same day)
 		/// </summary>
-		public static readonly ICurrency USS = new Currency("USS", "¤", 998, 0.01m);
+		public static readonly ICurrency USS = new Iso4217Currency("USS", "¤", 998, 0.01m);
 		/// <summary>
 		/// Uruguay Peso en Unidades Indexadas (URUIURUI)
 		/// </summary>
-		public static readonly ICurrency UYI = new Currency("UYI", "¤", 940, 1m);
+		public static readonly ICurrency UYI = new Iso4217Currency("UYI", "¤", 940, 1m);
 		/// <summary>
 		/// Peso Uruguayo
 		/// </summary>
-		public static readonly ICurrency UYU = new Currency("UYU", "$U", 858, 0.01m);
+		public static readonly ICurrency UYU = new Iso4217Currency("UYU", "$U", 858, 0.01m);
 		/// <summary>
 		/// Uzbekistan Sum
 		/// </summary>
-		public static readonly ICurrency UZS = new Currency("UZS", "\u043b\u0432", 860, 0.01m);
+		public static readonly ICurrency UZS = new Iso4217Currency("UZS", "\u043b\u0432", 860, 0.01m);
 		/// <summary>
 		/// Bolivar Fuerte
 		/// </summary>
-		public static readonly ICurrency VEF = new Currency("VEF", "Bs", 937, 0.01m);
+		public static readonly ICurrency VEF = new Iso4217Currency("VEF", "Bs", 937, 0.01m);
 		/// <summary>
 		/// Dong
 		/// </summary>
-		public static readonly ICurrency VND = new Currency("VND", "\u20ab", 704, 1m);
+		public static readonly ICurrency VND = new Iso4217Currency("VND", "\u20ab", 704, 1m);
 		/// <summary>
 		/// Vatu
 		/// </summary>
-		public static readonly ICurrency VUV = new Currency("VUV", "¤", 548, 1m);
+		public static readonly ICurrency VUV = new Iso4217Currency("VUV", "¤", 548, 1m);
 		/// <summary>
 		/// Tala
 		/// </summary>
-		public static readonly ICurrency WST = new Currency("WST", "¤", 882, 0.01m);
+		public static readonly ICurrency WST = new Iso4217Currency("WST", "¤", 882, 0.01m);
 		/// <summary>
 		/// CFA Franc BEAC
 		/// </summary>
-		public static readonly ICurrency XAF = new Currency("XAF", "¤", 950, 1m);
+		public static readonly ICurrency XAF = new Iso4217Currency("XAF", "¤", 950, 1m);
 		/// <summary>
 		/// Silver
 		/// </summary>
-		public static readonly ICurrency XAG = new Currency("XAG", "¤", 961, 0m);
+		public static readonly ICurrency XAG = new Iso4217Currency("XAG", "¤", 961, 0m);
 		/// <summary>
 		/// Gold
 		/// </summary>
-		public static readonly ICurrency XAU = new Currency("XAU", "¤", 959, 0m);
+		public static readonly ICurrency XAU = new Iso4217Currency("XAU", "¤", 959, 0m);
 		/// <summary>
 		/// EURCO
 		/// </summary>
-		public static readonly ICurrency XBA = new Currency("XBA", "¤", 955, 0m);
+		public static readonly ICurrency XBA = new Iso4217Currency("XBA", "¤", 955, 0m);
 		/// <summary>
 		/// EMU-6
 		/// </summary>
-		public static readonly ICurrency XBB = new Currency("XBB", "¤", 956, 0m);
+		public static readonly ICurrency XBB = new Iso4217Currency("XBB", "¤", 956, 0m);
 		/// <summary>
 		/// EUA-9
 		/// </summary>
-		public static readonly ICurrency XBC = new Currency("XBC", "¤", 957, 0m);
+		public static readonly ICurrency XBC = new Iso4217Currency("XBC", "¤", 957, 0m);
 		/// <summary>
 		/// EUA-17
 		/// </summary>
-		public static readonly ICurrency XBD = new Currency("XBD", "¤", 958, 0m);
+		public static readonly ICurrency XBD = new Iso4217Currency("XBD", "¤", 958, 0m);
 		/// <summary>
 		/// East Caribbean Dollar
 		/// </summary>
-		public static readonly ICurrency XCD = new Currency("XCD", "$", 951, 0.01m);
+		public static readonly ICurrency XCD = new Iso4217Currency("XCD", "$", 951, 0.01m);
 		/// <summary>
 		/// SDR (Special Drawing Right)
 		/// </summary>
-		public static readonly ICurrency XDR = new Currency("XDR", "¤", 960, 0m);
+		public static readonly ICurrency XDR = new Iso4217Currency("XDR", "¤", 960, 0m);
 		/// <summary>
 		/// UIC-Franc
 		/// </summary>
-		public static readonly ICurrency XFU = new Currency("XFU", "¤", -1, 0m);
+		public static readonly ICurrency XFU = new Iso4217Currency("XFU", "¤", -1, 0m);
 		/// <summary>
 		/// CFA Franc BCEAO
 		/// </summary>
-		public static readonly ICurrency XOF = new Currency("XOF", "¤", 952, 1m);
+		public static readonly ICurrency XOF = new Iso4217Currency("XOF", "¤", 952, 1m);
 		/// <summary>
 		/// Palladium
 		/// </summary>
-		public static readonly ICurrency XPD = new Currency("XPD", "¤", 964, 0m);
+		public static readonly ICurrency XPD = new Iso4217Currency("XPD", "¤", 964, 0m);
 		/// <summary>
 		/// CFP Franc
 		/// </summary>
-		public static readonly ICurrency XPF = new Currency("XPF", "¤", 953, 1m);
+		public static readonly ICurrency XPF = new Iso4217Currency("XPF", "¤", 953, 1m);
 		/// <summary>
 		/// Platinum
 		/// </summary>
-		public static readonly ICurrency XPT = new Currency("XPT", "¤", 962, 0m);
+		public static readonly ICurrency XPT = new Iso4217Currency("XPT", "¤", 962, 0m);
 		/// <summary>
 		/// Sucre
 		/// </summary>
-		public static readonly ICurrency XSU = new Currency("XSU", "¤", 994, 0m);
+		public static readonly ICurrency XSU = new Iso4217Currency("XSU", "¤", 994, 0m);
 		/// <summary>
 		/// Codes for testing purposes
 		/// </summary>
-		public static readonly ICurrency XTS = new Currency("XTS", "¤", 963, 0m);
+		public static readonly ICurrency XTS = new Iso4217Currency("XTS", "¤", 963, 0m);
 		/// <summary>
 		/// No currency
 		/// </summary>
-		public static readonly ICurrency XXX = new Currency("XXX", "¤", 999, 0m);
+		public static readonly ICurrency XXX = new Iso4217Currency("XXX", "¤", 999, 0m);
 		/// <summary>
 		/// Yemeni Rial
 		/// </summary>
-		public static readonly ICurrency YER = new Currency("YER", "\ufdfc", 886, 0.01m);
+		public static readonly ICurrency YER = new Iso4217Currency("YER", "\ufdfc", 886, 0.01m);
 		/// <summary>
 		/// South African Rand
 		/// </summary>
-		public static readonly ICurrency ZAR = new Currency("ZAR", "R", 710, 0.01m);
+		public static readonly ICurrency ZAR = new Iso4217Currency("ZAR", "R", 710, 0.01m);
 		/// <summary>
 		/// Zambian Kwacha
 		/// </summary>
-		public static readonly ICurrency ZMK = new Currency("ZMK", "¤", 894, 0.01m);
+		public static readonly ICurrency ZMK = new Iso4217Currency("ZMK", "¤", 894, 0.01m);
 		/// <summary>
 		/// Zimbabwe Dollar
 		/// </summary>
-		public static readonly ICurrency ZWL = new Currency("ZWL", "¤", 932, 0.01m);
+		public static readonly ICurrency ZWL = new Iso4217Currency("ZWL", "¤", 932, 0.01m);
 		
 		/// <summary>
 		/// Parse char code of currency in ISO4217

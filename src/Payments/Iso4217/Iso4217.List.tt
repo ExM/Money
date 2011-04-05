@@ -4,7 +4,6 @@
 #><#@ import namespace="System.IO" 
 #><#@ import namespace="System.Linq" 
 #>using System;
-using Payments.Iso4217Currencies;
 
 namespace Payments
 {
@@ -50,7 +49,7 @@ namespace Payments
 		#>		/// <summary>
 		/// <#= cells[3] #>
 		/// </summary>
-		public static readonly ICurrency <#= cells[0] #> = new Currency("<#= cells[0] #>", "<#= symbol #>", <#= cells[1] #>, <#= mou #>);
+		public static readonly ICurrency <#= cells[0] #> = new Iso4217Currency("<#= cells[0] #>", "<#= symbol #>", <#= cells[1] #>, <#= mou #>);
 <# } #>
 		
 		/// <summary>

@@ -1,19 +1,18 @@
 using System;
 using System.Resources;
 
-
-namespace Payments.Iso4217Currencies
+namespace Payments
 {
-	public class Currency: ICurrency
+	internal class Iso4217Currency: ICurrency
 	{
-		private static readonly ResourceManager _rMan = new ResourceManager("Payments.Dic", typeof(Currency).Assembly);
+		private static readonly ResourceManager _rMan = new ResourceManager("Payments.Dic", typeof(Iso4217Currency).Assembly);
 		
 		private readonly string _charCode;
 		private readonly int _numCode;
 		private readonly string _symbol;
 		private readonly decimal _minorUnit;
 		
-		internal Currency(string charCode, string sym, int num, decimal mu)
+		internal Iso4217Currency(string charCode, string sym, int num, decimal mu)
 		{
 			_charCode = charCode;
 			_numCode = num;

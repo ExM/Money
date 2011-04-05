@@ -1,5 +1,4 @@
 ﻿using System;
-using Payments.Iso4217Currencies;
 
 namespace Payments
 {
@@ -7,7 +6,7 @@ namespace Payments
 	{
 		public static bool Contain(ICurrency currency)
 		{
-			return currency is Currency;
+			return currency is Iso4217Currency;
 		}
 		
 		public static bool Contain(string charCode)
