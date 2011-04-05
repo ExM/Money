@@ -52,19 +52,23 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <EmbeddedResource Include="Dic.ru.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Dic.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Dic.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dic.ru.resx">
+      <DependentUpon>Dic.ru.tt</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Iso4217.List.cs</LastGenOutput>
+    </None>
+    <None Include="Dic.ru.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dic.ru.resx</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
