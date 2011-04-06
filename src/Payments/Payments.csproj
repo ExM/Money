@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -10,6 +10,7 @@
     <RootNamespace>Payments</RootNamespace>
     <AssemblyName>Payments</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -57,21 +59,27 @@
       <LastGenOutput>Dic.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dic.ru.resx">
-      <DependentUpon>Dic.ru.tt</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Dic.ru.resx" />
+    <None Include="Dic.ru.gen.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dic.ru.gen.tt</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Iso4217.List.cs</LastGenOutput>
     </None>
-    <None Include="Dic.ru.tt">
+    <None Include="Dic.ru.gen.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Dic.ru.resx</LastGenOutput>
+      <LastGenOutput>Dic.ru.gen.resx</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <Target Name="BeforeBuild">
+	<Copy SourceFiles="Dic.ru.gen.resx" DestinationFiles="Dic.ru.resx"/>
+  </Target>
 </Project>
