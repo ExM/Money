@@ -1,4 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<#@ template language="C#v3.5" hostspecific="True"
+#><#@ output extension=".resx" 
+#><#@ assembly name="System.Core"
+#><#@ import namespace="System" 
+#><#@ import namespace="System.Collections.Generic" 
+#><#@ import namespace="System.IO" 
+#><#@ import namespace="System.Linq" 
+#><?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,13 +124,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AED" xml:space="preserve">
-    <value>UAE Dirham</value>
+<#
+string path = Path.GetDirectoryName(Host.TemplateFile);
+foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/iso4217_code_table.csv")).Skip(1))
+{
+  string[] cells = line.Split(';');
+  #>  <data name="<#= cells[0] #>" xml:space="preserve">
+    <value><#= cells[3] #></value>
   </data>
-  <data name="AFN" xml:space="preserve">
-    <value>Afghani</value>
-  </data>
-  <data name="ALL" xml:space="preserve">
-    <value>Lek</value>
-  </data>
+<# } #>
 </root>
