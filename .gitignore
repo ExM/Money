@@ -8,5 +8,4 @@ src/*/bin/Debug/*
 src/*/test-results/*
 bin/*.VisualState.xml
 bin/TestResult.xml
-src/Payments/Dic.resx
-src/Payments/Dic.ru.resx
+src/Debug

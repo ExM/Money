@@ -1,13 +1,13 @@
 <Project name="Payments" fileversion="2.0" DefaultNamespace="Payments" language="C#" targetFramework="3.5" ctype="DotNetProject">
   <Configurations active="Debug">
     <Configuration name="Debug" ctype="DotNetProjectConfiguration">
-      <Output directory="bin/Debug" assembly="Payments" />
+      <Output directory="../Debug" assembly="Payments" />
       <Build debugmode="True" target="Library" />
       <Execution consolepause="False" runwithwarnings="True" runtime="MsNet" />
       <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
     <Configuration name="Release" ctype="DotNetProjectConfiguration">
-      <Output directory="bin/Release" assembly="Payments" />
+      <Output directory="../Release" assembly="Payments" />
       <Build debugmode="False" target="Library" />
       <Execution consolepause="False" runwithwarnings="True" runtime="MsNet" />
       <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
@@ -22,12 +22,10 @@
     <File subtype="Code" buildaction="Compile" name="ICurrency.cs" />
     <File subtype="Code" buildaction="Compile" name="Money.cs" />
     <File subtype="Code" buildaction="Compile" name="UnknownCurrency.cs" />
-    <File subtype="Code" buildaction="Nothing" name="Dic.gen.tt" generator="TextTemplatingFileGenerator" />
-    <File subtype="Code" buildaction="Nothing" name="Dic.ru.gen.tt" generator="TextTemplatingFileGenerator" />
-    <File subtype="Code" buildaction="Nothing" name="Dic.gen.resx" dependson="Dic.gen.tt" />
-    <File subtype="Code" buildaction="Nothing" name="Dic.ru.gen.resx" dependson="Dic.ru.gen.tt" />
-    <File subtype="Code" buildaction="EmbedAsResource" name="Dic.resx" resource_id="Payments.Dic.resources" />
-    <File subtype="Code" buildaction="EmbedAsResource" name="Dic.ru.resx" resource_id="Payments.Dic.ru.resources" />
+    <File subtype="Code" buildaction="Nothing" name="Dic.tt" generator="TextTemplatingFileGenerator" />
+    <File subtype="Code" buildaction="Nothing" name="Dic.ru.tt" generator="TextTemplatingFileGenerator" />
+    <File subtype="Code" buildaction="EmbedAsResource" name="Dic.resx" dependson="Dic.tt" resource_id="Payments.Dic.resources" />
+    <File subtype="Code" buildaction="Nothing" name="Dic.ru.resx" dependson="Dic.ru.tt" />
   </Contents>
   <References>
     <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
