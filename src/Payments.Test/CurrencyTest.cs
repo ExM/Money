@@ -28,10 +28,11 @@ namespace Payments.Test
 			Assert.AreEqual(0.01m, Iso4217.UYU.MinorUnit);
 		}
 
-		[TestCase("USD", "ru-RU", "������ ���")]
+		[TestCase("USD", "ru-RU", "Доллар США")]
 		[TestCase("USD", "en-GB", "US Dollar")]
-		[TestCase("ALL", "ru-RU", "���")]
+		[TestCase("ALL", "ru-RU", "Лек")]
 		[TestCase("ALL", "en-GB", "Lek")]
+		[TestCase("XDR", "ru-RU", "Специальные права заимствования")]
 		public void Localization(string code, string culture, string exp)
 		{
 			CultureInfo ci = CultureInfo.GetCultureInfo(culture);
