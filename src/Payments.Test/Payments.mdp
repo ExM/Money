@@ -16,10 +16,12 @@
   <Contents>
     <File subtype="Code" buildaction="Compile" name="AssemblyInfo.cs" />
     <File subtype="Code" buildaction="Compile" name="CurrencyTest.cs" />
+    <File subtype="Code" buildaction="Compile" name="MoneyTest.cs" />
   </Contents>
   <References>
     <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <ProjectReference specificVersion="False" type="Assembly" localcopy="True" refto="../../lib/NUnit-2.5.9.10348/nunit.framework.dll" />
     <ProjectReference type="Project" localcopy="True" refto="Payments" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   </References>
 </Project>
