@@ -729,7 +729,7 @@ namespace Payments
 		/// Parse char code of currency in ISO4217
 		/// </summary>
 		/// <param name="charCode">
-		/// char code of currency <see cref="System.String"/>
+		/// char code of currency
 		/// </param>
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
@@ -925,8 +925,8 @@ namespace Payments
 		/// <summary>
 		/// Parse number code of currency in ISO4217
 		/// </summary>
-		/// <param name="charCode">
-		/// number code of currency <see cref="System.String"/>
+		/// <param name="numCode">
+		/// number code of currency
 		/// </param>
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>

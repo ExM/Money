@@ -4,13 +4,13 @@
       <Output directory="../Debug" assembly="Payments" />
       <Build debugmode="True" target="Library" />
       <Execution consolepause="False" runwithwarnings="True" runtime="MsNet" />
-      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG" generatexmldocumentation="True" ctype="CSharpCompilerParameters" />
     </Configuration>
     <Configuration name="Release" ctype="DotNetProjectConfiguration">
-      <Output directory="../Release" assembly="Payments" />
+      <Output directory="../../bin" assembly="Payments" />
       <Build debugmode="False" target="Library" />
       <Execution consolepause="False" runwithwarnings="True" runtime="MsNet" />
-      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="True" ctype="CSharpCompilerParameters" />
     </Configuration>
   </Configurations>
   <Contents>
@@ -26,7 +26,7 @@
     <File subtype="Code" buildaction="Nothing" name="Dic.ru.tt" generator="TextTemplatingFileGenerator" />
     <File subtype="Code" buildaction="EmbedAsResource" name="Dic.resx" dependson="Dic.tt" resource_id="Payments.Dic.resources" />
     <File subtype="Code" buildaction="Nothing" name="Dic.ru.resx" dependson="Dic.ru.tt" />
-    <File subtype="Code" buildaction="Compile" name="CurrencyExtension.cs" />
+    <File subtype="Code" buildaction="Compile" name="PaymentsExtension.cs" />
     <File subtype="Code" buildaction="Nothing" name="../../docs/iso4217_code_table.csv" />
     <File subtype="Code" buildaction="Nothing" name="../../docs/ru.csv" />
     <File subtype="Code" buildaction="Nothing" name="../../docs/symbols.csv" />
