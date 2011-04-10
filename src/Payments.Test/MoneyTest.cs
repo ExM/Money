@@ -108,6 +108,17 @@ namespace Payments.Test
 			Assert.AreEqual(Iso4217.RUB.Money(2.46m), 2 * Iso4217.RUB.Money(1.23m));
 			Assert.AreEqual(Iso4217.RUB.Money(1.23m), Iso4217.RUB.Money(2.46m) / 2);
 		}
+		
+		[Test]
+		public void Show()
+		{
+			CultureInfo ci = CultureInfo.InvariantCulture;
+			Thread.CurrentThread.CurrentCulture = ci;
+			Thread.CurrentThread.CurrentUICulture = ci;
+			
+			Assert.AreEqual("1.23 RUB", Iso4217.RUB.Money(1.23m).ToString());
+			Assert.AreEqual("1.123456789012345678900876523 USD", Iso4217.USD.Money(1.123456789012345678900876523m).ToString());
+		}
 	}
 }
 

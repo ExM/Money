@@ -1034,6 +1034,11 @@
             the total number minot of unit of currency
             </summary>
         </member>
+        <member name="M:Payments.Money.ToString">
+            <summary>
+            show amount and character code of currency
+            </summary>
+        </member>
         <member name="M:Payments.Money.FloorMinorUnit">
             <summary>
             Returns the largest integer less than or equal to minor of unit of this money.

@@ -28,8 +28,18 @@ namespace Payments
 		/// </param>
 		public Money(decimal amount, ICurrency currency)
 		{
+			if(currency == null)
+				throw new ArgumentNullException("currency");
 			Amount = amount;
 			Currency = currency;
+		}
+		
+		/// <summary>
+		/// show amount and character code of currency
+		/// </summary>
+		public override string ToString()
+		{
+			return string.Format ("{0:G} {1}", Amount, Currency.CharCode);
 		}
 		
 		/// <summary>
