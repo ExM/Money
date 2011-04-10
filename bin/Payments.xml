@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>/home/exm/Projects/Money/bin/Payments</name>
+    </assembly>
+    <members>
+        <member name="T:Payments.Iso4217">
+            <summary>
+            The currencies standard ISO 4217
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AED">
+            <summary>
+            UAE Dirham
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AFN">
+            <summary>
+            Afghani
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ALL">
+            <summary>
+            Lek
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AMD">
+            <summary>
+            Armenian Dram
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ANG">
+            <summary>
+            Netherlands Antillean Guilder
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AOA">
+            <summary>
+            Kwanza
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ARS">
+            <summary>
+            Argentine Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AUD">
+            <summary>
+            Australian Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AWG">
+            <summary>
+            Aruban Guilder
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.AZN">
+            <summary>
+            Azerbaijanian Manat
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BAM">
+            <summary>
+            Convertible Mark
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BBD">
+            <summary>
+            Barbados Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BDT">
+            <summary>
+            Taka
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BGN">
+            <summary>
+            Bulgarian Lev
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BHD">
+            <summary>
+            Bahraini Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BIF">
+            <summary>
+            Burundi Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BMD">
+            <summary>
+            Bermudian Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BND">
+            <summary>
+            Brunei Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BOB">
+            <summary>
+            Boliviano
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BOV">
+            <summary>
+            Mvdol
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BRL">
+            <summary>
+            Brazilian Real
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BSD">
+            <summary>
+            Bahamian Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BTN">
+            <summary>
+            Ngultrum
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BWP">
+            <summary>
+            Pula
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BYR">
+            <summary>
+            Belarussian Ruble
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.BZD">
+            <summary>
+            Belize Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CAD">
+            <summary>
+            Canadian Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CDF">
+            <summary>
+            Congolese Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CHE">
+            <summary>
+            WIR Euro
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CHF">
+            <summary>
+            Swiss Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CHW">
+            <summary>
+            WIR Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CLF">
+            <summary>
+            Unidades de fomento
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CLP">
+            <summary>
+            Chilean Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CNY">
+            <summary>
+            Yuan Renminbi
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.COP">
+            <summary>
+            Colombian Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.COU">
+            <summary>
+            Unidad de Valor Real
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CRC">
+            <summary>
+            Costa Rican Colon
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CUC">
+            <summary>
+            Peso Convertible
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CUP">
+            <summary>
+            Cuban Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CVE">
+            <summary>
+            Cape Verde Escudo
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.CZK">
+            <summary>
+            Czech Koruna
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.DJF">
+            <summary>
+            Djibouti Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.DKK">
+            <summary>
+            Danish Krone
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.DOP">
+            <summary>
+            Dominican Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.DZD">
+            <summary>
+            Algerian Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.EGP">
+            <summary>
+            Egyptian Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ERN">
+            <summary>
+            Nakfa
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ETB">
+            <summary>
+            Ethiopian Birr
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.EUR">
+            <summary>
+            Euro
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.FJD">
+            <summary>
+            Fiji Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.FKP">
+            <summary>
+            Falkland Islands Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GBP">
+            <summary>
+            Pound Sterling
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GEL">
+            <summary>
+            Lari
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GHS">
+            <summary>
+            Cedi
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GIP">
+            <summary>
+            Gibraltar Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GMD">
+            <summary>
+            Dalasi
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GNF">
+            <summary>
+            Guinea Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GTQ">
+            <summary>
+            Quetzal
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.GYD">
+            <summary>
+            Guyana Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.HKD">
+            <summary>
+            Hong Kong Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.HNL">
+            <summary>
+            Lempira
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.HRK">
+            <summary>
+            Croatian Kuna
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.HTG">
+            <summary>
+            Gourde
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.HUF">
+            <summary>
+            Forint
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.IDR">
+            <summary>
+            Rupiah
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ILS">
+            <summary>
+            New Israeli Sheqel
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.INR">
+            <summary>
+            Indian Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.IQD">
+            <summary>
+            Iraqi Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.IRR">
+            <summary>
+            Iranian Rial
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ISK">
+            <summary>
+            Iceland Krona
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.JMD">
+            <summary>
+            Jamaican Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.JOD">
+            <summary>
+            Jordanian Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.JPY">
+            <summary>
+            Yen
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KES">
+            <summary>
+            Kenyan Shilling
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KGS">
+            <summary>
+            Som
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KHR">
+            <summary>
+            Riel
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KMF">
+            <summary>
+            Comoro Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KPW">
+            <summary>
+            North Korean Won
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KRW">
+            <summary>
+            Won
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KWD">
+            <summary>
+            Kuwaiti Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KYD">
+            <summary>
+            Cayman Islands Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.KZT">
+            <summary>
+            Tenge
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LAK">
+            <summary>
+            Kip
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LBP">
+            <summary>
+            Lebanese Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LKR">
+            <summary>
+            Sri Lanka Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LRD">
+            <summary>
+            Liberian Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LSL">
+            <summary>
+            Loti
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LTL">
+            <summary>
+            Lithuanian Litas
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LVL">
+            <summary>
+            Latvian Lats
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.LYD">
+            <summary>
+            Libyan Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MAD">
+            <summary>
+            Moroccan Dirham
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MDL">
+            <summary>
+            Moldovan Leu
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MGA">
+            <summary>
+            Malagasy Ariary
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MKD">
+            <summary>
+            Denar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MMK">
+            <summary>
+            Kyat
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MNT">
+            <summary>
+            Tugrik
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MOP">
+            <summary>
+            Pataca
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MRO">
+            <summary>
+            Ouguiya
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MUR">
+            <summary>
+            Mauritius Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MVR">
+            <summary>
+            Rufiyaa
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MWK">
+            <summary>
+            Kwacha
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MXN">
+            <summary>
+            Mexican Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MXV">
+            <summary>
+            Mexican Unidad de Inversion (UDI)
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MYR">
+            <summary>
+            Malaysian Ringgit
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.MZN">
+            <summary>
+            Metical
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NAD">
+            <summary>
+            Namibia Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NGN">
+            <summary>
+            Naira
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NIO">
+            <summary>
+            Cordoba Oro
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NOK">
+            <summary>
+            Norwegian Krone
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NPR">
+            <summary>
+            Nepalese Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.NZD">
+            <summary>
+            New Zealand Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.OMR">
+            <summary>
+            Rial Omani
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PAB">
+            <summary>
+            Balboa
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PEN">
+            <summary>
+            Nuevo Sol
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PGK">
+            <summary>
+            Kina
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PHP">
+            <summary>
+            Philippine Peso
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PKR">
+            <summary>
+            Pakistan Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PLN">
+            <summary>
+            Zloty
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.PYG">
+            <summary>
+            Guarani
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.QAR">
+            <summary>
+            Qatari Rial
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.RON">
+            <summary>
+            Leu
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.RSD">
+            <summary>
+            Serbian Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.RUB">
+            <summary>
+            Russian Ruble
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.RWF">
+            <summary>
+            Rwanda Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SAR">
+            <summary>
+            Saudi Riyal
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SBD">
+            <summary>
+            Solomon Islands Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SCR">
+            <summary>
+            Seychelles Rupee
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SDG">
+            <summary>
+            Sudanese Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SEK">
+            <summary>
+            Swedish Krona
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SGD">
+            <summary>
+            Singapore Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SHP">
+            <summary>
+            Saint Helena Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SLL">
+            <summary>
+            Leone
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SOS">
+            <summary>
+            Somali Shilling
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SRD">
+            <summary>
+            Surinam Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.STD">
+            <summary>
+            Dobra
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SVC">
+            <summary>
+            El Salvador Colon
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SYP">
+            <summary>
+            Syrian Pound
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.SZL">
+            <summary>
+            Lilangeni
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.THB">
+            <summary>
+            Baht
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TJS">
+            <summary>
+            Somoni
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TMT">
+            <summary>
+            New Manat
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TND">
+            <summary>
+            Tunisian Dinar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TOP">
+            <summary>
+            Pa’anga
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TRY">
+            <summary>
+            Turkish Lira
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TTD">
+            <summary>
+            Trinidad and Tobago Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TWD">
+            <summary>
+            New Taiwan Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.TZS">
+            <summary>
+            Tanzanian Shilling
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.UAH">
+            <summary>
+            Hryvnia
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.UGX">
+            <summary>
+            Uganda Shilling
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.USD">
+            <summary>
+            US Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.USN">
+            <summary>
+            US Dollar (Next day)
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.USS">
+            <summary>
+            US Dollar (Same day)
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.UYI">
+            <summary>
+            Uruguay Peso en Unidades Indexadas (URUIURUI)
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.UYU">
+            <summary>
+            Peso Uruguayo
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.UZS">
+            <summary>
+            Uzbekistan Sum
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.VEF">
+            <summary>
+            Bolivar Fuerte
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.VND">
+            <summary>
+            Dong
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.VUV">
+            <summary>
+            Vatu
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.WST">
+            <summary>
+            Tala
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XAF">
+            <summary>
+            CFA Franc BEAC
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XAG">
+            <summary>
+            Silver
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XAU">
+            <summary>
+            Gold
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XBA">
+            <summary>
+            EURCO
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XBB">
+            <summary>
+            EMU-6
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XBC">
+            <summary>
+            EUA-9
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XBD">
+            <summary>
+            EUA-17
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XCD">
+            <summary>
+            East Caribbean Dollar
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XDR">
+            <summary>
+            SDR (Special Drawing Right)
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XFU">
+            <summary>
+            UIC-Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XOF">
+            <summary>
+            CFA Franc BCEAO
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XPD">
+            <summary>
+            Palladium
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XPF">
+            <summary>
+            CFP Franc
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XPT">
+            <summary>
+            Platinum
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XSU">
+            <summary>
+            Sucre
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XTS">
+            <summary>
+            Codes for testing purposes
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.XXX">
+            <summary>
+            No currency
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.YER">
+            <summary>
+            Yemeni Rial
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ZAR">
+            <summary>
+            South African Rand
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ZMK">
+            <summary>
+            Zambian Kwacha
+            </summary>
+        </member>
+        <member name="F:Payments.Iso4217.ZWL">
+            <summary>
+            Zimbabwe Dollar
+            </summary>
+        </member>
+        <member name="M:Payments.Iso4217.Contain(Payments.ICurrency)">
+            <summary>
+            ISO 4217 contain this instance of currency
+            </summary>
+            <param name="currency">
+            instance
+            </param>
+        </member>
+        <member name="M:Payments.Iso4217.Contain(System.String)">
+            <summary>
+            ISO 4217 contains an instance of a character code
+            </summary>
+            <param name="charCode">
+            character code
+            </param>
+        </member>
+        <member name="M:Payments.Iso4217.TryParse(System.String,Payments.ICurrency@)">
+            <summary>
+            Return currency from character code
+            </summary>
+            <param name="charCode">
+            character code
+            </param>
+            <param name="currency">
+            currency
+            </param>
+            <returns>
+            true if ISO 4217 contain this currency
+            </returns>
+        </member>
+        <member name="M:Payments.Iso4217.TryParse(System.Int32,Payments.ICurrency@)">
+            <summary>
+            Return currency from number code
+            </summary>
+            <param name="numCode">
+            number code
+            </param>
+            <param name="currency">
+            currency
+            </param>
+            <returns>
+            true if ISO 4217 contain this currency
+            </returns>
+        </member>
+        <member name="M:Payments.Iso4217.Parse(System.String)">
+            <summary>
+            Parse char code of currency in ISO4217
+            </summary>
+            <param name="charCode">
+            char code of currency
+            </param>
+            <returns>
+            null if not found<see cref="T:Payments.ICurrency" /></returns>
+        </member>
+        <member name="M:Payments.Iso4217.Parse(System.Int32)">
+            <summary>
+            Parse number code of currency in ISO4217
+            </summary>
+            <param name="numCode">
+            number code of currency
+            </param>
+            <returns>
+            null if not found<see cref="T:Payments.ICurrency" /></returns>
+        </member>
+        <member name="T:Payments.ICurrency">
+            <summary>
+            interface providing information on currency
+            </summary>
+        </member>
+        <member name="P:Payments.ICurrency.CharCode">
+            <summary>
+            character code
+            </summary>
+        </member>
+        <member name="P:Payments.ICurrency.NumCode">
+            <summary>
+            number code
+            </summary>
+        </member>
+        <member name="P:Payments.ICurrency.Symbol">
+            <summary>
+            symbol of currency
+            </summary>
+        </member>
+        <member name="P:Payments.ICurrency.MinorUnit">
+            <summary>
+            minor of unit scale
+            </summary>
+        </member>
+        <member name="T:Payments.Money">
+            <summary>
+            This structure provides a amount of money in some currency
+            </summary>
+        </member>
+        <member name="M:Payments.Money.#ctor(System.Decimal,Payments.ICurrency)">
+            <summary>
+            creates a amount of money in any currency
+            </summary>
+            <param name="amount">
+            amount of money
+            </param>
+            <param name="currency">
+            currency
+            </param>
+        </member>
+        <member name="F:Payments.Money.Amount">
+            <summary>
+            amount of money
+            </summary>
+        </member>
+        <member name="F:Payments.Money.Currency">
+            <summary>
+            currency
+            </summary>
+        </member>
+        <member name="P:Payments.Money.IsRounded">
+            <summary>
+            contains an integer number of currency units
+            </summary>
+        </member>
+        <member name="P:Payments.Money.TotalMinorUnit">
+            <summary>
+            the total number minot of unit of currency
+            </summary>
+        </member>
+        <member name="M:Payments.Money.FloorMinorUnit">
+            <summary>
+            Returns the largest integer less than or equal to minor of unit of this money.
+            </summary>
+            <returns>
+            a new instance with the required amount or the current instance if the operation is not possible
+            </returns>
+        </member>
+        <member name="M:Payments.Money.FloorMajorUnit">
+            <summary>
+            Returns the largest integer less than or equal to this money.
+            </summary>
+            <returns>
+            a new instance with the required amount or the current instance if the operation is not possible
+            </returns>
+        </member>
+        <member name="M:Payments.Money.CeilingMinorUnit">
+            <summary>
+            Returns the smallest integral value that is greater than or equal to minor of unit of this money.
+            </summary>
+            <returns>
+            a new instance with the required amount or the current instance if the operation is not possible
+            </returns>
+        </member>
+        <member name="M:Payments.Money.CeilingMajorUnit">
+            <summary>
+            Returns the smallest integral value that is greater than or equal to this money.
+            </summary>
+            <returns>
+            a new instance with the required amount or the current instance if the operation is not possible
+            </returns>
+        </member>
+        <member name="M:Payments.Money.Mult(System.Decimal,Payments.Money)">
+            <summary>
+            mutiply amount
+            </summary>
+        </member>
+        <member name="M:Payments.Money.Mult(Payments.Money,System.Decimal)">
+            <summary>
+            mutiply amount
+            </summary>
+        </member>
+        <member name="M:Payments.Money.Div(Payments.Money,System.Decimal)">
+            <summary>
+            divide amount
+            </summary>
+        </member>
+        <member name="M:Payments.Money.op_Multiply(Payments.Money,System.Decimal)">
+            <summary>
+            mutiply amount
+            </summary>
+        </member>
+        <member name="M:Payments.Money.op_Multiply(System.Decimal,Payments.Money)">
+            <summary>
+            mutiply amount
+            </summary>
+        </member>
+        <member name="M:Payments.Money.op_Division(Payments.Money,System.Decimal)">
+            <summary>
+            divide amount
+            </summary>
+        </member>
+        <member name="T:Payments.UnknownCurrency">
+            <summary>
+            unknowm currency
+            </summary>
+        </member>
+        <member name="M:Payments.UnknownCurrency.#ctor(System.String)">
+            <summary>
+            unknowm currency
+            </summary>
+            <param name="charCode">
+            any code
+            </param>
+        </member>
+        <member name="M:Payments.UnknownCurrency.#ctor(System.Int32)">
+            <summary>
+            unknowm currency
+            </summary>
+            <param name="numCode">
+            any code
+            </param>
+        </member>
+        <member name="P:Payments.UnknownCurrency.CharCode">
+            <summary>
+            character code
+            </summary>
+        </member>
+        <member name="P:Payments.UnknownCurrency.NumCode">
+            <summary>
+            number code
+            </summary>
+        </member>
+        <member name="P:Payments.UnknownCurrency.Symbol">
+            <summary>
+            default symbol of currency
+            </summary>
+        </member>
+        <member name="P:Payments.UnknownCurrency.MinorUnit">
+            <summary>
+            no minor of unit
+            </summary>
+        </member>
+        <member name="M:Payments.UnknownCurrency.ToString">
+            <summary>
+            character or number code
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /></returns>
+        </member>
+        <member name="T:Payments.PaymentsExtension">
+            <summary>
+            any extensions
+            </summary>
+        </member>
+        <member name="M:Payments.PaymentsExtension.Money(Payments.ICurrency,System.Decimal)">
+            <summary>
+            Create money from this currency
+            </summary>
+            <param name="currency">
+            currency
+            </param>
+            <param name="amount">
+            amount
+            </param>
+            <returns>
+            money
+            </returns>
+        </member>
+    </members>
+</doc>
