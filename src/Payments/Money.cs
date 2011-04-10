@@ -2,19 +2,39 @@ using System;
 
 namespace Payments
 {
+	/// <summary>
+	/// This structure provides a amount of money in some currency
+	/// </summary>
 	public struct Money
 	{
-		
+		/// <summary>
+		/// amount of money
+		/// </summary>
 		public readonly decimal Amount;
 		
+		/// <summary>
+		/// currency
+		/// </summary>
 		public readonly ICurrency Currency;
 		
+		/// <summary>
+		/// creates a amount of money in any currency
+		/// </summary>
+		/// <param name="amount">
+		/// amount of money
+		/// </param>
+		/// <param name="currency">
+		/// currency
+		/// </param>
 		public Money(decimal amount, ICurrency currency)
 		{
 			Amount = amount;
 			Currency = currency;
 		}
 		
+		/// <summary>
+		/// contains an integer number of currency units
+		/// </summary>
 		public bool IsRounded
 		{
 			get
@@ -26,6 +46,9 @@ namespace Payments
 			}
 		}
 		
+		/// <summary>
+		/// the total number minot of unit of currency
+		/// </summary>
 		public decimal TotalMinorUnit
 		{
 			get
@@ -36,6 +59,12 @@ namespace Payments
 			}
 		}
 		
+		/// <summary>
+		/// Returns the largest integer less than or equal to minor of unit of this money.
+		/// </summary>
+		/// <returns>
+		/// a new instance with the required amount or the current instance if the operation is not possible
+		/// </returns>
 		public Money FloorMinorUnit()
 		{
 			if(Currency.MinorUnit == 0m)
@@ -43,11 +72,23 @@ namespace Payments
 			return new Money(decimal.Floor(Amount/Currency.MinorUnit)*Currency.MinorUnit, Currency);
 		}
 		
+		/// <summary>
+		/// Returns the largest integer less than or equal to this money.
+		/// </summary>
+		/// <returns>
+		/// a new instance with the required amount or the current instance if the operation is not possible
+		/// </returns>
 		public Money FloorMajorUnit()
 		{
 			return new Money(decimal.Floor(Amount), Currency);
 		}
 		
+		/// <summary>
+		/// Returns the smallest integral value that is greater than or equal to minor of unit of this money.
+		/// </summary>
+		/// <returns>
+		/// a new instance with the required amount or the current instance if the operation is not possible
+		/// </returns>
 		public Money CeilingMinorUnit()
 		{
 			if(Currency.MinorUnit == 0m)
@@ -55,11 +96,64 @@ namespace Payments
 			return new Money(decimal.Ceiling(Amount/Currency.MinorUnit)*Currency.MinorUnit, Currency);
 		}
 		
+		/// <summary>
+		/// Returns the smallest integral value that is greater than or equal to this money.
+		/// </summary>
+		/// <returns>
+		/// a new instance with the required amount or the current instance if the operation is not possible
+		/// </returns>
 		public Money CeilingMajorUnit()
 		{
 			return new Money(decimal.Ceiling(Amount), Currency);
 		}
-
+		
+		/// <summary>
+		/// mutiply amount
+		/// </summary>
+		public static Money Mult(decimal lhs, Money rhs)
+		{
+			return new Money(lhs * rhs.Amount, rhs.Currency);
+		}
+		
+		/// <summary>
+		/// mutiply amount
+		/// </summary>
+		public static Money Mult(Money lhs, decimal rhs)
+		{
+			return new Money(lhs.Amount * rhs, lhs.Currency);
+		}
+		
+		/// <summary>
+		/// divide amount
+		/// </summary>
+		public static Money Div(Money lhs, decimal rhs)
+		{
+			return new Money(lhs.Amount / rhs, lhs.Currency);
+		}
+		
+		/// <summary>
+		/// mutiply amount
+		/// </summary>
+		public static Money operator *(Money lhs, decimal rhs)
+		{
+			return Mult(lhs, rhs);
+		}
+		
+		/// <summary>
+		/// mutiply amount
+		/// </summary>
+		public static Money operator *(decimal lhs, Money rhs)
+		{
+			return Mult(lhs, rhs);
+		}
+		
+		/// <summary>
+		/// divide amount
+		/// </summary>
+		public static Money operator /(Money lhs, decimal rhs)
+		{
+			return Div(lhs, rhs);
+		}
 	}
 }
 

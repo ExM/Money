@@ -25,7 +25,7 @@
     <File subtype="Code" buildaction="Nothing" name="Dic.tt" generator="TextTemplatingFileGenerator" />
     <File subtype="Code" buildaction="Nothing" name="Dic.ru.tt" generator="TextTemplatingFileGenerator" />
     <File subtype="Code" buildaction="EmbedAsResource" name="Dic.resx" dependson="Dic.tt" resource_id="Payments.Dic.resources" />
-    <File subtype="Code" buildaction="Nothing" name="Dic.ru.resx" dependson="Dic.ru.tt" />
+    <File subtype="Code" buildaction="EmbedAsResource" name="Dic.ru.resx" dependson="Dic.ru.tt" resource_id="Payments.Dic.ru.resources" />
     <File subtype="Code" buildaction="Compile" name="PaymentsExtension.cs" />
     <File subtype="Code" buildaction="Nothing" name="../../docs/iso4217_code_table.csv" />
     <File subtype="Code" buildaction="Nothing" name="../../docs/ru.csv" />

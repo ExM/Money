@@ -92,6 +92,22 @@ namespace Payments.Test
 			decimal mu = Iso4217.XAU.Money(99.99m).TotalMinorUnit;
 			Assert.Fail("minor unit exist: {0}", mu);
 		}
+		
+		[Test]
+		public void Equal()
+		{
+			Assert.AreEqual(Iso4217.RUB.Money(1.23m), Iso4217.RUB.Money(1.23m));
+			Assert.AreNotEqual(Iso4217.RUB.Money(1.24m), Iso4217.RUB.Money(1.23m));
+			Assert.AreNotEqual(Iso4217.RUB.Money(1.23m), Iso4217.USD.Money(1.23m));
+		}
+		
+		[Test]
+		public void Operatorsl()
+		{
+			Assert.AreEqual(Iso4217.RUB.Money(2.46m), Iso4217.RUB.Money(1.23m) * 2);
+			Assert.AreEqual(Iso4217.RUB.Money(2.46m), 2 * Iso4217.RUB.Money(1.23m));
+			Assert.AreEqual(Iso4217.RUB.Money(1.23m), Iso4217.RUB.Money(2.46m) / 2);
+		}
 	}
 }
 
