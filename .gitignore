@@ -1,6 +1,7 @@
 *.suo
 *~
 src/*/obj/Debug/*
+src/*/obj/Release/*
 src/*/bin/Debug/*
 *.userprefs
 *.pidb
