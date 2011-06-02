@@ -1,12 +1,9 @@
 *.suo
 *~
-src/*/obj/Debug/*
-src/*/obj/Release/*
-src/*/bin/Debug/*
+*/obj/Debug/*
+*/obj/Release/*
+*/bin/Debug/*
 *.userprefs
 *.pidb
 *.resources
-src/*/test-results/*
-bin/*.VisualState.xml
-bin/TestResult.xml
-src/Debug
+
