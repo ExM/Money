@@ -13,7 +13,7 @@ namespace Payments
 <#
 		Dictionary<string, string> symbols = new Dictionary<string, string>();
 		string path = Path.GetDirectoryName(Host.TemplateFile);
-		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../../docs/symbols.csv")).Skip(1))
+		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/symbols.csv")).Skip(1))
 		{
 			string[] cells = line.Split(';');
 			string code = cells[0];
@@ -29,7 +29,7 @@ namespace Payments
 		
 		List<string> codes = new List<string>();
 		SortedList<int, string> numCodes = new SortedList<int, string>();
-		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../../docs/iso4217_code_table.csv")).Skip(1))
+		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/iso4217_code_table.csv")).Skip(1))
 		{
 			string[] cells = line.Split(';');
 			codes.Add(cells[0]);

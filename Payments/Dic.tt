@@ -126,7 +126,7 @@
   </resheader>
 <#
 string path = Path.GetDirectoryName(Host.TemplateFile);
-foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/iso4217_code_table.csv")).Skip(1))
+foreach(string line in File.ReadAllLines(Path.Combine(path, "../docs/iso4217_code_table.csv")).Skip(1))
 {
   string[] cells = line.Split(';');
   #>  <data name="<#= cells[0] #>" xml:space="preserve">
