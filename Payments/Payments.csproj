@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <GenerateDocumentation>true</GenerateDocumentation>
+    <DocumentationFile>..\bin\Payments.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
