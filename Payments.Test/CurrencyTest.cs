@@ -18,9 +18,26 @@ namespace Payments.Test
 			else
 				Assert.IsNull(Iso4217.Parse(code));
 		}
+
+		[Test]
+		public void Equals()
+		{
+			ICurrency c1 = Iso4217.RUB;
+			ICurrency c2 = Iso4217.AED;
+			Assert.AreNotEqual(c1, c2);
+			Assert.IsFalse(c1 == c2);
+
+			ICurrency c3 = Iso4217.RUB;
+			Assert.AreEqual(c1, c3);
+			Assert.IsTrue(c1 == c3);
+
+			UnknownCurrency uc = new UnknownCurrency("RUB");
+			Assert.AreNotEqual(c1, uc);
+			Assert.IsFalse(c1 == uc);
+		}
 		
 		[Test]
-		public void UYU()
+		public void ViewUYU()
 		{
 			Assert.AreEqual("UYU", Iso4217.UYU.CharCode);
 			Assert.AreEqual("$U", Iso4217.UYU.Symbol);
