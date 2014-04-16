@@ -72,7 +72,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dic.resx" />
-    <EmbeddedResource Include="Dic.ru.resx" />
+    <EmbeddedResource Include="Dic.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dic.tt</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dic.ru.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dic.ru.tt</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
