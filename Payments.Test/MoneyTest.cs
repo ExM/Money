@@ -99,6 +99,12 @@ namespace Payments.Test
 			Assert.AreEqual(Iso4217.RUB.Money(1.23m), Iso4217.RUB.Money(1.23m));
 			Assert.AreNotEqual(Iso4217.RUB.Money(1.24m), Iso4217.RUB.Money(1.23m));
 			Assert.AreNotEqual(Iso4217.RUB.Money(1.23m), Iso4217.USD.Money(1.23m));
+
+			Assert.IsTrue(Iso4217.RUB.Money(1.23m) == Iso4217.RUB.Money(1.23m));
+			Assert.IsFalse(Iso4217.RUB.Money(1.23m) != Iso4217.RUB.Money(1.23m));
+
+			Assert.IsTrue(Iso4217.RUB.Money(1.23m) != Iso4217.USD.Money(1.23m));
+			Assert.IsTrue(Iso4217.RUB.Money(1.24m) != Iso4217.RUB.Money(1.23m));
 		}
 		
 		[Test]

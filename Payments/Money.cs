@@ -164,6 +164,51 @@ namespace Payments
 		{
 			return Div(lhs, rhs);
 		}
+
+		/// <summary>
+		/// Determines whether the specified System.Object is equal to the current Money.
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			if (!(obj is Money))
+				return false;
+
+			return Equals((Money)obj);
+		}
+
+		/// <summary>
+		/// Determines whether the specified Money is equal to the current Money.
+		/// </summary>
+		public bool Equals(Money other)
+		{
+			return Amount == other.Amount &&
+				Currency == other.Currency;
+		}
+
+		/// <summary>
+		/// Compares two Money structures.
+		/// </summary>
+		public static bool operator ==(Money x, Money y)
+		{
+			return x.Equals(y);
+		}
+
+		/// <summary>
+		/// Compares two Money structures.
+		/// </summary>
+		public static bool operator !=(Money x, Money y)
+		{
+			return !x.Equals(y);
+		}
+
+		/// <summary>
+		/// Serves as a hash function for a particular type.
+		/// </summary>
+		/// <returns></returns>
+		public override int GetHashCode()
+		{
+			return Amount.GetHashCode() ^ Currency.GetHashCode();
+		}
 	}
 }
 
