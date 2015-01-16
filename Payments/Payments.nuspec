@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Payments</id>
+		<version>$version$</version>
+		<title>Payments</title>
+		<authors>Anatoliy Koperin</authors>
+		<owners />
+		<licenseUrl>https://github.com/ExM/Money/blob/master/License.txt</licenseUrl>
+		<projectUrl>https://github.com/ExM/Money</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description> Library for working with sums of money.
+List of world currencies in accordance with ISO 4217.</description>
+		<summary />
+		<tags>
+			money currencies ISO4217
+		</tags>
+	</metadata>
+	<files>
+		<file src="..\bin\*.pdb" target="lib\net35" />
+		<file src="..\bin\ru\*" target="lib\net35\ru" />
+	</files>
+</package>

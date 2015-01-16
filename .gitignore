@@ -8,3 +8,6 @@
 *.resources
 bin
 */test-results/*
+
+NuGet/*.nupkg
+*.user

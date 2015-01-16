@@ -24,7 +24,7 @@
     <GenerateDocumentation>true</GenerateDocumentation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -32,6 +32,7 @@
     <ConsolePause>false</ConsolePause>
     <GenerateDocumentation>true</GenerateDocumentation>
     <DocumentationFile>..\bin\Payments.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,6 +62,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Dic.resx</LastGenOutput>
     </None>
+    <None Include="Payments.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">
@@ -72,15 +74,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dic.resx">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Dic.tt</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dic.ru.resx">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Dic.ru.tt</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Dic.resx" />
+    <EmbeddedResource Include="Dic.ru.resx" />
   </ItemGroup>
 </Project>
