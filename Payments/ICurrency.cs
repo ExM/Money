@@ -1,5 +1,6 @@
 using System;
-namespace Payments
+
+namespace AbbyyLS.Payments
 {
 	/// <summary>
 	/// interface providing information on currency

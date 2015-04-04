@@ -1,0 +1,2 @@
+* All currencies from ISO 4217:
+	http://www.currency-iso.org/dam/downloads/table_a1.xml

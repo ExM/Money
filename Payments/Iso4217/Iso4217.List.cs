@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace Payments
+namespace AbbyyLS.Payments
 {
 	public static partial class Iso4217
 	{
@@ -37,7 +38,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency AUD = new Iso4217Currency("AUD", "$", 36, 0.01m);
 		/// <summary>
-		/// Aruban Guilder
+		/// Aruban Florin
 		/// </summary>
 		public static readonly ICurrency AWG = new Iso4217Currency("AWG", "\u0192", 533, 0.01m);
 		/// <summary>
@@ -129,9 +130,9 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency CHW = new Iso4217Currency("CHW", "¤", 948, 0.01m);
 		/// <summary>
-		/// Unidades de fomento
+		/// Unidad de Fomento
 		/// </summary>
-		public static readonly ICurrency CLF = new Iso4217Currency("CLF", "¤", 990, 1m);
+		public static readonly ICurrency CLF = new Iso4217Currency("CLF", "¤", 990, 0.0001m);
 		/// <summary>
 		/// Chilean Peso
 		/// </summary>
@@ -161,7 +162,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency CUP = new Iso4217Currency("CUP", "\u20b1", 192, 0.01m);
 		/// <summary>
-		/// Cape Verde Escudo
+		/// Cabo Verde Escudo
 		/// </summary>
 		public static readonly ICurrency CVE = new Iso4217Currency("CVE", "¤", 132, 0.01m);
 		/// <summary>
@@ -217,7 +218,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency GEL = new Iso4217Currency("GEL", "¤", 981, 0.01m);
 		/// <summary>
-		/// Cedi
+		/// Ghana Cedi
 		/// </summary>
 		public static readonly ICurrency GHS = new Iso4217Currency("GHS", "¤", 936, 0.01m);
 		/// <summary>
@@ -353,14 +354,6 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency LSL = new Iso4217Currency("LSL", "¤", 426, 0.01m);
 		/// <summary>
-		/// Lithuanian Litas
-		/// </summary>
-		public static readonly ICurrency LTL = new Iso4217Currency("LTL", "Lt", 440, 0.01m);
-		/// <summary>
-		/// Latvian Lats
-		/// </summary>
-		public static readonly ICurrency LVL = new Iso4217Currency("LVL", "Ls", 428, 0.01m);
-		/// <summary>
 		/// Libyan Dinar
 		/// </summary>
 		public static readonly ICurrency LYD = new Iso4217Currency("LYD", "¤", 434, 0.001m);
@@ -421,7 +414,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency MYR = new Iso4217Currency("MYR", "RM", 458, 0.01m);
 		/// <summary>
-		/// Metical
+		/// Mozambique Metical
 		/// </summary>
 		public static readonly ICurrency MZN = new Iso4217Currency("MZN", "MT", 943, 0.01m);
 		/// <summary>
@@ -485,7 +478,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency QAR = new Iso4217Currency("QAR", "\ufdfc", 634, 0.01m);
 		/// <summary>
-		/// Leu
+		/// New Romanian Leu
 		/// </summary>
 		public static readonly ICurrency RON = new Iso4217Currency("RON", "lei", 946, 0.01m);
 		/// <summary>
@@ -541,6 +534,10 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency SRD = new Iso4217Currency("SRD", "$", 968, 0.01m);
 		/// <summary>
+		/// South Sudanese Pound
+		/// </summary>
+		public static readonly ICurrency SSP = new Iso4217Currency("SSP", "¤", 728, 0.01m);
+		/// <summary>
 		/// Dobra
 		/// </summary>
 		public static readonly ICurrency STD = new Iso4217Currency("STD", "¤", 678, 0.01m);
@@ -565,7 +562,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency TJS = new Iso4217Currency("TJS", "¤", 972, 0.01m);
 		/// <summary>
-		/// New Manat
+		/// Turkmenistan New Manat
 		/// </summary>
 		public static readonly ICurrency TMT = new Iso4217Currency("TMT", "¤", 934, 0.01m);
 		/// <summary>
@@ -599,7 +596,7 @@ namespace Payments
 		/// <summary>
 		/// Uganda Shilling
 		/// </summary>
-		public static readonly ICurrency UGX = new Iso4217Currency("UGX", "¤", 800, 0.01m);
+		public static readonly ICurrency UGX = new Iso4217Currency("UGX", "¤", 800, 1m);
 		/// <summary>
 		/// US Dollar
 		/// </summary>
@@ -608,10 +605,6 @@ namespace Payments
 		/// US Dollar (Next day)
 		/// </summary>
 		public static readonly ICurrency USN = new Iso4217Currency("USN", "¤", 997, 0.01m);
-		/// <summary>
-		/// US Dollar (Same day)
-		/// </summary>
-		public static readonly ICurrency USS = new Iso4217Currency("USS", "¤", 998, 0.01m);
 		/// <summary>
 		/// Uruguay Peso en Unidades Indexadas (URUIURUI)
 		/// </summary>
@@ -625,7 +618,7 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency UZS = new Iso4217Currency("UZS", "\u043b\u0432", 860, 0.01m);
 		/// <summary>
-		/// Bolivar Fuerte
+		/// Bolivar
 		/// </summary>
 		public static readonly ICurrency VEF = new Iso4217Currency("VEF", "Bs", 937, 0.01m);
 		/// <summary>
@@ -653,19 +646,19 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency XAU = new Iso4217Currency("XAU", "¤", 959, 0m);
 		/// <summary>
-		/// EURCO
+		/// Bond Markets Unit European Composite Unit (EURCO)
 		/// </summary>
 		public static readonly ICurrency XBA = new Iso4217Currency("XBA", "¤", 955, 0m);
 		/// <summary>
-		/// EMU-6
+		/// Bond Markets Unit European Monetary Unit (E.M.U.-6)
 		/// </summary>
 		public static readonly ICurrency XBB = new Iso4217Currency("XBB", "¤", 956, 0m);
 		/// <summary>
-		/// EUA-9
+		/// Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
 		/// </summary>
 		public static readonly ICurrency XBC = new Iso4217Currency("XBC", "¤", 957, 0m);
 		/// <summary>
-		/// EUA-17
+		/// Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
 		/// </summary>
 		public static readonly ICurrency XBD = new Iso4217Currency("XBD", "¤", 958, 0m);
 		/// <summary>
@@ -676,10 +669,6 @@ namespace Payments
 		/// SDR (Special Drawing Right)
 		/// </summary>
 		public static readonly ICurrency XDR = new Iso4217Currency("XDR", "¤", 960, 0m);
-		/// <summary>
-		/// UIC-Franc
-		/// </summary>
-		public static readonly ICurrency XFU = new Iso4217Currency("XFU", "¤", -1, 0m);
 		/// <summary>
 		/// CFA Franc BCEAO
 		/// </summary>
@@ -701,11 +690,15 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency XSU = new Iso4217Currency("XSU", "¤", 994, 0m);
 		/// <summary>
-		/// Codes for testing purposes
+		/// Codes specifically reserved for testing purposes
 		/// </summary>
 		public static readonly ICurrency XTS = new Iso4217Currency("XTS", "¤", 963, 0m);
 		/// <summary>
-		/// No currency
+		/// ADB Unit of Account
+		/// </summary>
+		public static readonly ICurrency XUA = new Iso4217Currency("XUA", "¤", 965, 0m);
+		/// <summary>
+		/// The codes assigned for transactions where no currency is involved
 		/// </summary>
 		public static readonly ICurrency XXX = new Iso4217Currency("XXX", "¤", 999, 0m);
 		/// <summary>
@@ -713,17 +706,18 @@ namespace Payments
 		/// </summary>
 		public static readonly ICurrency YER = new Iso4217Currency("YER", "\ufdfc", 886, 0.01m);
 		/// <summary>
-		/// South African Rand
+		/// Rand
 		/// </summary>
 		public static readonly ICurrency ZAR = new Iso4217Currency("ZAR", "R", 710, 0.01m);
 		/// <summary>
 		/// Zambian Kwacha
 		/// </summary>
-		public static readonly ICurrency ZMK = new Iso4217Currency("ZMK", "¤", 894, 0.01m);
+		public static readonly ICurrency ZMW = new Iso4217Currency("ZMW", "¤", 967, 0.01m);
 		/// <summary>
 		/// Zimbabwe Dollar
 		/// </summary>
 		public static readonly ICurrency ZWL = new Iso4217Currency("ZWL", "¤", 932, 0.01m);
+
 		
 		/// <summary>
 		/// Parse char code of currency in ISO4217
@@ -740,184 +734,183 @@ namespace Payments
 			{
 				case "AED": return AED;
 				case "AFN": return AFN;
+				case "EUR": return EUR;
 				case "ALL": return ALL;
-				case "AMD": return AMD;
-				case "ANG": return ANG;
+				case "DZD": return DZD;
+				case "USD": return USD;
 				case "AOA": return AOA;
+				case "XCD": return XCD;
 				case "ARS": return ARS;
-				case "AUD": return AUD;
+				case "AMD": return AMD;
 				case "AWG": return AWG;
+				case "AUD": return AUD;
 				case "AZN": return AZN;
-				case "BAM": return BAM;
-				case "BBD": return BBD;
-				case "BDT": return BDT;
-				case "BGN": return BGN;
-				case "BHD": return BHD;
-				case "BIF": return BIF;
-				case "BMD": return BMD;
-				case "BND": return BND;
-				case "BOB": return BOB;
-				case "BOV": return BOV;
-				case "BRL": return BRL;
 				case "BSD": return BSD;
-				case "BTN": return BTN;
-				case "BWP": return BWP;
+				case "BHD": return BHD;
+				case "BDT": return BDT;
+				case "BBD": return BBD;
 				case "BYR": return BYR;
 				case "BZD": return BZD;
+				case "XOF": return XOF;
+				case "BMD": return BMD;
+				case "BTN": return BTN;
+				case "INR": return INR;
+				case "BOB": return BOB;
+				case "BOV": return BOV;
+				case "BAM": return BAM;
+				case "BWP": return BWP;
+				case "NOK": return NOK;
+				case "BRL": return BRL;
+				case "BND": return BND;
+				case "BGN": return BGN;
+				case "BIF": return BIF;
+				case "KHR": return KHR;
+				case "XAF": return XAF;
 				case "CAD": return CAD;
-				case "CDF": return CDF;
-				case "CHE": return CHE;
-				case "CHF": return CHF;
-				case "CHW": return CHW;
+				case "CVE": return CVE;
+				case "KYD": return KYD;
 				case "CLF": return CLF;
 				case "CLP": return CLP;
 				case "CNY": return CNY;
 				case "COP": return COP;
 				case "COU": return COU;
+				case "KMF": return KMF;
+				case "CDF": return CDF;
+				case "NZD": return NZD;
 				case "CRC": return CRC;
+				case "HRK": return HRK;
 				case "CUC": return CUC;
 				case "CUP": return CUP;
-				case "CVE": return CVE;
+				case "ANG": return ANG;
 				case "CZK": return CZK;
-				case "DJF": return DJF;
 				case "DKK": return DKK;
+				case "DJF": return DJF;
 				case "DOP": return DOP;
-				case "DZD": return DZD;
 				case "EGP": return EGP;
+				case "SVC": return SVC;
 				case "ERN": return ERN;
 				case "ETB": return ETB;
-				case "EUR": return EUR;
-				case "FJD": return FJD;
 				case "FKP": return FKP;
-				case "GBP": return GBP;
+				case "FJD": return FJD;
+				case "XPF": return XPF;
+				case "GMD": return GMD;
 				case "GEL": return GEL;
 				case "GHS": return GHS;
 				case "GIP": return GIP;
-				case "GMD": return GMD;
-				case "GNF": return GNF;
 				case "GTQ": return GTQ;
+				case "GBP": return GBP;
+				case "GNF": return GNF;
 				case "GYD": return GYD;
-				case "HKD": return HKD;
-				case "HNL": return HNL;
-				case "HRK": return HRK;
 				case "HTG": return HTG;
+				case "HNL": return HNL;
+				case "HKD": return HKD;
 				case "HUF": return HUF;
-				case "IDR": return IDR;
-				case "ILS": return ILS;
-				case "INR": return INR;
-				case "IQD": return IQD;
-				case "IRR": return IRR;
 				case "ISK": return ISK;
+				case "IDR": return IDR;
+				case "XDR": return XDR;
+				case "IRR": return IRR;
+				case "IQD": return IQD;
+				case "ILS": return ILS;
 				case "JMD": return JMD;
-				case "JOD": return JOD;
 				case "JPY": return JPY;
+				case "JOD": return JOD;
+				case "KZT": return KZT;
 				case "KES": return KES;
-				case "KGS": return KGS;
-				case "KHR": return KHR;
-				case "KMF": return KMF;
 				case "KPW": return KPW;
 				case "KRW": return KRW;
 				case "KWD": return KWD;
-				case "KYD": return KYD;
-				case "KZT": return KZT;
+				case "KGS": return KGS;
 				case "LAK": return LAK;
 				case "LBP": return LBP;
-				case "LKR": return LKR;
-				case "LRD": return LRD;
 				case "LSL": return LSL;
-				case "LTL": return LTL;
-				case "LVL": return LVL;
+				case "ZAR": return ZAR;
+				case "LRD": return LRD;
 				case "LYD": return LYD;
-				case "MAD": return MAD;
-				case "MDL": return MDL;
-				case "MGA": return MGA;
-				case "MKD": return MKD;
-				case "MMK": return MMK;
-				case "MNT": return MNT;
+				case "CHF": return CHF;
 				case "MOP": return MOP;
+				case "MKD": return MKD;
+				case "MGA": return MGA;
+				case "MWK": return MWK;
+				case "MYR": return MYR;
+				case "MVR": return MVR;
 				case "MRO": return MRO;
 				case "MUR": return MUR;
-				case "MVR": return MVR;
-				case "MWK": return MWK;
+				case "XUA": return XUA;
 				case "MXN": return MXN;
 				case "MXV": return MXV;
-				case "MYR": return MYR;
+				case "MDL": return MDL;
+				case "MNT": return MNT;
+				case "MAD": return MAD;
 				case "MZN": return MZN;
+				case "MMK": return MMK;
 				case "NAD": return NAD;
-				case "NGN": return NGN;
-				case "NIO": return NIO;
-				case "NOK": return NOK;
 				case "NPR": return NPR;
-				case "NZD": return NZD;
+				case "NIO": return NIO;
+				case "NGN": return NGN;
 				case "OMR": return OMR;
-				case "PAB": return PAB;
-				case "PEN": return PEN;
-				case "PGK": return PGK;
-				case "PHP": return PHP;
 				case "PKR": return PKR;
-				case "PLN": return PLN;
+				case "PAB": return PAB;
+				case "PGK": return PGK;
 				case "PYG": return PYG;
+				case "PEN": return PEN;
+				case "PHP": return PHP;
+				case "PLN": return PLN;
 				case "QAR": return QAR;
 				case "RON": return RON;
-				case "RSD": return RSD;
 				case "RUB": return RUB;
 				case "RWF": return RWF;
-				case "SAR": return SAR;
-				case "SBD": return SBD;
-				case "SCR": return SCR;
-				case "SDG": return SDG;
-				case "SEK": return SEK;
-				case "SGD": return SGD;
 				case "SHP": return SHP;
-				case "SLL": return SLL;
-				case "SOS": return SOS;
-				case "SRD": return SRD;
+				case "WST": return WST;
 				case "STD": return STD;
-				case "SVC": return SVC;
-				case "SYP": return SYP;
+				case "SAR": return SAR;
+				case "RSD": return RSD;
+				case "SCR": return SCR;
+				case "SLL": return SLL;
+				case "SGD": return SGD;
+				case "XSU": return XSU;
+				case "SBD": return SBD;
+				case "SOS": return SOS;
+				case "SSP": return SSP;
+				case "LKR": return LKR;
+				case "SDG": return SDG;
+				case "SRD": return SRD;
 				case "SZL": return SZL;
-				case "THB": return THB;
-				case "TJS": return TJS;
-				case "TMT": return TMT;
-				case "TND": return TND;
-				case "TOP": return TOP;
-				case "TRY": return TRY;
-				case "TTD": return TTD;
+				case "SEK": return SEK;
+				case "CHE": return CHE;
+				case "CHW": return CHW;
+				case "SYP": return SYP;
 				case "TWD": return TWD;
+				case "TJS": return TJS;
 				case "TZS": return TZS;
-				case "UAH": return UAH;
+				case "THB": return THB;
+				case "TOP": return TOP;
+				case "TTD": return TTD;
+				case "TND": return TND;
+				case "TRY": return TRY;
+				case "TMT": return TMT;
 				case "UGX": return UGX;
-				case "USD": return USD;
+				case "UAH": return UAH;
 				case "USN": return USN;
-				case "USS": return USS;
 				case "UYI": return UYI;
 				case "UYU": return UYU;
 				case "UZS": return UZS;
+				case "VUV": return VUV;
 				case "VEF": return VEF;
 				case "VND": return VND;
-				case "VUV": return VUV;
-				case "WST": return WST;
-				case "XAF": return XAF;
-				case "XAG": return XAG;
-				case "XAU": return XAU;
+				case "YER": return YER;
+				case "ZMW": return ZMW;
+				case "ZWL": return ZWL;
 				case "XBA": return XBA;
 				case "XBB": return XBB;
 				case "XBC": return XBC;
 				case "XBD": return XBD;
-				case "XCD": return XCD;
-				case "XDR": return XDR;
-				case "XFU": return XFU;
-				case "XOF": return XOF;
-				case "XPD": return XPD;
-				case "XPF": return XPF;
-				case "XPT": return XPT;
-				case "XSU": return XSU;
 				case "XTS": return XTS;
 				case "XXX": return XXX;
-				case "YER": return YER;
-				case "ZAR": return ZAR;
-				case "ZMK": return ZMK;
-				case "ZWL": return ZWL;
+				case "XAU": return XAU;
+				case "XPD": return XPD;
+				case "XPT": return XPT;
+				case "XAG": return XAG;
+
 				default: return null;
 			}
 		}
@@ -1001,10 +994,8 @@ namespace Payments
 				case 418: return LAK;
 				case 422: return LBP;
 				case 426: return LSL;
-				case 428: return LVL;
 				case 430: return LRD;
 				case 434: return LYD;
-				case 440: return LTL;
 				case 446: return MOP;
 				case 454: return MWK;
 				case 458: return MYR;
@@ -1043,6 +1034,7 @@ namespace Payments
 				case 704: return VND;
 				case 706: return SOS;
 				case 710: return ZAR;
+				case 728: return SSP;
 				case 748: return SZL;
 				case 752: return SEK;
 				case 756: return CHF;
@@ -1062,7 +1054,6 @@ namespace Payments
 				case 860: return UZS;
 				case 882: return WST;
 				case 886: return YER;
-				case 894: return ZMK;
 				case 901: return TWD;
 				case 931: return CUC;
 				case 932: return ZWL;
@@ -1092,6 +1083,8 @@ namespace Payments
 				case 962: return XPT;
 				case 963: return XTS;
 				case 964: return XPD;
+				case 965: return XUA;
+				case 967: return ZMW;
 				case 968: return SRD;
 				case 969: return MGA;
 				case 970: return COU;
@@ -1112,8 +1105,8 @@ namespace Payments
 				case 990: return CLF;
 				case 994: return XSU;
 				case 997: return USN;
-				case 998: return USS;
 				case 999: return XXX;
+
 				default: return null;
 			}
 		}

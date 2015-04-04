@@ -1,56 +1,33 @@
-﻿<#@ template language="C#v3.5" hostspecific="True" Debug="true"
+﻿<#@ template language="C#" hostspecific="True" Debug="true"
 #><#@ assembly name="System.Core" 
 #><#@ import namespace="System" 
 #><#@ import namespace="System.Collections.Generic" 
 #><#@ import namespace="System.IO" 
 #><#@ import namespace="System.Linq" 
-#>using System;
+#><#@ include file="..\..\T4Templates\Iso4217table.ttinclude"
+#><#
+	var xmlEntries = XmlCurrencyEntries.Load(Host.ResolvePath("../../doc/table_a1.xml"));
+	var symbols = CurrencySymbols.Load(Host.ResolvePath("../../doc/unicodeSymbols.csv"));
+	var codes = xmlEntries.List.Where(_ => _.Code != null).Select(_ => _.Code).Distinct().ToList();
 
-namespace Payments
+	SortedList<int, string> numCodes = new SortedList<int, string>();
+#>
+using System;
+
+namespace AbbyyLS.Payments
 {
 	public static partial class Iso4217
 	{
 <#
-		Dictionary<string, string> symbols = new Dictionary<string, string>();
-		string path = Path.GetDirectoryName(Host.TemplateFile);
-		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/symbols.csv")).Skip(1))
+		foreach(var xmlEntry in xmlEntries.List.Where(_ => _.Code != null).Distinct().OrderBy(_ => _.Code))
 		{
-			string[] cells = line.Split(';');
-			string code = cells[0];
-			string symbol = "";
-			foreach(string ch in cells[1].Split(','))
-			{
-				if(ch.Length == 2) symbol += ((char)Convert.ToInt32(ch, 16)).ToString();//"\\u00" + ch;
-				else if(ch.Length == 3) symbol += "\\u0" + ch;
-				else symbol += "\\u" + ch;
-			}
-			symbols.Add(code, symbol);
-		}
-		
-		List<string> codes = new List<string>();
-		SortedList<int, string> numCodes = new SortedList<int, string>();
-		foreach(string line in File.ReadAllLines(Path.Combine(path, "../../docs/iso4217_code_table.csv")).Skip(1))
-		{
-			string[] cells = line.Split(';');
-			codes.Add(cells[0]);
+			if(xmlEntry.NumCode > 0)
+				numCodes.Add(xmlEntry.NumCode, xmlEntry.Code);
 			
-			int numCode = Convert.ToInt32(cells[1]);
-			if(numCode > 0)
-				numCodes.Add(numCode, cells[0]);
-			
-			string symbol;
-			if(!symbols.TryGetValue(cells[0], out symbol))
-				symbol = "¤";
-			string mouTxt = cells[2];
-			string mou = "0m";
-			if(mouTxt == "0") mou = "1m";
-			else if(mouTxt == "1") mou = "0.1m";
-			else if(mouTxt == "2") mou = "0.01m";
-			else if(mouTxt == "3") mou = "0.001m";
 		#>		/// <summary>
-		/// <#= cells[3] #>
+		/// <#= xmlEntry.Name #>
 		/// </summary>
-		public static readonly ICurrency <#= cells[0] #> = new Iso4217Currency("<#= cells[0] #>", "<#= symbol #>", <#= cells[1] #>, <#= mou #>);
+		public static readonly ICurrency <#= xmlEntry.Code #> = new Iso4217Currency("<#= xmlEntry.Code #>", "<#= symbols.Get(xmlEntry.Code) #>", <#= xmlEntry.NumCode #>, <#= xmlEntry.MinorUnit #>);
 <# } #>
 		
 		/// <summary>

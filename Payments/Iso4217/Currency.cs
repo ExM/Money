@@ -2,11 +2,11 @@ using System;
 using System.Resources;
 using System.Globalization;
 
-namespace Payments
+namespace AbbyyLS.Payments
 {
 	internal class Iso4217Currency: ICurrency
 	{
-		private static readonly ResourceManager _rMan = new ResourceManager("Payments.Dic", typeof(Iso4217Currency).Assembly);
+		private static readonly ResourceManager _rMan = new ResourceManager("AbbyyLS.Payments.Dic", typeof(Iso4217Currency).Assembly);
 		
 		private readonly string _charCode;
 		private readonly int _numCode;

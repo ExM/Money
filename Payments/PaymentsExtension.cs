@@ -1,5 +1,6 @@
 using System;
-namespace Payments
+
+namespace AbbyyLS.Payments
 {
 	/// <summary>
 	/// any extensions

@@ -7,9 +7,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{FE869DA2-B1B0-4E31-B418-7334832A59F6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Payments</RootNamespace>
-    <AssemblyName>Payments</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>AbbyyLS.Payments</RootNamespace>
+    <AssemblyName>AbbyyLS.Payments</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -22,17 +22,19 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <GenerateDocumentation>true</GenerateDocumentation>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <GenerateDocumentation>true</GenerateDocumentation>
-    <DocumentationFile>..\bin\Payments.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\AbbyyLS.Payments.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,15 +56,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="Dic.ru.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Dic.ru.resx</LastGenOutput>
+    <None Include="Payments.nuspec">
+      <SubType>Designer</SubType>
     </None>
-    <None Include="Dic.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Dic.resx</LastGenOutput>
-    </None>
-    <None Include="Payments.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">

@@ -11,3 +11,5 @@ bin
 
 NuGet/*.nupkg
 *.user
+packages/*
+*.nupkg

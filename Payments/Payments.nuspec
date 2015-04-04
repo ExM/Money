@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>Payments</id>
+		<id>AbbyyLS.Payments</id>
 		<version>$version$</version>
-		<title>Payments</title>
+		<title>AbbyyLS.Payments</title>
 		<authors>Anatoliy Koperin</authors>
 		<owners />
 		<licenseUrl>https://github.com/ExM/Money/blob/master/License.txt</licenseUrl>
@@ -17,7 +17,7 @@ List of world currencies in accordance with ISO 4217.</description>
 		</tags>
 	</metadata>
 	<files>
-		<file src="..\bin\*.pdb" target="lib\net35" />
-		<file src="..\bin\ru\*" target="lib\net35\ru" />
+		<file src="bin\$configuration$\*.pdb" target="lib\net45" />
+		<file src="bin\$configuration$\ru\*" target="lib\net45\ru" />
 	</files>
 </package>

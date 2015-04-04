@@ -1,5 +1,6 @@
 using System;
-namespace Payments
+
+namespace AbbyyLS.Payments
 {
 	/// <summary>
 	/// unknowm currency
@@ -91,6 +92,6 @@ namespace Payments
 			}
 		}
 		#endregion
-}
+	}
 }
 
