@@ -6,7 +6,7 @@
 		<title>AbbyyLS.Payments</title>
 		<authors>Anatoliy Koperin</authors>
 		<owners />
-		<licenseUrl>https://github.com/ExM/Money/blob/master/License.txt</licenseUrl>
+		<licenseUrl>https://github.com/ExM/Money/raw/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/ExM/Money</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description> Library for working with sums of money.

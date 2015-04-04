@@ -5,17 +5,17 @@ namespace AbbyyLS.Payments
 	/// <summary>
 	/// This structure provides a amount of money in some currency
 	/// </summary>
-	public struct Money
+	public struct Money : IComparable<Money>, IEquatable<Money>
 	{
 		/// <summary>
 		/// amount of money
 		/// </summary>
-		public readonly decimal Amount;
+		public decimal Amount { get; private set; }
 		
 		/// <summary>
 		/// currency
 		/// </summary>
-		public readonly ICurrency Currency;
+		public ICurrency Currency { get; private set; }
 		
 		/// <summary>
 		/// creates a amount of money in any currency
@@ -27,6 +27,7 @@ namespace AbbyyLS.Payments
 		/// currency
 		/// </param>
 		public Money(decimal amount, ICurrency currency)
+			:this()
 		{
 			if(currency == null)
 				throw new ArgumentNullException("currency");
@@ -209,6 +210,37 @@ namespace AbbyyLS.Payments
 		{
 			return Amount.GetHashCode() ^ Currency.GetHashCode();
 		}
+
+		public int CompareTo(Money other)
+		{
+			if (Currency != other.Currency)
+				throw new NotSupportedException("mismatch currency");
+
+			return Amount.CompareTo(other.Amount);
+		}
+
+		/// <summary>
+		/// sum amount
+		/// </summary>
+		public static Money operator +(Money lhs, Money rhs)
+		{
+			if (lhs.Currency != rhs.Currency)
+				throw new NotSupportedException("mismatch currency");
+
+			return new Money(lhs.Amount + rhs.Amount, lhs.Currency);
+		}
+
+		/// <summary>
+		/// subtraction amount
+		/// </summary>
+		public static Money operator -(Money lhs, Money rhs)
+		{
+			if (lhs.Currency != rhs.Currency)
+				throw new NotSupportedException("mismatch currency");
+
+			return new Money(lhs.Amount - rhs.Amount, lhs.Currency);
+		}
+
 	}
 }
 
