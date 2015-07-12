@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace AbbyyLS.Payments
 {
@@ -728,7 +729,7 @@ namespace AbbyyLS.Payments
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
 		/// </returns>
-		public static ICurrency Parse(string charCode)
+		public static ICurrency TryParse(string charCode)
 		{
 			switch(charCode.ToUpperInvariant())
 			{
@@ -924,7 +925,7 @@ namespace AbbyyLS.Payments
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
 		/// </returns>
-		public static ICurrency Parse(int numCode)
+		public static ICurrency TryParse(int numCode)
 		{
 			switch(numCode)
 			{
@@ -1109,6 +1110,191 @@ namespace AbbyyLS.Payments
 
 				default: return null;
 			}
+		}
+
+		/// <summary>
+		/// Get all support currencies
+		/// </summary>
+		public static IEnumerable<ICurrency> GetAll()
+		{
+			yield return AED;
+			yield return AFN;
+			yield return EUR;
+			yield return ALL;
+			yield return DZD;
+			yield return USD;
+			yield return AOA;
+			yield return XCD;
+			yield return ARS;
+			yield return AMD;
+			yield return AWG;
+			yield return AUD;
+			yield return AZN;
+			yield return BSD;
+			yield return BHD;
+			yield return BDT;
+			yield return BBD;
+			yield return BYR;
+			yield return BZD;
+			yield return XOF;
+			yield return BMD;
+			yield return BTN;
+			yield return INR;
+			yield return BOB;
+			yield return BOV;
+			yield return BAM;
+			yield return BWP;
+			yield return NOK;
+			yield return BRL;
+			yield return BND;
+			yield return BGN;
+			yield return BIF;
+			yield return KHR;
+			yield return XAF;
+			yield return CAD;
+			yield return CVE;
+			yield return KYD;
+			yield return CLF;
+			yield return CLP;
+			yield return CNY;
+			yield return COP;
+			yield return COU;
+			yield return KMF;
+			yield return CDF;
+			yield return NZD;
+			yield return CRC;
+			yield return HRK;
+			yield return CUC;
+			yield return CUP;
+			yield return ANG;
+			yield return CZK;
+			yield return DKK;
+			yield return DJF;
+			yield return DOP;
+			yield return EGP;
+			yield return SVC;
+			yield return ERN;
+			yield return ETB;
+			yield return FKP;
+			yield return FJD;
+			yield return XPF;
+			yield return GMD;
+			yield return GEL;
+			yield return GHS;
+			yield return GIP;
+			yield return GTQ;
+			yield return GBP;
+			yield return GNF;
+			yield return GYD;
+			yield return HTG;
+			yield return HNL;
+			yield return HKD;
+			yield return HUF;
+			yield return ISK;
+			yield return IDR;
+			yield return XDR;
+			yield return IRR;
+			yield return IQD;
+			yield return ILS;
+			yield return JMD;
+			yield return JPY;
+			yield return JOD;
+			yield return KZT;
+			yield return KES;
+			yield return KPW;
+			yield return KRW;
+			yield return KWD;
+			yield return KGS;
+			yield return LAK;
+			yield return LBP;
+			yield return LSL;
+			yield return ZAR;
+			yield return LRD;
+			yield return LYD;
+			yield return CHF;
+			yield return MOP;
+			yield return MKD;
+			yield return MGA;
+			yield return MWK;
+			yield return MYR;
+			yield return MVR;
+			yield return MRO;
+			yield return MUR;
+			yield return XUA;
+			yield return MXN;
+			yield return MXV;
+			yield return MDL;
+			yield return MNT;
+			yield return MAD;
+			yield return MZN;
+			yield return MMK;
+			yield return NAD;
+			yield return NPR;
+			yield return NIO;
+			yield return NGN;
+			yield return OMR;
+			yield return PKR;
+			yield return PAB;
+			yield return PGK;
+			yield return PYG;
+			yield return PEN;
+			yield return PHP;
+			yield return PLN;
+			yield return QAR;
+			yield return RON;
+			yield return RUB;
+			yield return RWF;
+			yield return SHP;
+			yield return WST;
+			yield return STD;
+			yield return SAR;
+			yield return RSD;
+			yield return SCR;
+			yield return SLL;
+			yield return SGD;
+			yield return XSU;
+			yield return SBD;
+			yield return SOS;
+			yield return SSP;
+			yield return LKR;
+			yield return SDG;
+			yield return SRD;
+			yield return SZL;
+			yield return SEK;
+			yield return CHE;
+			yield return CHW;
+			yield return SYP;
+			yield return TWD;
+			yield return TJS;
+			yield return TZS;
+			yield return THB;
+			yield return TOP;
+			yield return TTD;
+			yield return TND;
+			yield return TRY;
+			yield return TMT;
+			yield return UGX;
+			yield return UAH;
+			yield return USN;
+			yield return UYI;
+			yield return UYU;
+			yield return UZS;
+			yield return VUV;
+			yield return VEF;
+			yield return VND;
+			yield return YER;
+			yield return ZMW;
+			yield return ZWL;
+			yield return XBA;
+			yield return XBB;
+			yield return XBC;
+			yield return XBD;
+			yield return XTS;
+			yield return XXX;
+			yield return XAU;
+			yield return XPD;
+			yield return XPT;
+			yield return XAG;
 		}
 	}
 }

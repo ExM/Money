@@ -13,3 +13,4 @@ NuGet/*.nupkg
 *.user
 packages/*
 *.nupkg
+TestResults/*

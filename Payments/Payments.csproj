@@ -23,6 +23,7 @@
     <ConsolePause>false</ConsolePause>
     <GenerateDocumentation>true</GenerateDocumentation>
     <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\AbbyyLS.Payments.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,7 +46,6 @@
     <Compile Include="Money.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="Iso4217\Currency.cs" />
-    <Compile Include="UnknownCurrency.cs" />
     <Compile Include="Iso4217\Iso4217.cs" />
     <Compile Include="Iso4217\Iso4217.List.cs">
       <DependentUpon>Iso4217.List.tt</DependentUpon>

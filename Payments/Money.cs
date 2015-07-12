@@ -29,7 +29,7 @@ namespace AbbyyLS.Payments
 		public Money(decimal amount, ICurrency currency)
 			:this()
 		{
-			if(currency == null)
+			if (amount != 0m && currency == null)
 				throw new ArgumentNullException("currency");
 			Amount = amount;
 			Currency = currency;
@@ -40,6 +40,8 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public override string ToString()
 		{
+			if (Currency == null)
+				return "0";
 			return string.Format ("{0:G} {1}", Amount, Currency.CharCode);
 		}
 		
@@ -50,7 +52,7 @@ namespace AbbyyLS.Payments
 		{
 			get
 			{
-				if(Currency.MinorUnit == 0m)
+				if (Currency == null || Currency.MinorUnit == 0m)
 					return true;
 				decimal mu = Amount/Currency.MinorUnit;
 				return decimal.Truncate(mu) == mu;
@@ -64,6 +66,8 @@ namespace AbbyyLS.Payments
 		{
 			get
 			{
+				if (Currency == null)
+					return 0m;
 				if(Currency.MinorUnit == 0m)
 					throw new InvalidOperationException(string.Format("undefined minor unit in {0} currency", Currency.CharCode));
 				return Amount/Currency.MinorUnit;
@@ -78,6 +82,8 @@ namespace AbbyyLS.Payments
 		/// </returns>
 		public Money FloorMinorUnit()
 		{
+			if (Currency == null)
+				return Zero;
 			if(Currency.MinorUnit == 0m)
 				return this;
 			return new Money(decimal.Floor(Amount/Currency.MinorUnit)*Currency.MinorUnit, Currency);
@@ -91,6 +97,8 @@ namespace AbbyyLS.Payments
 		/// </returns>
 		public Money FloorMajorUnit()
 		{
+			if (Currency == null)
+				return Zero;
 			return new Money(decimal.Floor(Amount), Currency);
 		}
 		
@@ -102,6 +110,8 @@ namespace AbbyyLS.Payments
 		/// </returns>
 		public Money CeilingMinorUnit()
 		{
+			if (Currency == null)
+				return Zero;
 			if(Currency.MinorUnit == 0m)
 				return this;
 			return new Money(decimal.Ceiling(Amount/Currency.MinorUnit)*Currency.MinorUnit, Currency);
@@ -115,31 +125,9 @@ namespace AbbyyLS.Payments
 		/// </returns>
 		public Money CeilingMajorUnit()
 		{
+			if (Currency == null)
+				return Zero;
 			return new Money(decimal.Ceiling(Amount), Currency);
-		}
-		
-		/// <summary>
-		/// mutiply amount
-		/// </summary>
-		public static Money Mult(decimal lhs, Money rhs)
-		{
-			return new Money(lhs * rhs.Amount, rhs.Currency);
-		}
-		
-		/// <summary>
-		/// mutiply amount
-		/// </summary>
-		public static Money Mult(Money lhs, decimal rhs)
-		{
-			return new Money(lhs.Amount * rhs, lhs.Currency);
-		}
-		
-		/// <summary>
-		/// divide amount
-		/// </summary>
-		public static Money Div(Money lhs, decimal rhs)
-		{
-			return new Money(lhs.Amount / rhs, lhs.Currency);
 		}
 		
 		/// <summary>
@@ -147,7 +135,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static Money operator *(Money lhs, decimal rhs)
 		{
-			return Mult(lhs, rhs);
+			return new Money(rhs * lhs.Amount, lhs.Currency);
 		}
 		
 		/// <summary>
@@ -155,7 +143,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static Money operator *(decimal lhs, Money rhs)
 		{
-			return Mult(lhs, rhs);
+			return new Money(lhs * rhs.Amount, rhs.Currency);
 		}
 		
 		/// <summary>
@@ -163,7 +151,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static Money operator /(Money lhs, decimal rhs)
 		{
-			return Div(lhs, rhs);
+			return new Money(lhs.Amount / rhs, lhs.Currency);
 		}
 
 		/// <summary>
@@ -182,6 +170,9 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public bool Equals(Money other)
 		{
+			if (Amount == 0m && other.Amount == 0m)
+				return true;
+
 			return Amount == other.Amount &&
 				Currency == other.Currency;
 		}
@@ -208,15 +199,57 @@ namespace AbbyyLS.Payments
 		/// <returns></returns>
 		public override int GetHashCode()
 		{
-			return Amount.GetHashCode() ^ Currency.GetHashCode();
+			return Amount.GetHashCode() ^ ((Currency == null) ? 0 : Currency.GetHashCode());
 		}
 
+		/// <summary>
+		///  Compares this instance to a specified AbbyyLS.Payments.Money object and returns a
+		///     comparison of their relative values.
+		/// </summary>
 		public int CompareTo(Money other)
 		{
+			if(Currency == null)
+				return 0m.CompareTo(other.Amount);
+
+			if (other.Currency == null)
+				return Amount.CompareTo(0m);
+
 			if (Currency != other.Currency)
-				throw new NotSupportedException("mismatch currency");
+				throw new InvalidOperationException("mismatch currency");
 
 			return Amount.CompareTo(other.Amount);
+		}
+
+		/// <summary>
+		/// operator Less
+		/// </summary>
+		public static bool operator <(Money lhs, Money rhs)
+		{
+			return lhs.CompareTo(rhs) < 0;
+		}
+
+		/// <summary>
+		/// operator Less or Equal
+		/// </summary>
+		public static bool operator <=(Money lhs, Money rhs)
+		{
+			return lhs.CompareTo(rhs) <= 0;
+		}
+
+		/// <summary>
+		/// operator Great
+		/// </summary>
+		public static bool operator >(Money lhs, Money rhs)
+		{
+			return lhs.CompareTo(rhs) > 0;
+		}
+
+		/// <summary>
+		/// operator Greate or Equal
+		/// </summary>
+		public static bool operator >=(Money lhs, Money rhs)
+		{
+			return lhs.CompareTo(rhs) >= 0;
 		}
 
 		/// <summary>
@@ -224,8 +257,14 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static Money operator +(Money lhs, Money rhs)
 		{
+			if (lhs.Currency == null)
+				return rhs;
+
+			if (rhs.Currency == null)
+				return lhs;
+
 			if (lhs.Currency != rhs.Currency)
-				throw new NotSupportedException("mismatch currency");
+				throw new InvalidOperationException("mismatch currency");
 
 			return new Money(lhs.Amount + rhs.Amount, lhs.Currency);
 		}
@@ -235,12 +274,22 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static Money operator -(Money lhs, Money rhs)
 		{
+			if (rhs.Currency == null)
+				return lhs;
+
+			if (lhs.Currency == null)
+				return new Money(- rhs.Amount, rhs.Currency);
+
 			if (lhs.Currency != rhs.Currency)
-				throw new NotSupportedException("mismatch currency");
+				throw new InvalidOperationException("mismatch currency");
 
 			return new Money(lhs.Amount - rhs.Amount, lhs.Currency);
 		}
 
+		/// <summary>
+		/// Default value
+		/// </summary>
+		public static readonly Money Zero = new Money();
 	}
 }
 

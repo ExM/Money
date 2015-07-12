@@ -13,6 +13,7 @@
 	SortedList<int, string> numCodes = new SortedList<int, string>();
 #>
 using System;
+using System.Collections.Generic;
 
 namespace AbbyyLS.Payments
 {
@@ -39,7 +40,7 @@ namespace AbbyyLS.Payments
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
 		/// </returns>
-		public static ICurrency Parse(string charCode)
+		public static ICurrency TryParse(string charCode)
 		{
 			switch(charCode.ToUpperInvariant())
 			{
@@ -59,7 +60,7 @@ namespace AbbyyLS.Payments
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
 		/// </returns>
-		public static ICurrency Parse(int numCode)
+		public static ICurrency TryParse(int numCode)
 		{
 			switch(numCode)
 			{
@@ -69,5 +70,14 @@ namespace AbbyyLS.Payments
 				default: return null;
 			}
 		}
+
+		/// <summary>
+		/// Get all support currencies
+		/// </summary>
+		public static IEnumerable<ICurrency> GetAll()
+		{
+<# foreach(string code in codes) {
+#>			yield return <#= code #>;
+<# } #>		}
 	}
 }
