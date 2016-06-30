@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6C48742A-D944-4BF1-A4FB-6BBF1ECB7E58}"
 	ProjectSection(SolutionItems) = preProject
+		doc\list_one.xml = doc\list_one.xml
 		doc\references.txt = doc\references.txt
-		doc\table_a1.xml = doc\table_a1.xml
 		doc\unicodeSymbols.csv = doc\unicodeSymbols.csv
 	EndProjectSection
 EndProject

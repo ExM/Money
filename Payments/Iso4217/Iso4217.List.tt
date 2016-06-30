@@ -6,7 +6,7 @@
 #><#@ import namespace="System.Linq" 
 #><#@ include file="..\..\T4Templates\Iso4217table.ttinclude"
 #><#
-	var xmlEntries = XmlCurrencyEntries.Load(Host.ResolvePath("../../doc/table_a1.xml"));
+	var xmlEntries = XmlCurrencyEntries.Load(Host.ResolvePath("../../doc/list_one.xml"));
 	var symbols = CurrencySymbols.Load(Host.ResolvePath("../../doc/unicodeSymbols.csv"));
 	var codes = xmlEntries.List.Where(_ => _.Code != null).Select(_ => _.Code).Distinct().ToList();
 

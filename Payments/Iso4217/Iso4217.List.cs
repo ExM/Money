@@ -103,7 +103,11 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency BWP = new Iso4217Currency("BWP", "P", 72, 0.01m);
 		/// <summary>
-		/// Belarussian Ruble
+		/// Belarusian Ruble
+		/// </summary>
+		public static readonly ICurrency BYN = new Iso4217Currency("BYN", "p.", 933, 0.01m);
+		/// <summary>
+		/// Belarusian Ruble
 		/// </summary>
 		public static readonly ICurrency BYR = new Iso4217Currency("BYR", "p.", 974, 1m);
 		/// <summary>
@@ -251,7 +255,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency HNL = new Iso4217Currency("HNL", "L", 340, 0.01m);
 		/// <summary>
-		/// Croatian Kuna
+		/// Kuna
 		/// </summary>
 		public static readonly ICurrency HRK = new Iso4217Currency("HRK", "kn", 191, 0.01m);
 		/// <summary>
@@ -399,7 +403,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency MVR = new Iso4217Currency("MVR", "¤", 462, 0.01m);
 		/// <summary>
-		/// Kwacha
+		/// Malawi Kwacha
 		/// </summary>
 		public static readonly ICurrency MWK = new Iso4217Currency("MWK", "¤", 454, 0.01m);
 		/// <summary>
@@ -451,7 +455,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency PAB = new Iso4217Currency("PAB", "B/.", 590, 0.01m);
 		/// <summary>
-		/// Nuevo Sol
+		/// Sol
 		/// </summary>
 		public static readonly ICurrency PEN = new Iso4217Currency("PEN", "S/.", 604, 0.01m);
 		/// <summary>
@@ -479,7 +483,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency QAR = new Iso4217Currency("QAR", "\ufdfc", 634, 0.01m);
 		/// <summary>
-		/// New Romanian Leu
+		/// Romanian Leu
 		/// </summary>
 		public static readonly ICurrency RON = new Iso4217Currency("RON", "lei", 946, 0.01m);
 		/// <summary>
@@ -619,7 +623,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency UZS = new Iso4217Currency("UZS", "\u043b\u0432", 860, 0.01m);
 		/// <summary>
-		/// Bolivar
+		/// Bolívar
 		/// </summary>
 		public static readonly ICurrency VEF = new Iso4217Currency("VEF", "Bs", 937, 0.01m);
 		/// <summary>
@@ -733,7 +737,6 @@ namespace AbbyyLS.Payments
 		{
 			switch(charCode.ToUpperInvariant())
 			{
-				case "AED": return AED;
 				case "AFN": return AFN;
 				case "EUR": return EUR;
 				case "ALL": return ALL;
@@ -750,12 +753,13 @@ namespace AbbyyLS.Payments
 				case "BHD": return BHD;
 				case "BDT": return BDT;
 				case "BBD": return BBD;
+				case "BYN": return BYN;
 				case "BYR": return BYR;
 				case "BZD": return BZD;
 				case "XOF": return XOF;
 				case "BMD": return BMD;
-				case "BTN": return BTN;
 				case "INR": return INR;
+				case "BTN": return BTN;
 				case "BOB": return BOB;
 				case "BOV": return BOV;
 				case "BAM": return BAM;
@@ -765,13 +769,13 @@ namespace AbbyyLS.Payments
 				case "BND": return BND;
 				case "BGN": return BGN;
 				case "BIF": return BIF;
+				case "CVE": return CVE;
 				case "KHR": return KHR;
 				case "XAF": return XAF;
 				case "CAD": return CAD;
-				case "CVE": return CVE;
 				case "KYD": return KYD;
-				case "CLF": return CLF;
 				case "CLP": return CLP;
+				case "CLF": return CLF;
 				case "CNY": return CNY;
 				case "COP": return COP;
 				case "COU": return COU;
@@ -780,8 +784,8 @@ namespace AbbyyLS.Payments
 				case "NZD": return NZD;
 				case "CRC": return CRC;
 				case "HRK": return HRK;
-				case "CUC": return CUC;
 				case "CUP": return CUP;
+				case "CUC": return CUC;
 				case "ANG": return ANG;
 				case "CZK": return CZK;
 				case "DKK": return DKK;
@@ -891,9 +895,10 @@ namespace AbbyyLS.Payments
 				case "TMT": return TMT;
 				case "UGX": return UGX;
 				case "UAH": return UAH;
+				case "AED": return AED;
 				case "USN": return USN;
-				case "UYI": return UYI;
 				case "UYU": return UYU;
+				case "UYI": return UYI;
 				case "UZS": return UZS;
 				case "VUV": return VUV;
 				case "VEF": return VEF;
@@ -1058,6 +1063,7 @@ namespace AbbyyLS.Payments
 				case 901: return TWD;
 				case 931: return CUC;
 				case 932: return ZWL;
+				case 933: return BYN;
 				case 934: return TMT;
 				case 936: return GHS;
 				case 937: return VEF;
@@ -1117,7 +1123,6 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static IEnumerable<ICurrency> GetAll()
 		{
-			yield return AED;
 			yield return AFN;
 			yield return EUR;
 			yield return ALL;
@@ -1134,12 +1139,13 @@ namespace AbbyyLS.Payments
 			yield return BHD;
 			yield return BDT;
 			yield return BBD;
+			yield return BYN;
 			yield return BYR;
 			yield return BZD;
 			yield return XOF;
 			yield return BMD;
-			yield return BTN;
 			yield return INR;
+			yield return BTN;
 			yield return BOB;
 			yield return BOV;
 			yield return BAM;
@@ -1149,13 +1155,13 @@ namespace AbbyyLS.Payments
 			yield return BND;
 			yield return BGN;
 			yield return BIF;
+			yield return CVE;
 			yield return KHR;
 			yield return XAF;
 			yield return CAD;
-			yield return CVE;
 			yield return KYD;
-			yield return CLF;
 			yield return CLP;
+			yield return CLF;
 			yield return CNY;
 			yield return COP;
 			yield return COU;
@@ -1164,8 +1170,8 @@ namespace AbbyyLS.Payments
 			yield return NZD;
 			yield return CRC;
 			yield return HRK;
-			yield return CUC;
 			yield return CUP;
+			yield return CUC;
 			yield return ANG;
 			yield return CZK;
 			yield return DKK;
@@ -1275,9 +1281,10 @@ namespace AbbyyLS.Payments
 			yield return TMT;
 			yield return UGX;
 			yield return UAH;
+			yield return AED;
 			yield return USN;
-			yield return UYI;
 			yield return UYU;
+			yield return UYI;
 			yield return UZS;
 			yield return VUV;
 			yield return VEF;
