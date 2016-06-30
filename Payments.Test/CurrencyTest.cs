@@ -108,17 +108,21 @@ namespace AbbyyLS.Payments
 		}
 
 		[Test]
-		[ExpectedException(typeof(NotSupportedException))]
 		public void ParseCharFalse()
 		{
-			Iso4217.Parse("???");
+			Assert.Throws<NotSupportedException>(() =>
+			{
+				Iso4217.Parse("???");
+			});
 		}
 
 		[Test]
-		[ExpectedException(typeof(NotSupportedException))]
 		public void ParseNumFalse()
 		{
-			Iso4217.Parse(12345);
+			Assert.Throws<NotSupportedException>(() =>
+			{
+				Iso4217.Parse(12345);
+			});
 		}
 
 		[Test]

@@ -9,10 +9,12 @@ namespace AbbyyLS.Payments
 	public class MoneyTest
 	{
 		[Test]
-		[ExpectedException(typeof(ArgumentNullException))]
 		public void InvalidArgsInConstructor()
 		{
-			var mu = new Money(99.99m, null);
+			Assert.Throws<ArgumentNullException>(() =>
+			{
+				var mu = new Money(99.99m, null);
+			});
 		}
 
 		[TestCase("USD", -0.991)]
@@ -70,6 +72,7 @@ namespace AbbyyLS.Payments
 		[TestCase("BYR", 20.00001, 21)]
 		[TestCase("BYR", -20.00001, -20)]
 		[TestCase("XDR", 20.00001, 20.00001)]
+		[TestCase("BYN", 20.001, 20.01)]
 		public void CeilingMinorUnit(string code, decimal amount, decimal exp)
 		{
 			Assert.AreEqual(exp, Iso4217.Parse(code).Money(amount).CeilingMinorUnit().Amount);
@@ -82,6 +85,7 @@ namespace AbbyyLS.Payments
 		[TestCase("BYR", 20.1, 20)]
 		[TestCase("BYR", 20.00001, 20)]
 		[TestCase("BYR", -20.00001, -21)]
+		[TestCase("BYN", 20.015, 20.01)]
 		public void FloorMajorUnit(string code, decimal amount, decimal exp)
 		{
 			Assert.AreEqual(exp, Iso4217.Parse(code).Money(amount).FloorMajorUnit().Amount);
@@ -100,10 +104,12 @@ namespace AbbyyLS.Payments
 		}
 		
 		[Test]
-		[ExpectedException(typeof(InvalidOperationException))]
 		public void NoTotalMinorUnit()
 		{
-			var mu = Iso4217.XAU.Money(99.99m).TotalMinorUnit;
+			Assert.Throws<InvalidOperationException>(() =>
+			{
+				var mu = Iso4217.XAU.Money(99.99m).TotalMinorUnit;
+			});
 		}
 		
 		[Test]
@@ -161,23 +167,26 @@ namespace AbbyyLS.Payments
 		}
 
 		[Test]
-		[ExpectedException(typeof(InvalidOperationException))]
 		public void InvalidMatch()
 		{
 			var l = Iso4217.EUR.Money(1.23m);
 			var r = Iso4217.RUB.Money(2.23m);
 
-			var res = l < r;
+			Assert.Throws<InvalidOperationException>(() =>
+			{
+				var res = l < r;
+			});
 		}
 
 		[Test]
-		[ExpectedException(typeof(InvalidOperationException))]
 		public void InvalidMatchZero()
 		{
 			var l = Iso4217.EUR.Money(0m);
 			var r = Iso4217.RUB.Money(0m);
-
-			var res = l < r;
+			Assert.Throws<InvalidOperationException>(() =>
+			{
+				var res = l < r;
+			});
 		}
 
 		[Test]
@@ -203,13 +212,14 @@ namespace AbbyyLS.Payments
 		}
 
 		[Test]
-		[ExpectedException(typeof(InvalidOperationException))]
 		public void InvalidAdditional()
 		{
 			var m1 = Iso4217.EUR.Money(1m);
 			var m2 = Iso4217.RUB.Money(2m);
-
-			var res = m1 + m2;
+			Assert.Throws<InvalidOperationException>(() =>
+			{
+				var res = m1 + m2;
+			});
 		}
 
 		[Test]
@@ -223,13 +233,14 @@ namespace AbbyyLS.Payments
 		}
 
 		[Test]
-		[ExpectedException(typeof(InvalidOperationException))]
 		public void InvalidSubtract()
 		{
 			var m1 = Iso4217.EUR.Money(1m);
 			var m2 = Iso4217.RUB.Money(2m);
-
-			var res = m1 - m2;
+			Assert.Throws<InvalidOperationException>(() =>
+			{
+				var res = m1 - m2;
+			});
 		}
 
 		[Test]
