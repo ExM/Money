@@ -43,7 +43,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency AWG = new Iso4217Currency("AWG", "\u0192", 533, 0.01m);
 		/// <summary>
-		/// Azerbaijanian Manat
+		/// Azerbaijan Manat
 		/// </summary>
 		public static readonly ICurrency AZN = new Iso4217Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
 		/// <summary>
@@ -106,10 +106,6 @@ namespace AbbyyLS.Payments
 		/// Belarusian Ruble
 		/// </summary>
 		public static readonly ICurrency BYN = new Iso4217Currency("BYN", "p.", 933, 0.01m);
-		/// <summary>
-		/// Belarusian Ruble
-		/// </summary>
-		public static readonly ICurrency BYR = new Iso4217Currency("BYR", "p.", 974, 1m);
 		/// <summary>
 		/// Belize Dollar
 		/// </summary>
@@ -235,7 +231,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency GMD = new Iso4217Currency("GMD", "¤", 270, 0.01m);
 		/// <summary>
-		/// Guinea Franc
+		/// Guinean Franc
 		/// </summary>
 		public static readonly ICurrency GNF = new Iso4217Currency("GNF", "¤", 324, 1m);
 		/// <summary>
@@ -315,7 +311,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency KHR = new Iso4217Currency("KHR", "\u17db", 116, 0.01m);
 		/// <summary>
-		/// Comoro Franc
+		/// Comorian Franc 
 		/// </summary>
 		public static readonly ICurrency KMF = new Iso4217Currency("KMF", "¤", 174, 1m);
 		/// <summary>
@@ -339,7 +335,7 @@ namespace AbbyyLS.Payments
 		/// </summary>
 		public static readonly ICurrency KZT = new Iso4217Currency("KZT", "\u043b\u0432", 398, 0.01m);
 		/// <summary>
-		/// Kip
+		/// Lao Kip
 		/// </summary>
 		public static readonly ICurrency LAK = new Iso4217Currency("LAK", "\u20ad", 418, 0.01m);
 		/// <summary>
@@ -754,7 +750,6 @@ namespace AbbyyLS.Payments
 				case "BDT": return BDT;
 				case "BBD": return BBD;
 				case "BYN": return BYN;
-				case "BYR": return BYR;
 				case "BZD": return BZD;
 				case "XOF": return XOF;
 				case "BMD": return BMD;
@@ -1098,7 +1093,6 @@ namespace AbbyyLS.Payments
 				case 971: return AFN;
 				case 972: return TJS;
 				case 973: return AOA;
-				case 974: return BYR;
 				case 975: return BGN;
 				case 976: return CDF;
 				case 977: return BAM;
@@ -1140,7 +1134,6 @@ namespace AbbyyLS.Payments
 			yield return BDT;
 			yield return BBD;
 			yield return BYN;
-			yield return BYR;
 			yield return BZD;
 			yield return XOF;
 			yield return BMD;
