@@ -5,7 +5,7 @@ namespace AbbyyLS.Payments
 	/// <summary>
 	/// This structure provides a amount of money in some currency
 	/// </summary>
-	public struct Money : IComparable<Money>, IEquatable<Money>
+	public struct Money : IComparable<Money>, IEquatable<Money>, IFormattable
 	{
 		/// <summary>
 		/// amount of money
@@ -218,6 +218,11 @@ namespace AbbyyLS.Payments
 				throw new InvalidOperationException("mismatch currency");
 
 			return Amount.CompareTo(other.Amount);
+		}
+
+		public string ToString(string format, IFormatProvider formatProvider)
+		{
+			throw new NotImplementedException();
 		}
 
 		/// <summary>
